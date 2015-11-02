@@ -5,6 +5,5 @@ body {
 
 }
 .login-table {
-    margin: auto;
-    margin-top: 20%;
+    float: right;
 }
