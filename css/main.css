@@ -10,4 +10,5 @@ body {
 }
 .login-table {
     float: right;
+    margin: 10px;
 }
