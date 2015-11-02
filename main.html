@@ -1,0 +1,7 @@
+<div>
+    <select id="searchFruit"  style="min-width:200px;display:block"
+            ng-model="fruit" ng-change="search(fruit)">
+        <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.id}}</option>
+    </select>
+
+</div>

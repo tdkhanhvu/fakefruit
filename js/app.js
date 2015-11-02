@@ -1,6 +1,26 @@
-var app = angular.module('fakefruit', []);
-app.controller('login', function($scope) {
-    $scope.usr = "Username";
-    $scope.pwd = "Password";
-    $scope.lgn = "Login";
-});
+(function(){
+    var app = angular.module('fakefruit', ["ngRoute"]);
+
+    app.controller('login', function($scope) {
+        $scope.usr = "Username";
+        $scope.pwd = "Password";
+        $scope.lgn = "Login";
+    });
+
+    app.config(function($routeProvider){
+        $routeProvider
+            .when("/main", {
+                templateUrl: "main.html",
+                controller: "MainController"
+            })
+            .when("/user/:username", {
+                templateUrl: "user.html",
+                controller: "UserController"
+            })
+            .when("/repo/:username/:reponame", {
+                templateUrl: "repo.html",
+                controller: "RepoController"
+            })
+            .otherwise({redirectTo:"/main"});
+    });
+}());
