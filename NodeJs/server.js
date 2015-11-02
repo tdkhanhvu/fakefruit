@@ -4,8 +4,6 @@ var http = require('http'),
 	path =  require('path'),
 	index,
 	config = '',
-	searchSymbolsByName= '',
-	getMarks = '',
 	//list = [{'id':'cam'}, {'id':'nho'} ];
 	list = [{'id':'cam'},{'id':'nho','origins':[{'id':'phanrang', 'name':'Phan Rang', 'image':'nho_ninhthuan.png','description':'nho Phan Rang thường quả nhỏ, có màu đỏ hoặc tím nhạt, quả mọng, sờ vào quả thấy chắc và cứng. Cuốn rất tươi, chùm ngắn. Vị chua đậm'}, {'id':'trungquoc', 'name':'Trung Quốc', 'image':'nho_trungquoc.png','description':'quả tròn, to, thường đựng trong thùng lạnh. Quả có màu tím nhạt, có lớp phấn trắng đục. Ruột có nhiều hạt, mềm. Vị hơi chua.'}]},{'id':'dau'}];
 
@@ -50,29 +48,18 @@ function start(route) {
 		list.forEach(function (item) {
 			result.push({'id':item['id']});
 		});
-		//String acrHeaders = request.getHeader("Access-Control-Request-Headers");
-		//String acrMethod = request.getHeader("Access-Control-Request-Method");
-
-		//response.setHeader("Access-Control-Allow-Headers", acrHeaders);
-		//response.setHeader("Access-Control-Allow-Methods", acrMethod);
 
 		response.end(JSON.stringify(result), 'utf-8');
 	} else if (filePath.indexOf('search') > -1) {
-		//var result= {},
-		//	fruitId = ;
-		
-		//list.forEach(function (item) {
-		//	result.push({'id':item['id']});
-		//});
-		
-		var query = url.parse(request.url,true).query;
-		
-		var result = [];
-		
+		var tokens = url.parse(request.url,true).pathname.split("/"),
+            searchId = tokens[tokens.length - 1],
+            result = {};
+        console.log('searchId:' + searchId);
+
 		list.forEach(function (item) {
-			result.push({'id':item['id']});
+            if (item['id'] == searchId)
+			    result = item;
 		});
-		response.writeHead(200, { 'Content-Type': contentType });
 		response.end(JSON.stringify(result), 'utf-8');
 	} 
 	

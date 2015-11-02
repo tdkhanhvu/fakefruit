@@ -3,5 +3,20 @@
             ng-model="fruit" ng-change="search(fruit)">
         <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.id}}</option>
     </select>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active" ng-repeat="origin in origins">
+            <input type="checkbox" autocomplete="off" checked
+                   ng-model="origin.visible">{{origin.name}}
+        </label>
+    </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div ng-repeat="origin in origins" class="col-md-4" ng-show="origin.visible">
+                <p>{{origin.name}}</p>
+                <img ng-src="{{origin.image}}" title="{{origin.name}}">
+                <p>{{origin.description}}</p>
+            </div>
+        </div>
+    </div>
 </div>

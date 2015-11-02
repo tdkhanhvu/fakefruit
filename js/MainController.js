@@ -1,25 +1,20 @@
-var host = 'http://localhost:8080/';
+var host = 'http://localhost:8080/',
+    imagePath = host + 'assets/image/';
 (function(){
 
     var app = angular.module("fakefruit");
 
     var MainController = function($scope, $http) {
-//        var decrementCountdown = function(){
-//            $scope.countdown -= 1;
-//            if ($scope.countdown < 1){
-//                $scope.search($scope.username);
-//            }
-//        };
-//
-//        var countdownInterval = null;
-//        var startCountDown = function(){
-//            countdownInterval = $interval(decrementCountdown, 1000, $scope.countdown);
-//        };
-//
         $scope.search = function(fruit) {
-            console.log(fruit);
+            console.log('search for ' + fruit);
             $http.get(host + 'search/' + fruit)
                 .then(function(response){
+                    $scope.origins = response.data.origins;
+
+                    $scope.origins.forEach(function(origin) {
+                        origin['image'] = imagePath + origin['image'];
+                        origin['visible'] = true;
+                    })
                     console.log(response.data);
                 });
             //$location.path("/user/" + username);
