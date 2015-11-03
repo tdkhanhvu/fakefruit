@@ -12,11 +12,30 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div ng-repeat="origin in origins" class="col-md-4" ng-show="origin.visible">
-                <p>{{origin.name}}</p>
-                <img ng-src="{{origin.image}}" title="{{origin.name}}">
-                <p ng-repeat="attribute in attributes" style="height:70px">{{origin.description[attribute]}}</p>
-            </div>
+            <table class="table table-bordered table-hover table-striped" ng-show="origins.length">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th ng-repeat="origin in origins" ng-show="origin.visible">{{origin.name}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        Tên
+                    </td>
+                    <td ng-repeat="origin in origins" ng-show="origin.visible">
+                        <img ng-src="{{origin.image}}" title="{{origin.name}}">
+                    </td>
+                </tr>
+                <tr ng-repeat="attribute in attributes">
+                    <td>{{attribute}}</td>
+                    <td ng-repeat="origin in origins" ng-show="origin.visible">
+                        {{origin.description[attribute]}}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
