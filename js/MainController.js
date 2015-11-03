@@ -10,6 +10,12 @@ var host = 'http://localhost:8080/',
             $http.get(host + 'search/' + fruit)
                 .then(function(response){
                     $scope.origins = response.data.origins;
+                    $scope.attributes = [];
+                    console.log($scope.origins[0].description);
+
+                    for (var attribute in $scope.origins[0].description) {
+                        $scope.attributes.push(attribute);
+                    }
 
                     $scope.origins.forEach(function(origin) {
                         origin['image'] = imagePath + origin['image'];
@@ -24,10 +30,11 @@ var host = 'http://localhost:8080/',
             .then(function(response){
                 console.log(response.data);
                 $scope.fruits = response.data;
-                $("#searchFruit").select2({
-                    placeholder: 'Chọn Trái Cây'//,
-                    //data: response.data
-                });
+
+//                $("#searchFruit").select2({
+//                    placeholder: 'Chọn Trái Cây'//,
+//                    //data: response.data
+//                });
             });
     };
 

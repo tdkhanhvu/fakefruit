@@ -15,7 +15,7 @@
             <div ng-repeat="origin in origins" class="col-md-4" ng-show="origin.visible">
                 <p>{{origin.name}}</p>
                 <img ng-src="{{origin.image}}" title="{{origin.name}}">
-                <p>{{origin.description}}</p>
+                <p ng-repeat="attribute in attributes" style="height:70px">{{origin.description[attribute]}}</p>
             </div>
         </div>
     </div>
