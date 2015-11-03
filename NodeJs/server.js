@@ -5,7 +5,30 @@ var http = require('http'),
 	index,
 	config = '',
 	//list = [{'id':'cam'},{'id':'nho','origins':[{'id':'phanrang', 'name':'Phan Rang', 'image':'nho_ninhthuan.png','description':'nho Phan Rang thường quả nhỏ, có màu đỏ hoặc tím nhạt, quả mọng, sờ vào quả thấy chắc và cứng. Cuốn rất tươi, chùm ngắn. Vị chua đậm'}, {'id':'trungquoc', 'name':'Trung Quốc', 'image':'nho_trungquoc.png','description':'quả tròn, to, thường đựng trong thùng lạnh. Quả có màu tím nhạt, có lớp phấn trắng đục. Ruột có nhiều hạt, mềm. Vị hơi chua.'}]},{'id':'dau'}];
-    list = [{'id':'cam'},{'id':'nho','origins':[{'id':'phanrang', 'name':'Phan Rang', 'image':'nho_ninhthuan.png','description':{'size':'quả nhỏ', 'color':'màu đỏ hoặc tím nhạt', 'touch':'quả mọng, sờ vào quả thấy chắc và cứng', 'other':'Cuống rất tươi, chùm ngắn', 'taste': 'Vị chua đậm'}}, {'id':'trungquoc', 'name':'Trung Quốc', 'image':'nho_trungquoc.png','description':{'size':'quả tròn, to', 'color': 'màu tím nhạt, có lớp phấn trắng đục', 'touch':'','other': 'Ruột có nhiều hạt, mềm', 'taste': 'Vị hơi chua'}}]},{'id':'dau'}];
+    list = [
+        {'id':'cam'},
+        {'id':'nho',
+            'origins':[
+                {
+                    'id':'phanrang',
+                    'name':'Phan Rang',
+                    'image':'nho_ninhthuan.png',
+                    'description':{'size':'quả nhỏ', 'color':'màu đỏ hoặc tím nhạt', 'touch':'quả mọng, sờ vào quả thấy chắc và cứng', 'other':'Cuống rất tươi, chùm ngắn', 'taste': 'Vị chua đậm'}
+                },
+                {
+                    'id':'my',
+                    'name':'Mỹ',
+                    'image':'nho_my.jpg',
+                    'description':{'size':'thuôn dài', 'color': 'vỏ sậm hơn', 'touch':'','other': 'Rất ít hoặc không có hạt', 'taste': 'Vị ngọt,giòn'}
+                },
+                {
+                    'id':'trungquoc',
+                    'name':'Trung Quốc',
+                    'image':'nho_trungquoc.png',
+                    'description':{'size':'quả tròn, to', 'color': 'màu tím nhạt, có lớp phấn trắng đục', 'touch':'','other': 'Ruột có nhiều hạt, mềm', 'taste': 'Vị hơi chua'}
+                }]
+        },
+        {'id':'dau'}];
     fs.readFile('./index.html', function (err, data) {
 		if (err) {
 			throw err;

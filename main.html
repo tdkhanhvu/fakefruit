@@ -11,21 +11,22 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="table-responsive">
             <table class="table table-bordered table-hover table-striped" ng-show="origins.length">
                 <thead>
                 <tr>
-                    <th></th>
+                    <th>Tên</th>
                     <th ng-repeat="origin in origins" ng-show="origin.visible">{{origin.name}}</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
-                        Tên
+                        Hình
                     </td>
                     <td ng-repeat="origin in origins" ng-show="origin.visible">
-                        <img ng-src="{{origin.image}}" title="{{origin.name}}">
+                        <img style="width:200px" ng-src="{{origin.image}}"
+                             title="{{origin.name}}">
                     </td>
                 </tr>
                 <tr ng-repeat="attribute in attributes">
