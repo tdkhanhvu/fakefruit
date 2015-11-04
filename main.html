@@ -1,17 +1,25 @@
 <div>
-    <select id="searchFruit"  style="min-width:200px;display:block"
-            ng-model="fruit" ng-change="search(fruit)">
-        <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.id}}</option>
-    </select>
-    <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary" ng-repeat="origin in origins"
-               ng-class="{'active': origin.visible}">
-            <input type="checkbox" autocomplete="off" checked
-                   ng-model="origin.visible">{{origin.name}}
-        </label>
-    </div>
-
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <select id="searchFruit"  style="width:100%;display:block"
+                        ng-model="fruit" ng-change="search(fruit)">
+                    <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.id}}</option>
+                </select>
+            </div>
+            <div class="clearfix"></div>
+            <div class="text-center">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary" ng-repeat="origin in origins"
+                           ng-class="{'active': origin.visible}">
+                        <input type="checkbox" autocomplete="off" checked
+                               ng-model="origin.visible">{{origin.name}}
+                    </label>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
         <div class="table-responsive">
             <table class="table table-bordered table-hover table-striped" ng-show="origins.length">
                 <thead>
