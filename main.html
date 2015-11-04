@@ -4,7 +4,8 @@
         <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.id}}</option>
     </select>
     <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-primary active" ng-repeat="origin in origins">
+        <label class="btn btn-primary" ng-repeat="origin in origins"
+               ng-class="{'active': origin.visible}">
             <input type="checkbox" autocomplete="off" checked
                    ng-model="origin.visible">{{origin.name}}
         </label>
