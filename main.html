@@ -4,7 +4,7 @@
             <div class="col-md-4 col-md-offset-4">
                 <select id="searchFruit"  style="width:100%;display:block"
                         ng-model="fruit" ng-change="search(fruit)">
-                    <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.id}}</option>
+                    <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.name}}</option>
                 </select>
             </div>
             <div class="clearfix"></div>
@@ -17,11 +17,12 @@
                     </label>
                     <div class="clearfix"></div>
                 </div>
+                <div ng-hide="showTable()">Xin hãy chọn loại trái cây</div>
             </div>
 
         </div>
         <div class="table-responsive">
-            <table class="table table-bordered table-hover table-striped" ng-show="origins.length">
+            <table class="table table-bordered table-hover table-striped" ng-show="showTable()">
                 <thead>
                 <tr>
                     <th>Tên</th>

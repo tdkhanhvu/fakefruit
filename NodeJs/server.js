@@ -6,8 +6,8 @@ var http = require('http'),
 	config = '',
 	//list = [{'id':'cam'},{'id':'nho','origins':[{'id':'phanrang', 'name':'Phan Rang', 'image':'nho_ninhthuan.png','description':'nho Phan Rang thường quả nhỏ, có màu đỏ hoặc tím nhạt, quả mọng, sờ vào quả thấy chắc và cứng. Cuốn rất tươi, chùm ngắn. Vị chua đậm'}, {'id':'trungquoc', 'name':'Trung Quốc', 'image':'nho_trungquoc.png','description':'quả tròn, to, thường đựng trong thùng lạnh. Quả có màu tím nhạt, có lớp phấn trắng đục. Ruột có nhiều hạt, mềm. Vị hơi chua.'}]},{'id':'dau'}];
     list = [
-        {'id':'cam'},
-        {'id':'nho',
+        {'id':'cam', 'name': 'cam'},
+        {'id':'nho', 'name': 'nho',
             'origins':[
                 {
                     'id':'phanrang',
@@ -28,7 +28,7 @@ var http = require('http'),
                     'description':{'size':'quả tròn, to', 'color': 'màu tím nhạt, có lớp phấn trắng đục', 'touch':'','other': 'Ruột có nhiều hạt, mềm', 'taste': 'Vị hơi chua'}
                 }]
         },
-        {'id':'dau'}];
+        {'id':'dau', 'name': 'dâu'}];
     fs.readFile('./index.html', function (err, data) {
 		if (err) {
 			throw err;
@@ -68,7 +68,7 @@ function start(route) {
 		var result = [];
 		
 		list.forEach(function (item) {
-			result.push({'id':item['id']});
+			result.push({'id':item['id'], 'name':item['name']});
 		});
 
 		response.end(JSON.stringify(result), 'utf-8');

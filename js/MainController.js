@@ -11,7 +11,6 @@ var host = 'http://localhost:8080/',
                 .then(function(response){
                     $scope.origins = response.data.origins;
                     $scope.attributes = [];
-                    console.log($scope.origins[0].description);
 
                     for (var attribute in $scope.origins[0].description) {
                         $scope.attributes.push(attribute);
@@ -24,6 +23,20 @@ var host = 'http://localhost:8080/',
                     console.log(response.data);
                 });
             //$location.path("/user/" + username);
+        };
+
+        $scope.showTable = function() {
+            if (!$scope.origins) {
+                return false;
+            }
+
+            visibleExist = false;
+            $scope.origins.forEach(function(origin){
+               if (origin.visible) {
+                   visibleExist = true;
+               }
+            });
+            return visibleExist;
         };
 
         $http.get(host + 'getAllFruits')
