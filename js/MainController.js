@@ -1,14 +1,34 @@
 var host = 'http://localhost:8080/',
-    imagePath = host + 'assets/image/';
+    imagePath = host + 'assets/image/',
+    iconPath = host + 'assets/icon/';
 (function(){
 
     var app = angular.module("fakefruit");
 
     var MainController = function($scope, $http) {
-        $scope.search = function(fruit) {
-            console.log('search for ' + fruit);
-            $http.get(host + 'search/' + fruit)
+        $scope.searchFruit = function($item) {
+            console.log('searchFruit');
+            $scope.selectedFruit = $item;
+            console.log($item);
+
+            console.log('search for ' + $scope.selectedFruit.id);
+            $http.get(host + 'searchFruit/' + $scope.selectedFruit.id)
                 .then(function(response){
+                    console.log(response.data);
+
+                    $scope.types = response.data;
+                    $scope.attributes = [];
+                });
+        };
+
+        $scope.searchType = function($item) {
+            console.log('searchType');
+            $scope.selectedType = $item;
+            $http.get(host + 'searchType/' + $scope.selectedFruit.id + '/' +
+                    $scope.selectedType.id )
+                .then(function(response){
+                    console.log(response.data);
+
                     $scope.origins = response.data.origins;
                     $scope.attributes = [];
 
@@ -20,7 +40,6 @@ var host = 'http://localhost:8080/',
                         origin['image'] = imagePath + origin['image'];
                         origin['visible'] = true;
                     })
-                    console.log(response.data);
                 });
             //$location.path("/user/" + username);
         };
@@ -44,10 +63,9 @@ var host = 'http://localhost:8080/',
                 console.log(response.data);
                 $scope.fruits = response.data;
 
-//                $("#searchFruit").select2({
-//                    placeholder: 'Chọn Trái Cây'//,
-//                    //data: response.data
-//                });
+                $scope.fruits.forEach(function(fruit) {
+                    fruit['icon'] = iconPath + fruit['icon'];
+                });
             });
     };
 

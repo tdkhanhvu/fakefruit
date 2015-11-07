@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap']);
+    var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select']);
 
     app.controller('login', function($scope) {
         $scope.usr = "Username";

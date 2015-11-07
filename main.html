@@ -2,10 +2,39 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <select id="searchFruit"  style="width:100%;display:block"
-                        ng-model="fruit" ng-change="search(fruit)">
-                    <option ng-repeat="fruit in fruits" value="{{fruit.id}}">{{fruit.name}}</option>
-                </select>
+                <div>Bước 1: Chọn loại trái cây</div>
+                <ui-select ng-model="selectedFruit" theme="bootstrap"
+                        on-select="searchFruit($item)">
+                    <ui-select-match placeholder="Chọn trái cây">
+                        <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
+                             class="pull-left">
+                        {{$select.selected.name}}
+                    </ui-select-match>
+                    <ui-select-choices repeat="fruit in fruits">
+                        <img ng-src="{{fruit.icon}}" class="pull-left">
+
+                        <div ng-bind-html="fruit.name | highlight: $select.search"
+                                style="height:30px;margin-top:5px;" class="pull-left">
+                            {{fruit.name}}
+                        </div>
+                        <div class="clearfix"></div>
+                    </ui-select-choices>
+                </ui-select>
+
+                <div ng-show="selectedFruit">Bước 2: Chọn loại {{selectedFruit.name}}</div>
+                <ui-select ng-model="selectedType" theme="bootstrap"
+                           on-select="searchType($item)">
+                    <ui-select-match placeholder="Chọn trái cây">
+                        {{$select.selected.name}}
+                    </ui-select-match>
+                    <ui-select-choices repeat="type in types">
+                        <div ng-bind-html="type.name | highlight: $select.search"
+                             style="height:30px;margin-top:5px;" class="pull-left">
+                            {{type.name}}
+                        </div>
+                        <div class="clearfix"></div>
+                    </ui-select-choices>
+                </ui-select>
             </div>
             <div class="clearfix"></div>
             <div class="text-center">
@@ -17,8 +46,7 @@
                     </label>
                     <div class="clearfix"></div>
                 </div>
-                <div ng-hide="showTable()">Xin hãy chọn loại trái cây</div>
-            </div>
+        </div>
 
         </div>
         <div class="table-responsive">
@@ -35,7 +63,7 @@
                         Hình
                     </td>
                     <td ng-repeat="origin in origins" ng-show="origin.visible">
-                        <img style="width:200px" ng-src="{{origin.image}}"
+                        <img style="max-width:400px" ng-src="{{origin.image}}"
                              title="{{origin.name}}">
                     </td>
                 </tr>
