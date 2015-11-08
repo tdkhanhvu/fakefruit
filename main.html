@@ -2,6 +2,7 @@
     <div class="row">
         <div class="col-md-2">
             <div><h3><span class="label label-success">Bước 1</span></h3></div>
+            <p>Chọn trái cây</p>
             <ui-select ng-model="$parent.selectedFruit" theme="bootstrap"
                     on-select="searchFruit()">
                 <ui-select-match placeholder="Chọn trái cây">
@@ -21,6 +22,7 @@
             </ui-select>
             <div ng-show="selectedFruit">
                 <div><h3><span class="label label-success">Bước 2</span></h3></div>
+                <p>Chọn loại {{selectedFruit.name}}</p>
                 <ui-select ng-model="$parent.selectedType" theme="bootstrap"
                            on-select="searchType()">
                     <ui-select-match placeholder="Chọn {{selectedFruit.name}}">
@@ -40,23 +42,27 @@
                 </ui-select>
             </div>
 
-        </div>
-        <div class="col-md-10">
-            <div class="clearfix"></div>
-            <div class="text-center" ng-show="selectedType">
-                <div class="btn-group" data-toggle="buttons">
+            <div ng-show="selectedType">
+                <div><h3><span class="label label-success">Bước 3</span></h3></div>
+                <p>Chọn nguồn gốc</p>
+                <div data-toggle="buttons">
                     <label class="btn btn-primary" ng-repeat="origin in origins"
-                           ng-class="{'active': origin.visible}">
+                           ng-class="{'active': origin.visible}"
+                            style="width: 100%; margin: 2px;">
                         <input type="checkbox" autocomplete="off" checked
                                ng-model="origin.visible">{{origin.name}}
                     </label>
                     <div class="clearfix"></div>
                 </div>
             </div>
+        </div>
+        <div class="col-md-10">
+            <div class="clearfix"></div>
+
             <div class="table-responsive">
                 <table class="table table-bordered table-hover table-striped" ng-show="showTable()">
                     <thead>
-                    <tr>
+                    <tr class="bg-primary">
                         <th>Gốc</th>
                         <th ng-repeat="origin in origins" ng-show="origin.visible">{{origin.name}}</th>
                     </tr>
