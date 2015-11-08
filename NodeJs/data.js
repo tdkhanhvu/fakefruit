@@ -285,6 +285,44 @@ var list = [
                 ]
             }
         ]
+    },
+    {
+        'id': 'quyt',
+        'name': 'Quýt',
+        'icon':'quyt.png',
+        'types': [
+            {
+                'id': 'quyt',
+                'name': 'Quýt',
+                'icon': 'quyt.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'quyt_quyt_vietnam.jpg',
+                        'description': {
+                            'shape': 'Kích thước không đồng đều nhau',
+                            'color': 'Thường bị nám, có đốm mờ, màu vàng mỡ gà, không được bắt mắt',
+                            'touch': 'Vỏ rất mỏng',
+                            'other': '',
+                            'taste': 'Thanh nhẹ, chua dịu'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'quyt_quyt_trungquoc.jpg',
+                        'description': {
+                            'shape': 'Kích thước đồng đều nhau, quả dẹt.',
+                            'color': 'Vỏ láng bóng, màu vàng tươi hấp dẫn',
+                            'touch': 'Vỏ dày hơn',
+                            'other': 'Đầu múi thường hay bị khô, xốp, không được mọng nước',
+                            'taste': 'Ngọt đậm, thậm chí có cả vị đắng và mùi hắc'
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
