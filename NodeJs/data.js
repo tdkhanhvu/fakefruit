@@ -156,43 +156,81 @@ var list = [
         'types': [
             {
                 'id': 'cam',
-                'name': 'cam',
+                'name': 'Cam',
                 'icon': 'cam.png',
                 'origins': [
                     {
-                        'id': 'vietnam',
-                        'name': 'Việt Nam',
-                        'image': 'cam_cam_vietnam.png',
+                        'id': 'vinh',
+                        'name': 'Vinh',
+                        'image': 'cam_cam_vinh.jpg',
                         'description': {
-                            'shape': '',
-                            'color': '',
-                            'touch': '',
-                            'other': '',
-                            'taste': ''
+                            'shape': 'quả to đều và chín đỏ từ dưới lên',
+                            'color': 'màu xanh vàng không đều',
+                            'touch': 'vỏ thường bị nám phía trên cuống, hơi mỏng chứ không mỏng tanh',
+                            'other': 'mùi thơm, nhiều nước',
+                            'taste': 'ngọt nhưng vẫn có một ít vị chua đặc trưng của Cam'
                         }
                     },
                     {
-                        'id': 'my',
-                        'name': 'Mỹ',
-                        'image': 'cam_cam_my.jpg',
+                        'id': 'uc',
+                        'name': 'Úc',
+                        'image': 'cam_cam_uc.jpg',
                         'description': {
                             'shape': '',
-                            'color': '',
-                            'touch': '',
-                            'other': '',
-                            'taste': ''
+                            'color': 'màu vàng nhạt đều từ đầu đến chân quả cam',
+                            'touch': 'bề mặt vỏ dày, căng, xù xì',
+                            'other': 'thường bị khô ở đầu quả, ít nước. Lòng quả cam có màu vàng sẫm tương đương màu vỏ',
+                            'taste': 'nước màu vàng đậm hơn, mùi nước thơm vừa phải, vị ngọt'
                         }
                     },
                     {
                         'id': 'trungquoc',
                         'name': 'Trung Quốc',
-                        'image': 'cam_cam_trungquoc.png',
+                        'image': 'cam_cam_trungquoc.jpg',
                         'description': {
-                            'shape': '',
-                            'color': '',
-                            'touch': '',
-                            'other': '',
-                            'taste': ''
+                            'shape': 'trái to',
+                            'color': 'màu vàng sẫm, loang lổ, không đều',
+                            'touch': 'vỏ dày và láng mịn, độ bóng cao và dính',
+                            'other': 'phần cuống hơi nhọn và phần đít quả hơi bầu.Không hạt',
+                            'taste': 'nước vàng nhạt, mùi hăng hắc'
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        'id': 'dau',
+        'name': 'Dâu Tây',
+        'icon':'dau.png',
+        'types': [
+            {
+                'id': 'dau',
+                'name': 'Dâu Tây',
+                'icon': 'dau.png',
+                'origins': [
+                    {
+                        'id': 'dalat',
+                        'name': 'Đà Lạt',
+                        'image': 'dau_dau_dalat.jpg',
+                        'description': {
+                            'shape': 'Quả vừa phải, không quá to, không đồng đều',
+                            'color': 'Đỏ không đồng đều, sậm màu ở thân, phần cuống hơi trắng',
+                            'touch': 'Mềm, không nhẵn mịn',
+                            'other': 'Phần dài quả: Mỏng ngắn, phủ một phần trên trái dâu, màu xanh nhạt',
+                            'taste': 'Mùi thơm đặc trưng, khi ăn mềm dai, có vị chua thanh'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'dau_dau_trungquoc.jpg',
+                        'description': {
+                            'shape': 'Quả to, độ đồng đều cao',
+                            'color': 'Màu đỏ sậm rất đẹp mắt',
+                            'touch': 'Quả có độ cứng, mịn',
+                            'other': 'Phần dài quả: Màu đỏ đậm hơn, không có màu trắng đan xen',
+                            'taste': 'Không có mùi thơm, khi ăn có cảm giác bở, không có vị chua thanh'
                         }
                     }
                 ]
