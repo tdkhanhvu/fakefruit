@@ -58,7 +58,7 @@ function start(route) {
 		list.forEach(function (fruit) {
             if (fruit['id'] == fruitId)
                 fruit.types.forEach(function(type){
-                    result.push({'id':type['id'], 'name':type['name']});
+                    result.push({'id':type['id'], 'name':type['name'], 'icon':type['icon']});
                 });
 		});
 		response.end(JSON.stringify(result), 'utf-8');

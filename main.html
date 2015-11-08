@@ -10,7 +10,7 @@
                              class="pull-left">
                         {{$select.selected.name}}
                     </ui-select-match>
-                    <ui-select-choices repeat="fruit in fruits">
+                    <ui-select-choices repeat="fruit in fruits | orderBy:'id'">
                         <img ng-src="{{fruit.icon}}" class="pull-left">
 
                         <div ng-bind-html="fruit.name | highlight: $select.search"
@@ -25,9 +25,13 @@
                     <ui-select ng-model="$parent.selectedType" theme="bootstrap"
                                on-select="searchType()">
                         <ui-select-match placeholder="Chọn trái cây">
+                            <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
+                                 class="pull-left">
                             {{$select.selected.name}}
                         </ui-select-match>
-                        <ui-select-choices repeat="type in types">
+                        <ui-select-choices repeat="type in types | orderBy:'id'">
+                            <img ng-src="{{type.icon}}" class="pull-left">
+
                             <div ng-bind-html="type.name | highlight: $select.search"
                                  style="height:30px;margin-top:5px;" class="pull-left">
                                 {{type.name}}
@@ -53,7 +57,7 @@
                 <table class="table table-bordered table-hover table-striped" ng-show="showTable()">
                     <thead>
                     <tr>
-                        <th>Tên</th>
+                        <th>Nguồn gốc</th>
                         <th ng-repeat="origin in origins" ng-show="origin.visible">{{origin.name}}</th>
                     </tr>
                     </thead>
@@ -69,8 +73,10 @@
                     </tr>
                     <tr ng-repeat="attribute in attributes">
                         <td>{{attribute}}</td>
-                        <td ng-repeat="origin in origins" ng-show="origin.visible">
-                            {{origin.description[attribute]}}
+                        <td ng-repeat="origin in origins" ng-show="origin.visible"
+                            ng-class="{'text-danger': origin.id == 'trungquoc'}">
+                            <strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute]}}</strong>
+                            <span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute]}}</span>
                         </td>
                     </tr>
                     </tbody>

@@ -9,11 +9,6 @@ var host = 'http://localhost:8080/',
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
 
-        $scope.$watch('item', function() {
-            console.log('hey, myVar has changed!');
-            console.log($scope.item);
-        });
-
         $scope.searchFruit = function() {
             $scope.selectedType = undefined;
             console.log('searchFruit');
@@ -24,6 +19,10 @@ var host = 'http://localhost:8080/',
 
                     $scope.types = response.data;
                     $scope.attributes = [];
+
+                    $scope.types.forEach(function(type) {
+                        type['icon'] = iconPath + type['icon'];
+                    });
                 });
         };
 

@@ -7,6 +7,7 @@ var list = [
             {
                 'id': 'fuji',
                 'name': 'táo đỏ',
+                'icon': 'tao_fuji.png',
                 'origins': [
                     {
                         'id': 'my',
@@ -37,6 +38,7 @@ var list = [
             {
                 'id': 'xanh',
                 'name': 'táo xanh',
+                'icon': 'tao_xanh.png',
                 'origins': [
                     {
                         'id': 'my',
@@ -67,6 +69,7 @@ var list = [
             {
                 'id': 'gala',
                 'name': 'táo Gala',
+                'icon': 'tao_gala.png',
                 'origins': [
                     {
                         'id': 'my',
@@ -104,6 +107,7 @@ var list = [
             {
                 'id': 'do',
                 'name': 'nho đỏ',
+                'icon': 'nho_do.png',
                 'origins': [
                     {
                         'id': 'phanrang',
@@ -144,12 +148,56 @@ var list = [
                 ]
             }
         ]
-
     },
     {
-        'id': 'dau',
-        'name': 'dâu',
-        'icon':'dau.png'
+        'id': 'cam',
+        'name': 'cam',
+        'icon':'cam.png',
+        'types': [
+            {
+                'id': 'cam',
+                'name': 'cam',
+                'icon': 'cam.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'cam_cam_vietnam.png',
+                        'description': {
+                            'shape': '',
+                            'color': '',
+                            'touch': '',
+                            'other': '',
+                            'taste': ''
+                        }
+                    },
+                    {
+                        'id': 'my',
+                        'name': 'Mỹ',
+                        'image': 'cam_cam_my.jpg',
+                        'description': {
+                            'shape': '',
+                            'color': '',
+                            'touch': '',
+                            'other': '',
+                            'taste': ''
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'cam_cam_trungquoc.png',
+                        'description': {
+                            'shape': '',
+                            'color': '',
+                            'touch': '',
+                            'other': '',
+                            'taste': ''
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
