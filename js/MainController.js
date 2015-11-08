@@ -23,6 +23,11 @@ var host = 'http://localhost:8080/',
                     $scope.types.forEach(function(type) {
                         type['icon'] = iconPath + type['icon'];
                     });
+
+                    if ($scope.types.length == 1) {
+                        $scope.selectedType = $scope.types[0];
+                        $scope.searchType();
+                    }
                 });
         };
 
