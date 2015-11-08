@@ -236,6 +236,55 @@ var list = [
                 ]
             }
         ]
+    },
+    {
+        'id': 'dualuoi',
+        'name': 'Dưa Lưới',
+        'icon':'dualuoi.png',
+        'types': [
+            {
+                'id': 'dualuoi',
+                'name': 'Dưa Lưới',
+                'icon': 'dualuoi.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'dualuoi_dualuoi_vietnam.jpg',
+                        'description': {
+                            'shape': 'quả tròn và quả hình bầu dục. Từ 1-2kg',
+                            'color': 'màu xanh và màu vàng',
+                            'touch': 'vân lưới to và đẹp, cùi dày',
+                            'other': '',
+                            'taste': 'vị ngọt thanh, ăn giòn'
+                        }
+                    },                    {
+                        'id': 'baokhue',
+                        'name': 'Bảo Khuê',
+                        'image': 'dualuoi_dualuoi_baokhue.jpg',
+                        'description': {
+                            'shape': 'vỏ xanh, nặng tối đa 3 kg',
+                            'color': '',
+                            'touch': 'cùi dày',
+                            'other': 'Ruột dưa màu cam',
+                            'taste': 'vị ngọt thanh mát và thơm'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'dualuoi_dualuoi_trungquoc.jpg',
+                        'description': {
+                            'shape': 'quả dài, hình bầu dục, kích cỡ lớn (4-5 kg)',
+                            'color': 'màu vàng cũ',
+                            'touch': '',
+                            'other': 'ruột dưa màu vàng cam, cùi hơi mềm. Khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn',
+                            'taste': 'ngọt lịm'
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
