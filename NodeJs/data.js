@@ -323,6 +323,75 @@ var list = [
                 ]
             }
         ]
+    },
+    {
+        'id': 'hong',
+        'name': 'Hồng',
+        'icon':'hong.png',
+        'types': [
+            {
+                'id': 'trung',
+                'name': 'Trứng',
+                'icon': 'hong.png',
+                'origins': [
+                    {
+                        'id': 'dalat',
+                        'name': 'Đà Lạt',
+                        'image': 'hong_trung_dalat.jpg',
+                        'description': {
+                            'shape': 'Tròn, dẹt trơn giống trứng gà',
+                            'color': 'Vàng cam, có vết thâm, không đều màu',
+                            'touch': '',
+                            'other': 'Cuống có nhiều đốm đen, không có rãnh',
+                            'taste': 'Ngọt béo, ăn rất dẻo và thơm'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'hong_trung_trungquoc.jpg',
+                        'description': {
+                            'shape': 'To, tròn đều, to dẹt hơi vuông, có khía',
+                            'color': 'Đỏ sẫm, bóng mịn',
+                            'touch': 'Vỏ bóng, đẹp, không vết xước',
+                            'other': 'Không thơm, hơi khô và không mọng nước. Cuống thâm đen',
+                            'taste': 'Ngọt'
+                        }
+                    }
+                ]
+            },
+            {
+                'id': 'gion',
+                'name': 'Giòn',
+                'icon': 'hong.png',
+                'origins': [
+                    {
+                        'id': 'dalat',
+                        'name': 'Đà Lạt',
+                        'image': 'hong_gion_dalat.jpg',
+                        'description': {
+                            'shape': 'Tròn',
+                            'color': 'Màu xanh nhưng hơi ngả vàng, màu sắc không đều, không bóng',
+                            'touch': '',
+                            'other': '',
+                            'taste': 'Giòn, ngọt và hơi chát'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'hong_gion_trungquoc.jpg',
+                        'description': {
+                            'shape': 'To',
+                            'color': 'Vàng đậm',
+                            'touch': '',
+                            'other': '',
+                            'taste': ''
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
