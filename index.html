@@ -2,14 +2,11 @@
 <html ng-app="fakefruit">
   <head>
     <title>Fakefruit v0.1</title>
-      <link rel="stylesheet" type="text/css" href="css/select2.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/3.4.5/select2.css">-->
-
-      <!--<link rel="stylesheet" href="css/select2-bootstrap.css">-->
+    <link rel="stylesheet" type="text/css" href="css/select2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
-  <body>
+  <body class="container-fluid">
     <table class="login-table" ng-controller="login">
       <tr>
         <td>
@@ -23,6 +20,7 @@
         </td>
       </tr>
     </table>
+    <div class="clearfix"></div>
     <div class="main-div">
         <div ng-view></div>
     </div>

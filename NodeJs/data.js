@@ -1,12 +1,12 @@
 var list = [
     {
         'id': 'tao',
-        'name': 'táo',
+        'name': 'Táo',
         'icon': 'tao.png',
         'types': [
             {
                 'id': 'fuji',
-                'name': 'táo đỏ',
+                'name': 'Fuji',
                 'icon': 'tao_fuji.png',
                 'origins': [
                     {
@@ -37,7 +37,7 @@ var list = [
             },
             {
                 'id': 'xanh',
-                'name': 'táo xanh',
+                'name': 'Xanh',
                 'icon': 'tao_xanh.png',
                 'origins': [
                     {
@@ -68,7 +68,7 @@ var list = [
             },
             {
                 'id': 'gala',
-                'name': 'táo Gala',
+                'name': 'Gala',
                 'icon': 'tao_gala.png',
                 'origins': [
                     {
@@ -101,12 +101,12 @@ var list = [
     },
     {
         'id': 'nho',
-        'name': 'nho',
+        'name': 'Nho',
         'icon': 'nho.png',
         'types': [
             {
                 'id': 'do',
-                'name': 'nho đỏ',
+                'name': 'Đỏ',
                 'icon': 'nho_do.png',
                 'origins': [
                     {
@@ -151,7 +151,7 @@ var list = [
     },
     {
         'id': 'cam',
-        'name': 'cam',
+        'name': 'Cam',
         'icon':'cam.png',
         'types': [
             {
