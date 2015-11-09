@@ -392,6 +392,44 @@ var list = [
                 ]
             }
         ]
+    },
+    {
+        'id': 'le',
+        'name': 'Lê',
+        'icon':'le.png',
+        'types': [
+            {
+                'id': 'le',
+                'name': 'Lê',
+                'icon': 'le.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'le_le_vietnam.jpg',
+                        'description': {
+                            'shape': 'Qủa thon dài, cầm chắc tay.',
+                            'color': 'Màu vàng đậm, không bóng bẩy và bắt mắt.',
+                            'touch': 'Có vỏ ngoài sần sùi',
+                            'other': 'Thịt quả trắng, đồng đều, không bị khô xốp. Không sử dụng chất bảo quản nên chỉ để ngoài 2 - 3 ngày đã héo và ủng.',
+                            'taste': 'Ngọt, hơi chua, mùi thơm dịu.'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'le_le_trungquoc.jpg',
+                        'description': {
+                            'shape': 'Qủa tròn đều, bọc trong lưới xốp. ',
+                            'color': 'Màu xanh hoặc vàng tươi, bắt mắt',
+                            'touch': 'Thường có vỏ ngoài nhẵn mịn, sáng bóng, da căng',
+                            'other': 'Thịt quả bị thâm đen hoặc có nhiều vết nứt thâm, lỗ chỗ như kim châm. Có chứa chất bảo quản nên có thể để ngoài thoải mái từ 15 - 20 ngày mà vẫn bóng đẹp. Nếu để tủ lạnh có thể bảo quản tới 3-4 tháng.',
+                            'taste': 'Ngọt đậm, không có mùi thơm đặc trưng.'
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
