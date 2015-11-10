@@ -1,4 +1,59 @@
-var list = [
+var attributes = [
+    {
+        'id': 'see',
+        'name': 'Nhìn',
+        'attributes': [{
+            'id': 'photo',
+            'name': 'Hình'
+        },{
+            'id': 'color',
+            'name': 'Màu'
+        },{
+            'id': 'shape',
+            'name': 'Dạng'
+        },{
+            'id': 'size',
+            'name': 'Cỡ'
+        }
+        ]},
+    {
+        'id': 'touch',
+        'name': 'Chạm',
+        'attributes': [{
+            'id': 'vo',
+            'name': 'Vỏ'
+        }]},
+    {
+        'id': 'smelltaste',
+        'name': 'Mùi vị',
+        'attributes': [{
+            'id': 'smell',
+            'name': 'Mùi'
+        },{
+            'id': 'taste',
+            'name': 'Vị'
+        },{
+            'id': 'ruot',
+            'name': 'Ruột'
+        }]},
+    {
+        'id': 'Others',
+        'name': 'Khác',
+        'attributes': [{
+            'id':'season',
+            'name': 'Mùa'
+        },{
+            'id': 'weight',
+            'name': 'Nặng'
+        },{
+            'id': 'price',
+            'name': 'Giá'
+        },{
+            'id': 'time',
+            'name': 'Bảo quản'
+        }]
+
+    }],list = [
     {
         'id': 'tao',
         'name': 'Táo',
@@ -632,3 +687,4 @@ var list = [
 ];
 
 exports.list = list;
+exports.attributes = attributes;
