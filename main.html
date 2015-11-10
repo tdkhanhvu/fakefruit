@@ -80,11 +80,10 @@
                                  title="{{origin.name}}">
                         </td>
                     </tr>
-                    <tr ng-repeat="attribute in attributes" class="{{attribute.class}}">
+                    <tr ng-repeat="attribute in attributes" class="bg-{{attribute.class}} text-{{attribute.class}}">
                         <td rowspan="{{attribute.rows}}" ng-if="attribute.rows != 0">{{attribute.group}}</td>
-                        <td>{{attribute.name}}</td>
-                        <td ng-repeat="origin in origins" ng-show="origin.visible"
-                            ng-class="{'text-danger': origin.id == 'trungquoc'}">
+                        <td><span class="label label-{{attribute.class}}">{{attribute.name}}</span></td>
+                        <td ng-repeat="origin in origins" ng-show="origin.visible"">
                             <strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute.id]}}</strong>
                             <span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute.id]}}</span>
                         </td>

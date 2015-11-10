@@ -2,7 +2,7 @@ var attributeGroups = [
     {
         'id': 'see',
         'name': 'Nhìn',
-        'class': 'bg-danger',
+        'class': 'danger',
         'attributes': [
 //            {
 //            'id': 'photo',
@@ -22,7 +22,7 @@ var attributeGroups = [
     {
         'id': 'touch',
         'name': 'Chạm',
-        'class': 'bg-warning',
+        'class': 'warning',
         'attributes': [{
             'id': 'vo',
             'name': 'Vỏ'
@@ -30,7 +30,7 @@ var attributeGroups = [
     {
         'id': 'smelltaste',
         'name': 'Mùi vị',
-        'class':'bg-info',
+        'class':'info',
         'attributes': [{
             'id': 'smell',
             'name': 'Mùi'
@@ -44,7 +44,7 @@ var attributeGroups = [
     {
         'id': 'Others',
         'name': 'Khác',
-        'class': 'bg-success',
+        'class': 'success',
         'attributes': [{
             'id':'season',
             'name': 'Mùa'
