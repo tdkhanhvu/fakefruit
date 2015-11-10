@@ -305,7 +305,8 @@ var list = [
                             'color': 'Thường bị nám, có đốm mờ, màu vàng mỡ gà, không được bắt mắt',
                             'touch': 'Vỏ rất mỏng',
                             'other': '',
-                            'taste': 'Thanh nhẹ, chua dịu'
+                            'taste': 'Thanh nhẹ, chua dịu',
+                            'time': 'tháng 10 đến khoảng tháng 2'
                         }
                     },
                     {
@@ -313,7 +314,7 @@ var list = [
                         'name': 'Trung Quốc',
                         'image': 'quyt_quyt_trungquoc.jpg',
                         'description': {
-                            'shape': 'Kích thước đồng đều nhau, quả dẹt.',
+                            'shape': 'Kích thước đồng đều nhau, quả dẹt và thấp.',
                             'color': 'Vỏ láng bóng, màu vàng tươi hấp dẫn',
                             'touch': 'Vỏ dày hơn',
                             'other': 'Đầu múi thường hay bị khô, xốp, không được mọng nước',
@@ -425,6 +426,94 @@ var list = [
                             'touch': 'Thường có vỏ ngoài nhẵn mịn, sáng bóng, da căng',
                             'other': 'Thịt quả bị thâm đen hoặc có nhiều vết nứt thâm, lỗ chỗ như kim châm. Có chứa chất bảo quản nên có thể để ngoài thoải mái từ 15 - 20 ngày mà vẫn bóng đẹp. Nếu để tủ lạnh có thể bảo quản tới 3-4 tháng.',
                             'taste': 'Ngọt đậm, không có mùi thơm đặc trưng.'
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        'id': 'luu',
+        'name': 'Lựu',
+        'icon':'luu.png',
+        'types': [
+            {
+                'id': 'luu',
+                'name': 'Lựu',
+                'icon': 'luu.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'luu_luu_vietnam.jpg',
+                        'description': {
+                            'shape': 'Nhỏ hơn. Tròn đến méo, cả hình vuông.',
+                            'color': 'Xanh, đỏ dần khi chín.',
+                            'touch': 'Da sần sùi hoặc bị nám.',
+                            'other': 'Hạt nhiều, hạt có màu nhạt hơn, nhiều nước. Mùi thanh.',
+                            'taste': 'Mát dịu.',
+                            'time': 'Một tuần là héo và dễ hỏng.',
+                            'price': 'Cao hơn.'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'luu_luu_trungquoc.jpg',
+                        'description': {
+                            'shape': 'Lớn hơn. Tròn, đều nhau, đẹp mắt.',
+                            'color': 'Trắng hồng.',
+                            'touch': 'Vỏ ngoài mịn, căng tròn.',
+                            'other': 'Hạt đỏ rực, bắt mắt, các hạt đều nhau. Không mùi hoặc mùi của hoá chất.',
+                            'taste': '',
+                            'time' : 'Vài tháng vẫn tươi.',
+                            'price' : 'Thấp hơn.'
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        'id': 'xoai',
+        'name': 'Xoài',
+        'icon':'xoai.png',
+        'types': [
+            {
+                'id': 'xoai',
+                'name': 'Xoài',
+                'icon': 'xoai.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'xoai_xoai_vietnam.jpg',
+                        'description': {
+                            'shape': 'Trái thuôn, cuống nhỏ, hơi lõm sâu',
+                            'color': 'Màu vàng sáng',
+                            'touch': 'Da căng bóng',
+                            'other': 'Khúc đầu của quả xoài chín vàng và cứng',
+                            'taste': 'Mùi thơm ngọt đậm',
+                            'time': '',
+                            'price': '',
+                            'weight': '300 - 350g',
+                            'season': 'tháng 11 đến tháng 6 âm lịch'
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'xoai_xoai_trungquoc.jpg',
+                        'description': {
+                            'shape': '',
+                            'color': 'Xanh, không chín vàng hoặc màu vàng mờ',
+                            'touch': 'Thâm đen, vỏ nhăn, nhũn',
+                            'other': 'Lấm tấm đen ở cuống. Mùi hắc',
+                            'taste': 'Không có vị xoài và ăn nhạt nhẽo',
+                            'time' : '1 - 2 tháng',
+                            'price' : '',
+                            'weight': '400 - 700g',
+                            'season': 'tháng 6, tháng 7 đến khoảng tháng 10 âm lịch'
                         }
                     }
                 ]
