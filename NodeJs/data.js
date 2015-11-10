@@ -519,6 +519,69 @@ var list = [
                 ]
             }
         ]
+    },
+    {
+        'id': 'man',
+        'name': 'Mận',
+        'icon':'man.png',
+        'types': [
+            {
+                'id': 'man',
+                'name': 'Mận',
+                'icon': 'man.png',
+                'origins': [
+                    {
+                        'id': 'laocai',
+                        'name': 'Lào Cai',
+                        'image': 'man_man_laocai.jpg',
+                        'description': {
+                            'shape': 'Quả nhỏ',
+                            'color': 'Tím',
+                            'touch': '',
+                            'other': '',
+                            'taste': 'Ngọt',
+                            'time': '',
+                            'price': '',
+                            'weight': '',
+                            'season': 'Hết mùa vào giữa tháng 7'
+                        }
+                    },
+//                    {
+//                        'id': 'hau',
+//                        'name': 'Hậu',
+//                        'image': 'man_man_hau.jpg',
+//                        'origin': 'Mộc Châu',
+//                        'description': {
+//                            'shape': '',
+//                            'color': '',
+//                            'touch': 'Da căng bóng, khi bóp nhẹ có cảm giác cứng, không bị dập nát',
+//                            'other': 'Ruột đỏ mọng. Giòn',
+//                            'taste': 'Vị chua',
+//                            'time': '2 đến 3 ngày là quả mềm và nhũn như cháo',
+//                            'price': 'Đầu mùa 70.000 - 120.000/kg. Bình thường giá 20.000 - 25.000/kg',
+//                            'weight': '',
+//                            'season': 'Một mùa bắt đầu từ cuối tháng 3. Tháng 5 - 6 mới là chính vụ.'
+//                        }
+//                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'man_man_trungquoc.jpg',
+                        'description': {
+                            'shape': 'Quả to',
+                            'color': 'Tím',
+                            'touch': '',
+                            'other': 'Ruột màu vàng ',
+                            'taste': 'Rất ngọt',
+                            'time' : '',
+                            'price' : '25.000 – 30.000 đồng/kg',
+                            'weight': '',
+                            'season': ''
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
