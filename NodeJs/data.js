@@ -1,11 +1,14 @@
-var attributes = [
+var attributeGroups = [
     {
         'id': 'see',
         'name': 'Nhìn',
-        'attributes': [{
-            'id': 'photo',
-            'name': 'Hình'
-        },{
+        'class': 'bg-danger',
+        'attributes': [
+//            {
+//            'id': 'photo',
+//            'name': 'Hình'
+//        },
+            {
             'id': 'color',
             'name': 'Màu'
         },{
@@ -19,6 +22,7 @@ var attributes = [
     {
         'id': 'touch',
         'name': 'Chạm',
+        'class': 'bg-warning',
         'attributes': [{
             'id': 'vo',
             'name': 'Vỏ'
@@ -26,6 +30,7 @@ var attributes = [
     {
         'id': 'smelltaste',
         'name': 'Mùi vị',
+        'class':'bg-info',
         'attributes': [{
             'id': 'smell',
             'name': 'Mùi'
@@ -39,6 +44,7 @@ var attributes = [
     {
         'id': 'Others',
         'name': 'Khác',
+        'class': 'bg-success',
         'attributes': [{
             'id':'season',
             'name': 'Mùa'
@@ -655,13 +661,8 @@ var attributes = [
                         'description': {
                             'shape': 'kích thước khá nhỏ, chỉ bằng cái chén uống nước trà thường ngày.',
                             'color': 'Xanh lá cây xen lẫn một ít màu hồng phấn',
-                            'touch': 'Nhiều lông',
-                            'other': '',
-                            'taste': 'Thơm giòn tự nhiên, có vị hơi chua',
-                            'time': '',
-                            'price': '',
-                            'weight': '',
-                            'season': ''
+                            'vo': 'Nhiều lông',
+                            'taste': 'Thơm giòn tự nhiên, có vị hơi chua'
                         }
                     },
                     {
@@ -671,13 +672,8 @@ var attributes = [
                         'description': {
                             'shape': 'Mẫu mã đẹp và đồng đều. Kích thước khá lớn',
                             'color': 'Hồng nhạt, đẹp mắt',
-                            'touch': 'Vỏ trơn láng, nhẵn mịn, lông ít hoặc không có.',
-                            'other': '',
-                            'taste': 'Không giữ được độ giòn lâu, cùi đào thường màu vàng, khi ăn mềm nhũn và ít ngọt',
-                            'time' : '',
-                            'price' : '',
-                            'weight': '',
-                            'season': ''
+                            'vo': 'Vỏ trơn láng, nhẵn mịn, lông ít hoặc không có.',
+                            'taste': 'Không giữ được độ giòn lâu, cùi đào thường màu vàng, khi ăn mềm nhũn và ít ngọt'
                         }
                     }
                 ]
@@ -687,4 +683,4 @@ var attributes = [
 ];
 
 exports.list = list;
-exports.attributes = attributes;
+exports.attributeGroups = attributeGroups;

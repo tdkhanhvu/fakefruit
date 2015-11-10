@@ -61,15 +61,17 @@
             <div class="clearfix"></div>
 
             <div class="table-responsive">
-                <table class="table table-bordered table-hover table-striped" ng-show="showTable()">
+                <table class="table table-bordered table-hover" ng-show="showTable()">
                     <thead>
                     <tr class="bg-primary">
+                        <th>Nhóm</th>
                         <th>Gốc</th>
                         <th ng-repeat="origin in origins" ng-show="origin.visible">{{origin.name}}</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
+                        <td rowspan="1"></td>
                         <td>
                             Hình
                         </td>
@@ -78,12 +80,13 @@
                                  title="{{origin.name}}">
                         </td>
                     </tr>
-                    <tr ng-repeat="attribute in attributes">
-                        <td>{{attribute}}</td>
+                    <tr ng-repeat="attribute in attributes" class="{{attribute.class}}">
+                        <td rowspan="{{attribute.rows}}" ng-if="attribute.rows != 0">{{attribute.group}}</td>
+                        <td>{{attribute.name}}</td>
                         <td ng-repeat="origin in origins" ng-show="origin.visible"
                             ng-class="{'text-danger': origin.id == 'trungquoc'}">
-                            <strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute]}}</strong>
-                            <span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute]}}</span>
+                            <strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute.id]}}</strong>
+                            <span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute.id]}}</span>
                         </td>
                     </tr>
                     </tbody>

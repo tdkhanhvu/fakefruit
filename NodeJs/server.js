@@ -12,7 +12,7 @@ var http = require('http'),
 	}),
     data = require('./data.js'),
     list = data.list,
-    attributes = data.attributes;
+    attributeGroups = data.attributeGroups;
 
 function start(route) {
   function onRequest(request, response) {
@@ -44,11 +44,15 @@ function start(route) {
 	response.writeHead(200, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*'});
 
 	if (filePath.indexOf('getAllFruits') > -1) {
-		var result = [];
+		var result = {},
+            fruits = [];
 
 		list.forEach(function (item) {
-			result.push({'id':item['id'], 'name':item['name'], 'icon':item['icon']});
+			fruits.push({'id':item['id'], 'name':item['name'], 'icon':item['icon']});
 		});
+
+        result.fruits = fruits;
+        result.attributeGroups = attributeGroups;
 
 		response.end(JSON.stringify(result), 'utf-8');
 	} else if (filePath.indexOf('searchFruit') > -1) {
@@ -109,5 +113,6 @@ function start(route) {
   http.createServer(onRequest).listen(8080);
   console.log("Server has started.");
 }
+
 
 exports.start = start;
