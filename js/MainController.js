@@ -113,7 +113,7 @@ var host = 'http://localhost:8080/',
                             startAttribute = attribute;
                         else
                             temp.push({'group': '', 'class': attributeGroup.class,
-                                'id': attribute.Id, 'name': attribute.name, 'rows': 0});
+                                'id': attribute.id, 'name': attribute.name, 'rows': 0});
                         rowCount++;
                     }
                 }

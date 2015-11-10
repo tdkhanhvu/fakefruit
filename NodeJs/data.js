@@ -4,10 +4,6 @@ var attributeGroups = [
         'name': 'Nhìn',
         'class': 'danger',
         'attributes': [
-//            {
-//            'id': 'photo',
-//            'name': 'Hình'
-//        },
             {
             'id': 'color',
             'name': 'Màu'
@@ -659,7 +655,7 @@ var attributeGroups = [
                         'name': 'Việt Nam',
                         'image': 'dao_dao_vietnam.jpg',
                         'description': {
-                            'shape': 'kích thước khá nhỏ, chỉ bằng cái chén uống nước trà thường ngày.',
+                            'size': 'Kích thước khá nhỏ, bằng chén uống nước trà.',
                             'color': 'Xanh lá cây xen lẫn một ít màu hồng phấn',
                             'vo': 'Nhiều lông',
                             'taste': 'Thơm giòn tự nhiên, có vị hơi chua'
@@ -670,10 +666,12 @@ var attributeGroups = [
                         'name': 'Trung Quốc',
                         'image': 'dao_dao_trungquoc.jpg',
                         'description': {
-                            'shape': 'Mẫu mã đẹp và đồng đều. Kích thước khá lớn',
+                            'shape': 'Mẫu mã đẹp và đồng đều',
+                            'size': 'Kích thước khá lớn',
                             'color': 'Hồng nhạt, đẹp mắt',
-                            'vo': 'Vỏ trơn láng, nhẵn mịn, lông ít hoặc không có.',
-                            'taste': 'Không giữ được độ giòn lâu, cùi đào thường màu vàng, khi ăn mềm nhũn và ít ngọt'
+                            'vo': 'Vỏ trơn láng, nhẵn mịn. Lông ít hoặc không có.',
+                            'ruot': 'Cùi đào thường màu vàng',
+                            'taste': 'Không giữ được độ giòn lâu. Khi ăn mềm nhũn và ít ngọt'
                         }
                     }
                 ]

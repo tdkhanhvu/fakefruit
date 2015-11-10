@@ -80,10 +80,19 @@
                                  title="{{origin.name}}">
                         </td>
                     </tr>
-                    <tr ng-repeat="attribute in attributes" class="bg-{{attribute.class}} text-{{attribute.class}}">
-                        <td rowspan="{{attribute.rows}}" ng-if="attribute.rows != 0">{{attribute.group}}</td>
+                    <tr ng-repeat="attribute in attributes" class="">
+                        <td rowspan="{{attribute.rows}}" ng-if="attribute.rows != 0">
+                            <!--<h3>-->
+                                <!--<span class="label label-{{attribute.class}}">-->
+                                    <!--{{attribute.group}}-->
+                                <!--</span>-->
+                            <!--</h3>-->
+                            <button type="button" class="btn btn-{{attribute.class}}">
+                                {{attribute.group}}
+                            </button>
+                        </td>
                         <td><span class="label label-{{attribute.class}}">{{attribute.name}}</span></td>
-                        <td ng-repeat="origin in origins" ng-show="origin.visible"">
+                        <td ng-repeat="origin in origins" ng-show="origin.visible">
                             <strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute.id]}}</strong>
                             <span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute.id]}}</span>
                         </td>
