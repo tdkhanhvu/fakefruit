@@ -582,6 +582,52 @@ var list = [
                 ]
             }
         ]
+    },
+    {
+        'id': 'dao',
+        'name': 'Đào',
+        'icon':'dao.png',
+        'types': [
+            {
+                'id': 'dao',
+                'name': 'Đào',
+                'icon': 'dao.png',
+                'origins': [
+                    {
+                        'id': 'vietnam',
+                        'name': 'Việt Nam',
+                        'image': 'dao_dao_vietnam.jpg',
+                        'description': {
+                            'shape': 'kích thước khá nhỏ, chỉ bằng cái chén uống nước trà thường ngày.',
+                            'color': 'Xanh lá cây xen lẫn một ít màu hồng phấn',
+                            'touch': 'Nhiều lông',
+                            'other': '',
+                            'taste': 'Thơm giòn tự nhiên, có vị hơi chua',
+                            'time': '',
+                            'price': '',
+                            'weight': '',
+                            'season': ''
+                        }
+                    },
+                    {
+                        'id': 'trungquoc',
+                        'name': 'Trung Quốc',
+                        'image': 'dao_dao_trungquoc.jpg',
+                        'description': {
+                            'shape': 'Mẫu mã đẹp và đồng đều. Kích thước khá lớn',
+                            'color': 'Hồng nhạt, đẹp mắt',
+                            'touch': 'Vỏ trơn láng, nhẵn mịn, lông ít hoặc không có.',
+                            'other': '',
+                            'taste': 'Không giữ được độ giòn lâu, cùi đào thường màu vàng, khi ăn mềm nhũn và ít ngọt',
+                            'time' : '',
+                            'price' : '',
+                            'weight': '',
+                            'season': ''
+                        }
+                    }
+                ]
+            }
+        ]
     }
 ];
 
