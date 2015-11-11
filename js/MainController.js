@@ -65,12 +65,17 @@ var host = 'http://localhost:8080/',
         $http.get(host + 'getAllFruits')
             .then(function (response) {
                 console.log(response.data);
-                $scope.fruits = response.data.fruits;
-                $scope.attributeGroups = response.data.attributeGroups;
+                $scope.fruits = response.data;
 
                 $scope.fruits.forEach(function (fruit) {
                     fruit['icon'] = iconPath + fruit['icon'];
                 });
+            });
+
+        $http.get(host + 'getAttributeGroups')
+            .then(function (response) {
+                console.log(response.data);
+                $scope.attributeGroups = response.data;
             });
 
         var processType = function (type) {
@@ -78,26 +83,20 @@ var host = 'http://localhost:8080/',
                 count = {},
                 result = [];
 
+            //set count of each possible attribute in the group to be 0
             $scope.attributeGroups.forEach(function (attributeGroup) {
                 attributeGroup.attributes.forEach(function (attribute) {
                     count[attribute.id] = 0;
                 });
             });
 
-            console.log('---------------------------------');
-            console.log(count);
-            console.log('---------------------------------');
-
+            //count the number of occurrences for each attribute
             origins.forEach(function (origin) {
                 for (var point in origin.description) {
                     if (origin[point] != '')
                         count[point] += 1;
                 }
             });
-
-            console.log('---------------------------------');
-            console.log(count);
-            console.log('---------------------------------');
 
             $scope.attributeGroups.forEach(function (attributeGroup) {
                 var attributes = attributeGroup.attributes,
@@ -109,6 +108,7 @@ var host = 'http://localhost:8080/',
                     var attribute = attributes[i];
 
                     if (count[attribute.id] != 0) {
+                        //the attribute row that shows attribute group name
                         if (startAttribute == null)
                             startAttribute = attribute;
                         else
@@ -117,6 +117,9 @@ var host = 'http://localhost:8080/',
                         rowCount++;
                     }
                 }
+
+                //number of row span by attribute group name cell = number
+                //of attributes exist in origin
                 if (startAttribute != null)
                     result.push({'group': attributeGroup.name, 'class': attributeGroup.class, 'id': startAttribute.id,
                         'name': startAttribute.name, 'rows': rowCount});
@@ -124,11 +127,6 @@ var host = 'http://localhost:8080/',
                 if (temp.length)
                     result.push.apply(result, temp);
             });
-
-            console.log('---------------------------------');
-            console.log(result);
-            console.log('---------------------------------');
-
 
             return result;
         };

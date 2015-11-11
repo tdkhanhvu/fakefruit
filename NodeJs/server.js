@@ -51,11 +51,13 @@ function start(route) {
 			fruits.push({'id':item['id'], 'name':item['name'], 'icon':item['icon']});
 		});
 
-        result.fruits = fruits;
-        result.attributeGroups = attributeGroups;
+        result = fruits;
 
 		response.end(JSON.stringify(result), 'utf-8');
-	} else if (filePath.indexOf('searchFruit') > -1) {
+	} else if (filePath.indexOf('getAttributeGroups') > -1) {
+        var result = attributeGroups;
+        response.end(JSON.stringify(result), 'utf-8');
+    } else if (filePath.indexOf('searchFruit') > -1) {
 		var tokens = url.parse(request.url,true).pathname.split("/"),
             fruitId = tokens[tokens.length - 1],
             result = [];
