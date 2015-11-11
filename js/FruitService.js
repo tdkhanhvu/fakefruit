@@ -5,16 +5,40 @@
             iconPath = host + 'assets/icon/',
             attributeGroups = null;
 
-        $http.get(host + 'getAttributeGroups')
-            .then(function (response) {
-                console.log(response.data);
-                attributeGroups = response.data;
-            });
+        var getAttributeGroups = function() {
+            var url = host + 'getAttributeGroups';
+            console.log(url);
+
+            return $http.get(url)
+                .then(function (response) {
+                    console.log(response.data);
+
+                    attributeGroups = response.data;
+                });
+        }
+
+        var getAllFruits = function() {
+            var url = host + 'getAllFruits';
+            console.log(url);
+
+            return $http.get(url)
+                .then(function (response) {
+                    console.log(response.data);
+                    var fruits = response.data;
+
+                    fruits.forEach(function (fruit) {
+                        fruit['icon'] = iconPath + fruit['icon'];
+                    });
+
+                    return fruits;
+                });
+        };
 
         var searchFruit = function (fruitId) {
-            console.log('searchFruit');
-            console.log('search for ' + fruitId);
-            return $http.get(host + 'searchFruit/' + fruitId)
+            var url = host + 'searchFruit/' + fruitId;
+            console.log(url);
+
+            return $http.get(url)
                 .then(function (response) {
                     console.log(response.data);
 
@@ -29,8 +53,10 @@
         };
 
         var searchType = function (fruitId, typeId) {
-            console.log('searchType');
-            return $http.get(host + 'searchType/' + fruitId + '/' + typeId)
+            var url = host + 'searchType/' + fruitId + '/' + typeId;
+            console.log(url);
+
+            return $http.get(url)
                 .then(function (response) {
                     console.log(response.data);
 
@@ -43,20 +69,6 @@
                     })
 
                     return {'origins': origins, 'attributes': attributes};
-                });
-        };
-
-        var getAllFruits = function() {
-            return $http.get(host + 'getAllFruits')
-                .then(function (response) {
-                    console.log(response.data);
-                    var fruits = response.data;
-
-                    fruits.forEach(function (fruit) {
-                        fruit['icon'] = iconPath + fruit['icon'];
-                    });
-
-                    return fruits;
                 });
         };
 
@@ -113,8 +125,11 @@
             return result;
         };
 
+        getAttributeGroups();
+
         return {
             getAllFruits: getAllFruits,
+            getAttributeGroups: getAttributeGroups,
             searchFruit: searchFruit,
             searchType: searchType
         };

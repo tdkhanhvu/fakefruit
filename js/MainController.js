@@ -3,7 +3,7 @@
     var app = angular.module("fakefruit");
 
     var MainController = function ($scope, $http, FruitService) {
-        $scope.selectedFruit = undefined;
+        $scope.selectedFruit = undefined,
         $scope.selectedType = undefined;
 
         var onGetAllFruits = function(data) {
@@ -59,6 +59,5 @@
     };
 
     app.controller("MainController", MainController);
-
 })();
 
