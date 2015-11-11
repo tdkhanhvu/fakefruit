@@ -5,7 +5,7 @@
             iconPath = host + 'assets/icon/',
             attributeGroups = null;
 
-        var getAttributeGroups = function() {
+        var getAttributeGroups = function () {
             var url = host + 'getAttributeGroups';
             console.log(url);
 
@@ -15,7 +15,7 @@
 
                     attributeGroups = response.data;
                 });
-        }
+        };
 
         var getAllFruits = function() {
             var url = host + 'getAllFruits';
@@ -66,7 +66,7 @@
                     origins.forEach(function (origin) {
                         origin['image'] = imagePath + origin['image'];
                         origin['visible'] = true;
-                    })
+                    });
 
                     return {'origins': origins, 'attributes': attributes};
                 });
@@ -87,8 +87,10 @@
             //count the number of occurrences for each attribute
             origins.forEach(function (origin) {
                 for (var point in origin.description) {
-                    if (origin[point] != '')
-                        count[point] += 1;
+                    if (origin.description.hasOwnProperty(point) &&
+                        origin.description[point] != '') {
+                        count[point]++;
+                    }
                 }
             });
 
