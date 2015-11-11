@@ -1,16 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app="fakefruit">
   <head>
     <title>Fakefruit v0.1</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/select2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    <script src="js/app.js"></script>
   </head>
-  <body>
+  <body class="container-fluid">
     <table class="login-table" ng-controller="login">
       <tr>
         <td>
@@ -24,8 +20,18 @@
         </td>
       </tr>
     </table>
+    <div class="clearfix"></div>
     <div class="main-div">
-      <div>Hello Welcome to Fakefruit!</div>
+        <div ng-view></div>
     </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+    <script src="js/dropdown/select2.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/MainController.js"></script>
   </body>
 </html>

@@ -1,12 +1,18 @@
 body {
-    background-color: #b0c4de;
+    background-color: rgba(189, 222, 176, 0.35);
 }
 .main-div {
-    position: fixed;
-    left: 30%;
+    /*position: fixed;*/
+    /*left: 30%;*/
     top: 30%;
-    font-family: Perpetua;
-    font-size: 28px;
+    /*font-family: Perpetua;*/
+    font-family: Arial;
+    /*font-size: 28px;*/
+}
+
+.main-div table {
+    font-size: 15px;
+    font-weight: 400;
 }
 .login-table {
     float: right;

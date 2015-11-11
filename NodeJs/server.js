@@ -3,18 +3,16 @@ var http = require('http'),
 	url = require('url'),
 	path =  require('path'),
 	index,
-	config = '',
-	searchSymbolsByName= '',
-	getMarks = '',
-	//list = [{'id':'cam'}, {'id':'nho'} ];
-	list = [{'id':'cam'},{'id':'nho','origins':[{'id':'phanrang', 'name':'Phan Rang', 'image':'nho_ninhthuan.png','description':'nho Phan Rang thường quả nhỏ, có màu đỏ hoặc tím nhạt, quả mọng, sờ vào quả thấy chắc và cứng. Cuốn rất tươi, chùm ngắn. Vị chua đậm'}, {'id':'trungquoc', 'name':'Trung Quốc', 'image':'nho_trungquoc.png','description':'quả tròn, to, thường đựng trong thùng lạnh. Quả có màu tím nhạt, có lớp phấn trắng đục. Ruột có nhiều hạt, mềm. Vị hơi chua.'}]},{'id':'dau'}];
-
-	fs.readFile('./index.html', function (err, data) {
+	config = '';
+    fs.readFile('./index.html', function (err, data) {
 		if (err) {
 			throw err;
 		}
 		index = data;
-	});
+	}),
+    data = require('./data.js'),
+    list = data.list,
+    attributeGroups = data.attributeGroups;
 
 function start(route) {
   function onRequest(request, response) {
@@ -44,39 +42,53 @@ function start(route) {
 	}
 	console.log(filePath);
 	response.writeHead(200, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*'});
+
 	if (filePath.indexOf('getAllFruits') > -1) {
-		var result = [];
-		
-		list.forEach(function (item) {
-			result.push({'id':item['id']});
-		});
-		//String acrHeaders = request.getHeader("Access-Control-Request-Headers");
-		//String acrMethod = request.getHeader("Access-Control-Request-Method");
+		var result = {},
+            fruits = [];
 
-		//response.setHeader("Access-Control-Allow-Headers", acrHeaders);
-		//response.setHeader("Access-Control-Allow-Methods", acrMethod);
+		list.forEach(function (item) {
+			fruits.push({'id':item['id'], 'name':item['name'], 'icon':item['icon']});
+		});
+
+        result.fruits = fruits;
+        result.attributeGroups = attributeGroups;
 
 		response.end(JSON.stringify(result), 'utf-8');
-	} else if (filePath.indexOf('search') > -1) {
-		//var result= {},
-		//	fruitId = ;
-		
-		//list.forEach(function (item) {
-		//	result.push({'id':item['id']});
-		//});
-		
-		var query = url.parse(request.url,true).query;
-		
-		var result = [];
-		
-		list.forEach(function (item) {
-			result.push({'id':item['id']});
+	} else if (filePath.indexOf('searchFruit') > -1) {
+		var tokens = url.parse(request.url,true).pathname.split("/"),
+            fruitId = tokens[tokens.length - 1],
+            result = [];
+        console.log('searchId:' + fruitId);
+
+		list.forEach(function (fruit) {
+            if (fruit['id'] == fruitId)
+                fruit.types.forEach(function(type){
+                    result.push({'id':type['id'], 'name':type['name'], 'icon':type['icon']});
+                });
 		});
-		response.writeHead(200, { 'Content-Type': contentType });
 		response.end(JSON.stringify(result), 'utf-8');
-	} 
-	
-	else {
+	} else if (filePath.indexOf('searchType') > -1) {
+        var tokens = url.parse(request.url,true).pathname.split("/"),
+            fruitId = tokens[tokens.length - 2],
+            typeId = tokens[tokens.length - 1],
+            result = {};
+        console.log('fruitId:' + fruitId);
+        console.log('typeId:' + typeId);
+
+        list.forEach(function (fruit) {
+            if (fruit['id'] == fruitId)
+                fruit.types.forEach(function(type){
+                    if (type['id'] == typeId) {
+                        console.log('find type:' + type);
+                        result = type;
+                    }
+                });
+        });
+        response.end(JSON.stringify(result), 'utf-8');
+    }
+
+    else {
 		fs.exists(filePath, function(exists) {
 			if (exists) {
 				fs.readFile(filePath, function(error, content) {
@@ -101,5 +113,6 @@ function start(route) {
   http.createServer(onRequest).listen(8080);
   console.log("Server has started.");
 }
+
 
 exports.start = start;
