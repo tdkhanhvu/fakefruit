@@ -1,4 +1,11 @@
-var attributeGroups = [
+var flags = {
+        'my': 'my.png',
+        'trungquoc': 'trungquoc.png',
+        'vietnam': 'vietnam.png',
+        'uc': 'uc.png',
+        'other': 'vietnam.png'
+    }
+    ,attributeGroups = [
     {
         'id': 'see',
         'name': 'Nhìn',
@@ -712,3 +719,4 @@ var attributeGroups = [
 
 exports.list = list;
 exports.attributeGroups = attributeGroups;
+exports.flags = flags;

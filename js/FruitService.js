@@ -3,6 +3,7 @@
         var host = 'http://localhost:8080/',
             imagePath = host + 'assets/image/',
             iconPath = host + 'assets/icon/',
+            flagPath = host + 'assets/flag/'
             attributeGroups = null;
 
         var getAttributeGroups = function () {
@@ -65,6 +66,7 @@
 
                     origins.forEach(function (origin) {
                         origin['image'] = imagePath + origin['image'];
+                        origin['flag'] = flagPath + origin['flag'];
                         origin['visible'] = true;
                     });
 

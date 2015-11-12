@@ -12,7 +12,8 @@ var http = require('http'),
 	}),
     data = require('./data.js'),
     list = data.list,
-    attributeGroups = data.attributeGroups;
+    attributeGroups = data.attributeGroups,
+    flags = data.flags;
 
 function start(route) {
   function onRequest(request, response) {
@@ -83,6 +84,13 @@ function start(route) {
                 fruit.types.forEach(function(type){
                     if (type['id'] == typeId) {
                         console.log('find type:' + type);
+
+                        type.origins.forEach(function(origin) {
+                            if (flags.hasOwnProperty(origin['id']))
+                                origin['flag'] = flags[origin['id']];
+                            else
+                                origin['flag'] = flags['other'];
+                        });
                         result = type;
                     }
                 });

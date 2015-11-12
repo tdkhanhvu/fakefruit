@@ -5,25 +5,37 @@
     var QuizController = function ($scope, $http, $interval, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
-        $scope.countdown = 0;
-        $scope.questionLeft = 0;
+
 
 //        var countdownInterval = null;
 //        var startCountDown = function(){
 //            countdownInterval = $interval(decrementCountdown, 1000, $scope.countdown);
 //        };
 
+        $scope.startQuiz = function() {
+            $scope.countdown = 0;
+            $scope.questionLeft = -1;
+            $scope.totalQuestion = -1;
+            $scope.percentComplete = 0;
+
+            $scope.submitAnswer('');
+        };
+
         $scope.submitAnswer = function(id){
 //            $scope.countdown -= 1;
 
             if (id != '') {
                 $scope.answer = id == $scope.question.originId ? 'correct': 'incorrect';
-            } else
+            } else {
                 $scope.questionLeft = $scope.questions.length;
+                $scope.totalQuestion = $scope.questionLeft;
+            }
 
             if ($scope.questions.length != 0)
                 $scope.question = $scope.questions.splice(randomIntFromInterval(0,
                     $scope.questions.length - 1), 1)[0];
+
+            $scope.percentComplete = Math.floor((1 - $scope.questionLeft * 1.0 / $scope.totalQuestion) * 100);
             $scope.questionLeft--;
 
 //            if ($scope.countdown < 1){
@@ -72,7 +84,7 @@
 
                 $scope.questions.push(question);
             });
-            $scope.submitAnswer('');
+            $scope.startQuiz();
 //            startCountDown();
         };
 
