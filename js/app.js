@@ -13,14 +13,16 @@
         });
     });
     app.config(function($routeProvider){
+        console.log('--------ROUTE-----------');
+        //console.log($location.path);
         $routeProvider
             .when("/main", {
                 templateUrl: "main.html",
                 controller: "MainController"
             })
-            .when("/user/:username", {
-                templateUrl: "user.html",
-                controller: "UserController"
+            .when("/quiz", {
+                templateUrl: "quiz.html",
+                controller: "QuizController"
             })
             .otherwise({redirectTo:"/main"});
     });
