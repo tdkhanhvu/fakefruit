@@ -26,13 +26,22 @@
             $scope.submitId = id;
             var timeOut = 5000;
 
-            if (id != '') {
-                $scope.answerId = $scope.question.originId;
-                $scope.answer = id == $scope.answerId ? 'correct': 'incorrect';
-            } else {
+            if (id == '') {
                 timeOut = 0;
                 $scope.questionLeft = $scope.questions.length;
                 $scope.totalQuestion = $scope.questionLeft;
+                $scope.questionCorrect = 0;
+                $scope.questionIncorrect = 0;
+            } else {
+                $scope.answerId = $scope.question.originId;
+
+                if (id == $scope.answerId) {
+                    $scope.answer = 'correct';
+                    $scope.questionCorrect++;
+                } else {
+                    $scope.answer = 'incorrect';
+                    $scope.questionIncorrect++;
+                }
             }
 
             if ($scope.questions.length != 0)

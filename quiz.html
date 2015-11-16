@@ -56,8 +56,14 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-success" type="button">
+                <button class="btn btn-primary" type="button">
                     Số câu hỏi còn lại <span class="badge">{{questionLeft}}</span>
+                </button>
+                <button class="btn btn-success" type="button">
+                    Đúng <span class="badge">{{questionCorrect}}</span>
+                </button>
+                <button class="btn btn-danger" type="button">
+                    Sai <span class="badge">{{questionIncorrect}}</span>
                 </button>
                 <h3>{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
 
