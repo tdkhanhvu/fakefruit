@@ -24,7 +24,7 @@
         $scope.submitAnswer = function(id){
 //            $scope.countdown -= 1;
             $scope.submitId = id;
-            var timeOut = 5000;
+            var timeOut = 10000;
 
             if (id == '') {
                 timeOut = 0;
@@ -50,7 +50,7 @@
                     $scope.answerId = null;
                     $scope.question = $scope.questions.splice(randomIntFromInterval(0,
                             $scope.questions.length - 1), 1)[0];
-
+                    console.log($scope.question.details);
                     $scope.percentComplete = Math.floor((1 - $scope.questionLeft * 1.0 / $scope.totalQuestion) * 100);
                     $scope.questionLeft--;
                 },timeOut);
@@ -92,14 +92,14 @@
                     if (typeof(origin.description[attrId]) != undefined &&
                         origin.description[attrId] != undefined)
                         validAttributes.push({'originId': origin.id, 'originName': origin.name,
-                            'content': origin.description[attrId]});
+                            'content': origin.description[attrId], 'flag': origin.flag});
                 });
 
                 var index = randomIntFromInterval(0, validAttributes.length - 1),
                     question = validAttributes[index];
 
                 question['attributeName'] = attribute.name;
-
+                question.details = validAttributes;
                 $scope.questions.push(question);
             });
             $scope.startQuiz();

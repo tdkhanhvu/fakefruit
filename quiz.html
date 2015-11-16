@@ -125,5 +125,22 @@
                 <!--</table>-->
             </div>
         </div>
+        <div class="col-md-4" ng-show="answer">
+            <div>
+                <h3>
+                    <span class="label label-primary">{{question.attributeName}}
+                    </span>
+                </h3>
+            </div>
+            <div class="panel panel-primary" ng-repeat="detail in question.details">
+                <div class="panel-heading">
+                    <img ng-src="{{detail.flag}}" style="width:30px;"/>
+                    {{detail.originName}}
+                </div>
+                <div class="panel-body">
+                    <div>{{detail.content}}</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
