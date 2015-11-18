@@ -1,6 +1,6 @@
 (function(){
     var FruitService = function($http) {
-        var host = 'http://localhost:8080/',
+        var host = 'http://'+window.location.hostname+':8080/',
             imagePath = host + 'assets/image/',
             iconPath = host + 'assets/icon/',
             flagPath = host + 'assets/flag/'
