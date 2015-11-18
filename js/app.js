@@ -16,6 +16,10 @@
         console.log('--------ROUTE-----------');
         //console.log($location.path);
         $routeProvider
+            .when("/mission", {
+                templateUrl: "mission.html",
+                controller: "MissionController"
+            })
             .when("/main", {
                 templateUrl: "main.html",
                 controller: "MainController"
