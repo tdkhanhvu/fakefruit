@@ -20,6 +20,10 @@
                 templateUrl: "mission.html",
                 controller: "MissionController"
             })
+            .when("/contact", {
+                templateUrl: "contact.html",
+                controller: "ContactController"
+            })
             .when("/main", {
                 templateUrl: "main.html",
                 controller: "MainController"
