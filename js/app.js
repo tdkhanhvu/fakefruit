@@ -28,6 +28,6 @@
                 templateUrl: "quiz.html",
                 controller: "QuizController"
             })
-            .otherwise({redirectTo:"/main"});
+            .otherwise({redirectTo:"/mission"});
     });
 }());

@@ -1,9 +1,10 @@
 (function(){
     var FruitService = function($http) {
         var host = 'http://'+window.location.hostname+':8080/',
-            imagePath = host + 'assets/image/',
+            fruitPath = host + 'assets/fruit/',
             iconPath = host + 'assets/icon/',
-            flagPath = host + 'assets/flag/'
+            flagPath = host + 'assets/flag/',
+            imagePath = host + 'assets/image/',
             attributeGroups = null;
 
         var getAttributeGroups = function () {
@@ -33,6 +34,10 @@
 
                     return fruits;
                 });
+        };
+
+        var getStaticImage = function(imageName) {
+            return imagePath + imageName;
         };
 
         var searchFruit = function (fruitId) {
@@ -65,7 +70,7 @@
                         attributes = processType(response.data);
 
                     origins.forEach(function (origin) {
-                        origin['image'] = imagePath + origin['image'];
+                        origin['image'] = fruitPath + origin['image'];
                         origin['flag'] = flagPath + origin['flag'];
                         origin['visible'] = true;
                     });
@@ -135,7 +140,8 @@
             getAllFruits: getAllFruits,
             getAttributeGroups: getAttributeGroups,
             searchFruit: searchFruit,
-            searchType: searchType
+            searchType: searchType,
+            getStaticImage: getStaticImage
         };
     };
 
