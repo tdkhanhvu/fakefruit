@@ -3,12 +3,12 @@
         <div class="col-md-2">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Chọn trái cây</strong></h3>
+                    <h3 class="panel-title"><strong>Trái Cây</strong></h3>
                 </div>
                 <div class="panel-body">
                     <ui-select ng-model="$parent.selectedFruit" theme="bootstrap"
                                on-select="searchFruit()">
-                        <ui-select-match placeholder="Chọn trái cây">
+                        <ui-select-match placeholder="Trái Cây">
                             <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
                                  class="pull-left">
                             {{$select.selected.name}}
@@ -27,7 +27,7 @@
             </div>
             <div class="panel panel-primary" ng-show="selectedFruit">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Chọn loại {{selectedFruit.name}}</strong></h3>
+                    <h3 class="panel-title"><strong>Loại</strong></h3>
                 </div>
                 <div class="panel-body">
                     <ui-select ng-model="$parent.selectedType" theme="bootstrap"
