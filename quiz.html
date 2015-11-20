@@ -1,149 +1,139 @@
 <div>
-    <div class="row">
+    <div class="row" style="margin-top: 30px;">
         <div class="col-md-2">
-            <div><h3><span class="label label-success">Bước 1</span></h3></div>
-            <small>Chọn trái cây</small>
-            <ui-select ng-model="$parent.selectedFruit" theme="bootstrap"
-                       on-select="searchFruit()">
-                <ui-select-match placeholder="Chọn trái cây">
-                    <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
-                         class="pull-left">
-                    {{$select.selected.name}}
-                </ui-select-match>
-                <ui-select-choices repeat="fruit in fruits | orderBy:'id'">
-                    <img ng-src="{{fruit.icon}}" class="pull-left">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Chọn trái cây</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <ui-select ng-model="$parent.selectedFruit" theme="bootstrap"
+                               on-select="searchFruit()">
+                        <ui-select-match placeholder="Chọn trái cây">
+                            <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
+                                 class="pull-left">
+                            {{$select.selected.name}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="fruit in fruits | orderBy:'id'">
+                            <img ng-src="{{fruit.icon}}" class="pull-left">
 
-                    <div ng-bind-html="fruit.name | highlight: $select.search"
-                         style="height:30px;margin-top:5px;" class="pull-left">
-                        {{fruit.name}}
-                    </div>
-                    <div class="clearfix"></div>
-                </ui-select-choices>
-            </ui-select>
-            <div ng-show="selectedFruit">
-                <div><h3><span class="label label-success">Bước 2</span></h3></div>
-                <small>Chọn loại {{selectedFruit.name}}</small>
-                <ui-select ng-model="$parent.selectedType" theme="bootstrap"
-                           on-select="searchType()">
-                    <ui-select-match placeholder="Chọn {{selectedFruit.name}}">
-                        <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
-                             class="pull-left">
-                        {{$select.selected.name}}
-                    </ui-select-match>
-                    <ui-select-choices repeat="type in types | orderBy:'id'">
-                        <img ng-src="{{type.icon}}" class="pull-left">
-
-                        <div ng-bind-html="type.name | highlight: $select.search"
-                             style="height:30px;margin-top:5px;" class="pull-left">
-                            {{type.name}}
-                        </div>
-                        <div class="clearfix"></div>
-                    </ui-select-choices>
-                </ui-select>
+                            <div ng-bind-html="fruit.name | highlight: $select.search"
+                                 style="height:30px;margin-top:5px;" class="pull-left">
+                                {{fruit.name}}
+                            </div>
+                            <div class="clearfix"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
             </div>
+            <div class="panel panel-primary" ng-show="selectedFruit">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Chọn loại {{selectedFruit.name}}</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <ui-select ng-model="$parent.selectedType" theme="bootstrap"
+                               on-select="searchType()">
+                        <ui-select-match placeholder="Chọn {{selectedFruit.name}}">
+                            <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
+                                 class="pull-left">
+                            {{$select.selected.name}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="type in types | orderBy:'id'">
+                            <img ng-src="{{type.icon}}" class="pull-left">
 
+                            <div ng-bind-html="type.name | highlight: $select.search"
+                                 style="height:30px;margin-top:5px;" class="pull-left">
+                                {{type.name}}
+                            </div>
+                            <div class="clearfix"></div>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <div class="clearfix"></div>
-
-            <div class="table-responsive" ng-show="questionLeft >= 0 && selectedType">
-                <div class="progress">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar"
-                             aria-valuenow="{{percentComplete}}" aria-valuemin="0"
-                             aria-valuemax="100" style="width: {{percentComplete}}%;">
-                            {{percentComplete}}%
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><strong>Câu hỏi</strong></h3>
+                </div>
+                <div class="panel-body">
+                    <div ng-hide="questionLeft >= 0 && selectedType">Xin hãy chọn loại trái cây để bắt đầu</div>
+                    <div class="table-responsive" style="overflow-y: hidden"
+                         ng-show="questionLeft >= 0 && selectedType">
+                        <div class="progress">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                     aria-valuenow="{{percentComplete}}" aria-valuemin="0"
+                                     aria-valuemax="100" style="width: {{percentComplete}}%;">
+                                    {{percentComplete}}%
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <button class="btn btn-primary" type="button">
-                    Còn lại <span class="badge">{{questionLeft}}</span>
-                </button>
-                <button class="btn btn-success" type="button">
-                    Đúng <span class="badge">{{questionCorrect}}</span>
-                </button>
-                <button class="btn btn-danger" type="button">
-                    Sai <span class="badge">{{questionIncorrect}}</span>
-                </button>
-
-                <button class="btn btn-info" type="button" ng-show="answer"
-                        ng-click="nextQuestion()">
-                    Tiếp theo <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                </button>
-                <h3>{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
-
-                <div class="well">
-                    <blockquote>
-                        <p>{{question.content}}</p>
-                    </blockquote>
-
-                </div>
-                <div>
-                    <div class="col-md-3" ng-repeat="origin in origins">
-                        <button type="button"
-                                class="btn btn-success" ng-click="submitAnswer(origin.id)">
-                            <!--{{origin.name}}-->
-                            <img ng-src="{{origin.flag}}"/>
-                            <p>{{origin.name}}</p>
+                        <button class="btn btn-primary" type="button">
+                            Còn lại <span class="badge">{{questionLeft}}</span>
                         </button>
+                        <button class="btn btn-success" type="button">
+                            Đúng <span class="badge">{{questionCorrect}}</span>
+                        </button>
+                        <button class="btn btn-danger" type="button">
+                            Sai <span class="badge">{{questionIncorrect}}</span>
+                        </button>
+
+                        <button class="btn btn-info" type="button" ng-show="answer"
+                                ng-click="nextQuestion()">
+                            Tiếp theo <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        </button>
+                        <h3>{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
+
+                        <div class="well">
+                            <blockquote>
+                                <p>{{question.content}}</p>
+                            </blockquote>
+
+                        </div>
+                        <div>
+                            <div class="col-md-3" ng-repeat="origin in origins">
+                                <button type="button"
+                                        class="btn btn-success" ng-click="submitAnswer(origin.id)">
+                                    <!--{{origin.name}}-->
+                                    <img ng-src="{{origin.flag}}"/>
+                                    <p>{{origin.name}}</p>
+                                </button>
                     <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"
                           ng-show="origin.id == answerId"
                           style="display:block;text-align:center;font-size: 2.5em;"></span>
                     <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"
                           ng-show="answer == 'incorrect' && origin.id == submitId"
                           style="display:block;text-align:center;font-size: 2.5em;"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!--<table class="table table-bordered table-hover" ng-show="showTable()">-->
-                <!--<thead>-->
-                <!--<tr class="bg-primary">-->
-                <!--<th>Nhóm</th>-->
-                <!--<th>Gốc</th>-->
-                <!--<th ng-repeat="origin in origins" ng-show="origin.visible">{{origin.name}}</th>-->
-                <!--</tr>-->
-                <!--</thead>-->
-                <!--<tbody>-->
-                <!--<tr>-->
-                <!--<td rowspan="1"></td>-->
-                <!--<td>-->
-                <!--Hình-->
-                <!--</td>-->
-                <!--<td ng-repeat="origin in origins" ng-show="origin.visible">-->
-                <!--<img ng-src="{{origin.image}}"-->
-                <!--title="{{origin.name}}">-->
-                <!--</td>-->
-                <!--</tr>-->
-                <!--<tr ng-repeat="attribute in attributes" class="">-->
-                <!--<td rowspan="{{attribute.rows}}" ng-if="attribute.rows != 0">-->
-                <!--<button type="button" class="btn btn-{{attribute.class}}">-->
-                <!--{{attribute.group}}-->
-                <!--</button>-->
-                <!--</td>-->
-                <!--<td><span class="label label-{{attribute.class}}">{{attribute.name}}</span></td>-->
-                <!--<td ng-repeat="origin in origins" ng-show="origin.visible">-->
-                <!--<strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute.id]}}</strong>-->
-                <!--<span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute.id]}}</span>-->
-                <!--</td>-->
-                <!--</tr>-->
-                <!--</tbody>-->
-                <!--</table>-->
             </div>
         </div>
-        <div class="col-md-4" ng-show="answer">
-            <div>
-                <h3>
-                    <span class="label label-primary">{{question.attributeName}}
-                    </span>
-                </h3>
-            </div>
-            <div class="panel panel-primary" ng-repeat="detail in question.details">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <img ng-src="{{detail.flag}}" style="width:30px;"/>
-                    {{detail.originName}}
+                    <h3 class="panel-title"><strong>Đáp Án</strong></h3>
                 </div>
                 <div class="panel-body">
-                    <div>{{detail.content}}</div>
+                    <div ng-hide="answer">
+                        Xin hãy trả lời câu hỏi để xem đáp án.
+                    </div>
+                    <div ng-show="answer">
+                        <h3>
+                            <span class="label label-primary">{{question.attributeName}}
+                            </span>
+                        </h3>
+                        <div class="panel panel-primary" ng-repeat="detail in question.details">
+                            <div class="panel-heading">
+                                <img ng-src="{{detail.flag}}" style="width:30px;"/>
+                                {{detail.originName}}
+                            </div>
+                            <div class="panel-body">
+                                <div>{{detail.content}}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
