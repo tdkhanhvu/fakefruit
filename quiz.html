@@ -78,32 +78,38 @@
                             Sai <span class="badge">{{questionIncorrect}}</span>
                         </button>
 
-                        <button class="btn btn-info" type="button" ng-show="answer"
+                        <button class="btn btn-info" type="button" ng-show="answer && questions.length"
                                 ng-click="nextQuestion()">
                             Tiếp theo <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
                         </button>
-                        <h3>{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
 
-                        <div class="well">
-                            <blockquote>
-                                <p>{{question.content}}</p>
-                            </blockquote>
-
+                        <div ng-hide="questions.length || question" style="margin-top:30px;">
+                            Chúc mừng bạn đã hoàn thành xong câu đố với tỉ lệ đúng là
+                            {{questionCorrect * 100.0 / (questionCorrect + questionIncorrect) | number:2}} %
                         </div>
-                        <div>
-                            <div class="col-md-3" ng-repeat="origin in origins">
-                                <button type="button"
-                                        class="btn btn-success" ng-click="submitAnswer(origin.id)">
-                                    <!--{{origin.name}}-->
-                                    <img ng-src="{{origin.flag}}"/>
-                                    <p>{{origin.name}}</p>
-                                </button>
-                    <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"
-                          ng-show="origin.id == answerId"
-                          style="display:block;text-align:center;font-size: 2.5em;"></span>
-                    <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"
-                          ng-show="answer == 'incorrect' && origin.id == submitId"
-                          style="display:block;text-align:center;font-size: 2.5em;"></span>
+                        <div id="quizContent" ng-show="questions.length || question">
+                            <h3>{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
+
+                            <div class="well">
+                                <blockquote>
+                                    <p>{{question.content}}</p>
+                                </blockquote>
+                            </div>
+                            <div>
+                                <div class="col-md-3" ng-repeat="origin in origins">
+                                    <button type="button" ng-disabled="disabled"
+                                            class="btn btn-success" ng-click="submitAnswer(origin.id)">
+                                        <!--{{origin.name}}-->
+                                        <img ng-src="{{origin.flag}}"/>
+                                        <p>{{origin.name}}</p>
+                                    </button>
+                                    <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"
+                                          ng-show="origin.id == answerId"
+                                          style="display:block;text-align:center;font-size: 2.5em;"></span>
+                                    <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"
+                                          ng-show="answer == 'incorrect' && origin.id == submitId"
+                                          style="display:block;text-align:center;font-size: 2.5em;"></span>
+                                </div>
                             </div>
                         </div>
                     </div>

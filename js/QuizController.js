@@ -5,20 +5,17 @@
     var QuizController = function ($scope, $http, $interval, $timeout, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
-
-
-//        var countdownInterval = null;
-//        var startCountDown = function(){
-//            countdownInterval = $interval(decrementCountdown, 1000, $scope.countdown);
-//        };
+        $scope.disabled = false;
 
         $scope.startQuiz = function() {
-            $scope.countdown = 0;
-            $scope.questionLeft = -1;
-            $scope.totalQuestion = -1;
             $scope.percentComplete = 0;
+            $scope.questionLeft = $scope.questions.length;
+            $scope.totalQuestion = $scope.questionLeft;
+            $scope.questionCorrect = 0;
+            $scope.questionIncorrect = 0;
+            //$scope.disabled = true;
 
-            $scope.submitAnswer('');
+            $scope.nextQuestion();
         };
 
         $scope.nextQuestion = function(){
@@ -27,28 +24,25 @@
 
             $scope.answer = '';
             $scope.answerId = null;
+            $scope.question = null;
+
             if ($scope.questions.length != 0) {
                 $scope.question = $scope.questions.splice(randomIntFromInterval(0,
-                $scope.questions.length - 1), 1)[0];
+                    $scope.questions.length - 1), 1)[0];
                 console.log($scope.question.details);
-                $scope.percentComplete = Math.floor((1 - $scope.questionLeft * 1.0 / $scope.totalQuestion) * 100);
+
                 $scope.questionLeft--;
+                $scope.disabled = false;
             }
         };
 
         $scope.submitAnswer = function(id){
-//            $scope.countdown -= 1;
-            $scope.submitId = id;
-            var timeOut = 10000;
-
-            if (id == '') {
-                timeOut = 0;
-                $scope.questionLeft = $scope.questions.length;
-                $scope.totalQuestion = $scope.questionLeft;
-                $scope.questionCorrect = 0;
-                $scope.questionIncorrect = 0;
-            } else {
+            $scope.disabled = true;
+            if ($scope.question != null) {
+                $scope.submitId = id;
                 $scope.answerId = $scope.question.originId;
+                $scope.percentComplete = Math.floor((1 - $scope.questionLeft * 1.0
+                    / $scope.totalQuestion) * 100);
 
                 if (id == $scope.answerId) {
                     $scope.answer = 'correct';
@@ -57,20 +51,9 @@
                     $scope.answer = 'incorrect';
                     $scope.questionIncorrect++;
                 }
+
+                $scope.timer = $timeout($scope.nextQuestion,10000);
             }
-
-            if ($scope.questions.length != 0)
-                $scope.timer = $timeout($scope.nextQuestion,timeOut);
-
-
-//            if ($scope.countdown < 1){
-//                $scope.question = $scope.questions.splice(randomIntFromInterval(0,
-//                    $scope.questions.length - 1), 1)[0];
-//                if ($scope.questions.length == 0)
-//                    $interval.cancel(countdownInterval);
-//                else
-//                    $scope.countdown = 5;
-//            }
         };
 
         var onGetAllFruits = function (data) {
@@ -110,7 +93,6 @@
                 $scope.questions.push(question);
             });
             $scope.startQuiz();
-//            startCountDown();
         };
 
         var onError = function (reason) {
