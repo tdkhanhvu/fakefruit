@@ -3,8 +3,7 @@
     var app = angular.module("fakefruit");
 
     var QuizController = function ($scope, $http, $interval, $timeout,
-                                   $routeParams, FruitService) {
-        console.log($routeParams.fruit);
+                                    FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
         $scope.disabled = false;
@@ -15,7 +14,6 @@
             $scope.totalQuestion = $scope.questionLeft;
             $scope.questionCorrect = 0;
             $scope.questionIncorrect = 0;
-            //$scope.disabled = true;
 
             $scope.nextQuestion();
         };
@@ -58,35 +56,12 @@
             }
         };
 
-        var onGetAllFruits = function (data) {
-            $scope.fruits = data;
+        var onGetAllFruits = function(data){
+            FruitService.onGetAllFruits($scope, data);
+        }
 
-            if (typeof($routeParams.fruit) != undefined) {
-                $scope.fruits.forEach(function(fruit){
-                    if ($routeParams.fruit == fruit.id) {
-                        $scope.selectedFruit = fruit;
-
-                        $scope.searchFruit();
-                    }
-                });
-            }
-        };
-
-        var onSearchFruit = function (data) {
-            $scope.types = data;
-
-            if ($scope.types.length == 1) {
-                $scope.selectedType = $scope.types[0];
-                $scope.searchType();
-            } else if (typeof($routeParams.type) != undefined) {
-                $scope.types.forEach(function(type){
-                    if ($routeParams.type == type.id) {
-                        $scope.selectedType = type;
-
-                        $scope.searchType();
-                    }
-                });
-            }
+        var onSearchFruit = function(data){
+            FruitService.onSearchFruit($scope, data);
         };
 
         var onSearchType = function (data) {

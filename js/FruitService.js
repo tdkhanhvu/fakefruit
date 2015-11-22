@@ -1,5 +1,5 @@
 (function(){
-    var FruitService = function($http) {
+    var FruitService = function($http, $routeParams) {
         var host = 'http://'+window.location.hostname+':8080/',
             fruitPath = host + 'assets/fruit/',
             iconPath = host + 'assets/icon/',
@@ -36,6 +36,20 @@
                 });
         };
 
+        var onGetAllFruits = function($scope, data) {
+            $scope.fruits = data;
+
+            if (typeof($routeParams.fruit) != undefined) {
+                $scope.fruits.forEach(function(fruit){
+                    if ($routeParams.fruit == fruit.id) {
+                        $scope.selectedFruit = fruit;
+
+                        $scope.searchFruit();
+                    }
+                });
+            }
+        };
+
         var getStaticImage = function(imageName) {
             return imagePath + imageName;
         };
@@ -56,6 +70,23 @@
 
                     return types;
                 });
+        };
+
+        var onSearchFruit = function($scope, data){
+            $scope.types = data;
+
+            if ($scope.types.length == 1) {
+                $scope.selectedType = $scope.types[0];
+                $scope.searchType();
+            } else if (typeof($routeParams.type) != undefined) {
+                $scope.types.forEach(function(type){
+                    if ($routeParams.type == type.id) {
+                        $scope.selectedType = type;
+
+                        $scope.searchType();
+                    }
+                });
+            }
         };
 
         var searchType = function (fruitId, typeId) {
@@ -141,7 +172,9 @@
             getAttributeGroups: getAttributeGroups,
             searchFruit: searchFruit,
             searchType: searchType,
-            getStaticImage: getStaticImage
+            getStaticImage: getStaticImage,
+            onGetAllFruits: onGetAllFruits,
+            onSearchFruit: onSearchFruit
         };
     };
 

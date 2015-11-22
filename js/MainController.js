@@ -2,39 +2,16 @@
 
     var app = angular.module("fakefruit");
 
-    var MainController = function ($scope, $http, $routeParams, FruitService) {
+    var MainController = function ($scope, $http, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
 
-        var onGetAllFruits = function(data) {
-            $scope.fruits = data;
-
-            if (typeof($routeParams.fruit) != undefined) {
-                $scope.fruits.forEach(function(fruit){
-                    if ($routeParams.fruit == fruit.id) {
-                        $scope.selectedFruit = fruit;
-
-                        $scope.searchFruit();
-                    }
-                });
-            }
-        };
+        var onGetAllFruits = function(data){
+            FruitService.onGetAllFruits($scope, data);
+        }
 
         var onSearchFruit = function(data){
-            $scope.types = data;
-
-            if ($scope.types.length == 1) {
-                $scope.selectedType = $scope.types[0];
-                $scope.searchType();
-            } else if (typeof($routeParams.type) != undefined) {
-                $scope.types.forEach(function(type){
-                    if ($routeParams.type == type.id) {
-                        $scope.selectedType = type;
-
-                        $scope.searchType();
-                    }
-                });
-            }
+            FruitService.onSearchFruit($scope, data);
         };
 
         var onSearchType = function(data) {
