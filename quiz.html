@@ -7,13 +7,29 @@
         <div class="col-md-6">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Câu hỏi</strong></h3>
+                    <h3 class="panel-title"><strong>Câu Hỏi</strong></h3>
                 </div>
                 <div class="panel-body">
-                    <div ng-hide="questionLeft >= 0 && selectedType">Xin hãy chọn loại trái cây để bắt đầu</div>
+                    <div ng-hide="questionAnswer <= questionTotal && selectedType">Xin hãy chọn loại trái cây để bắt đầu</div>
                     <div class="table-responsive" style="overflow-y: hidden"
-                         ng-show="questionLeft >= 0 && selectedType">
-                        <div class="progress">
+                         ng-show="questionAnswer <= questionTotal && selectedType">
+                        <button class="btn btn-primary" type="button">
+                            <span class="badge">{{questionAnswer}}/{{questionTotal}}</span>
+                        </button>
+                        <button class="btn btn-success" type="button">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                            <span class="badge">{{questionCorrect}}</span>
+                        </button>
+                        <button class="btn btn-danger" type="button">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            <span class="badge">{{questionIncorrect}}</span>
+                        </button>
+
+                        <button class="btn btn-info" type="button" ng-show="answer && questions.length"
+                                ng-click="nextQuestion()">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        </button>
+                        <div class="progress" style="margin-top:10px">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-success" role="progressbar"
                                      aria-valuenow="{{percentComplete}}" aria-valuemin="0"
@@ -22,28 +38,13 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="button">
-                            Còn lại <span class="badge">{{questionLeft}}</span>
-                        </button>
-                        <button class="btn btn-success" type="button">
-                            Đúng <span class="badge">{{questionCorrect}}</span>
-                        </button>
-                        <button class="btn btn-danger" type="button">
-                            Sai <span class="badge">{{questionIncorrect}}</span>
-                        </button>
-
-                        <button class="btn btn-info" type="button" ng-show="answer && questions.length"
-                                ng-click="nextQuestion()">
-                            Tiếp theo <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                        </button>
-
                         <div ng-hide="questions.length || question" style="margin-top:30px;">
                             Chúc mừng bạn đã hoàn thành xong câu đố với tỉ lệ đúng là
                             {{questionCorrect * 100.0 / (questionCorrect + questionIncorrect) | number:2}} %
                         </div>
                         <div id="quizContent" ng-show="questions.length || question">
-                            <h3>{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
-
+                            <h5 class="visible-xs-inline">{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h5>
+                            <h3 class="hidden-xs">{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
                             <div class="well">
                                 <blockquote>
                                     <p>{{question.content}}</p>

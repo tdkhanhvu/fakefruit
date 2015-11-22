@@ -10,8 +10,8 @@
 
         $scope.startQuiz = function() {
             $scope.percentComplete = 0;
-            $scope.questionLeft = $scope.questions.length;
-            $scope.totalQuestion = $scope.questionLeft;
+            $scope.questionAnswer = 0;
+            $scope.questionTotal = $scope.questions.length;
             $scope.questionCorrect = 0;
             $scope.questionIncorrect = 0;
 
@@ -31,7 +31,7 @@
                     $scope.questions.length - 1), 1)[0];
                 console.log($scope.question.details);
 
-                $scope.questionLeft--;
+                $scope.questionAnswer++;
                 $scope.disabled = false;
             }
         };
@@ -41,8 +41,8 @@
             if ($scope.question != null) {
                 $scope.submitId = id;
                 $scope.answerId = $scope.question.originId;
-                $scope.percentComplete = Math.floor((1 - $scope.questionLeft * 1.0
-                    / $scope.totalQuestion) * 100);
+                $scope.percentComplete = Math.floor( ($scope.questionAnswer* 1.0
+                    / $scope.questionTotal) * 100);
 
                 if (id == $scope.answerId) {
                     $scope.answer = 'correct';
