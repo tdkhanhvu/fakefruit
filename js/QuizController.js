@@ -29,7 +29,6 @@
             if ($scope.questions.length != 0) {
                 $scope.question = $scope.questions.splice(randomIntFromInterval(0,
                     $scope.questions.length - 1), 1)[0];
-                console.log($scope.question.details);
 
                 $scope.questionAnswer++;
                 $scope.disabled = false;

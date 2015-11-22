@@ -13,8 +13,6 @@
 
             return $http.get(url)
                 .then(function (response) {
-                    console.log(response.data);
-
                     attributeGroups = response.data;
                 });
         };
@@ -25,7 +23,6 @@
 
             return $http.get(url)
                 .then(function (response) {
-                    console.log(response.data);
                     var fruits = response.data;
 
                     fruits.forEach(function (fruit) {
@@ -60,8 +57,6 @@
 
             return $http.get(url)
                 .then(function (response) {
-                    console.log(response.data);
-
                     var types = response.data;
 
                     types.forEach(function (type) {
@@ -95,8 +90,6 @@
 
             return $http.get(url)
                 .then(function (response) {
-                    console.log(response.data);
-
                     var origins = response.data.origins,
                         attributes = processType(response.data);
 

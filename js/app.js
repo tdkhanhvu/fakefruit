@@ -13,8 +13,6 @@
         });
     });
     app.config(function($routeProvider){
-        console.log('--------ROUTE-----------');
-        //console.log($location.path);
         $routeProvider
             .when("/mission", {
                 templateUrl: "mission.html",
