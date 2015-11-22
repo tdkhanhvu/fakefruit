@@ -12,7 +12,7 @@
                 </div>
                 <div class="panel-body">
                     <div ng-hide="showTable()">Xin hãy chọn trái cây để xem thông tin</div>
-                    <div class="table-responsive" ng-show="showTable()">
+                    <div class="table-responsive hidden-xs" ng-show="showTable()">
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr class="bg-primary">
@@ -43,12 +43,39 @@
                                     <span class="label label-{{attribute.class}}">{{attribute.name}}</span>
                                 </td>
                                 <td ng-repeat="origin in origins" ng-show="origin.visible">
-                                    <strong ng-if="origin.id == 'trungquoc'">{{origin.description[attribute.id]}}</strong>
-                                    <span ng-if="origin.id != 'trungquoc'">{{origin.description[attribute.id]}}</span>
+                                    <strong ng-if="origin.id == 'trungquoc'" class="text-danger">
+                                        {{origin.description[attribute.id]}}
+                                    </strong>
+                                    <span ng-if="origin.id != 'trungquoc'">
+                                        {{origin.description[attribute.id]}}
+                                    </span>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="visible-xs-inline">
+                        <div class="col-xs-12 panel panel-success" style="padding:0"
+                             ng-repeat="origin in origins" ng-show="origin.visible">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{{origin.name}}</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>
+                                    <img ng-src="{{origin.image}}" class="img-thumbnail"
+                                         title="{{origin.name}}">
+                                </p>
+                                <p ng-repeat="attribute in attributes" ng-if="origin.description[attribute.id]">
+                                    <span class="label label-{{attribute.class}}">{{attribute.name}}</span>
+                                    <strong ng-if="origin.id == 'trungquoc'" class="text-danger">
+                                        {{origin.description[attribute.id]}}
+                                    </strong>
+                                <span ng-if="origin.id != 'trungquoc'">
+                                    {{origin.description[attribute.id]}}
+                                </span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
