@@ -50,12 +50,13 @@
                                 </blockquote>
                             </div>
                             <div>
-                                <div class="col-md-3" ng-repeat="origin in origins">
-                                    <button type="button" ng-disabled="disabled"
-                                            class="btn btn-success" ng-click="submitAnswer(origin.id)">
+                                <div class="col-xs-4" ng-repeat="origin in origins">
+                                    <button type="button" ng-disabled="disabled" style="padding:0"
+                                            class="btn btn-success center-block"
+                                            ng-click="submitAnswer(origin.id)">
                                         <img ng-src="{{origin.flag}}"/>
-                                        <p>{{origin.name}}</p>
                                     </button>
+                                    <div class="text-center">{{origin.name}}</div>
                                     <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"
                                           ng-show="origin.id == answerId"
                                           style="display:block;text-align:center;font-size: 2.5em;"></span>
