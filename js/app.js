@@ -34,4 +34,25 @@
             })
             .otherwise({redirectTo:"/mission"});
     });
+
+    app.directive('fruitSelection', function(){
+        return {
+            restrict: 'E',
+            templateUrl: './templates/fruit-selection.html'
+        };
+    });
+
+    app.directive('typeSelection', function(){
+        return {
+            restrict: 'E',
+            templateUrl: './templates/type-selection.html'
+        };
+    });
+
+    app.directive('originSelection', function(){
+        return {
+            restrict: 'E',
+            templateUrl: './templates/origin-selection.html'
+        };
+    });
 }());

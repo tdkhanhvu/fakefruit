@@ -1,0 +1,17 @@
+<div class="panel panel-primary" ng-show="selectedType">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Xuất Xứ</strong></h3>
+    </div>
+    <div class="panel-body">
+        <div data-toggle="buttons">
+            <label class="btn btn-primary" ng-repeat="origin in origins"
+                   ng-class="{'active': origin.visible}"
+                   style="width: 100%; margin: 2px;">
+                <input type="checkbox" autocomplete="off" checked
+                       ng-model="origin.visible">{{origin.name}}
+            </label>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

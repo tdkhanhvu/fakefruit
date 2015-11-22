@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title"><strong>Trái Cây</strong></h3>
+    </div>
+    <div class="panel-body">
+        <ui-select ng-model="$parent.selectedFruit" theme="bootstrap"
+                   on-select="searchFruit()">
+            <ui-select-match placeholder="Trái cây">
+                <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
+                     class="pull-left">
+                {{$select.selected.name}}
+            </ui-select-match>
+            <ui-select-choices repeat="fruit in fruits | orderBy:'id'">
+                <img ng-src="{{fruit.icon}}" class="pull-left">
+
+                <div ng-bind-html="fruit.name | highlight: $select.search"
+                     style="height:30px;margin-top:5px;" class="pull-left">
+                    {{fruit.name}}
+                </div>
+                <div class="clearfix"></div>
+            </ui-select-choices>
+        </ui-select>
+    </div>
+</div>
