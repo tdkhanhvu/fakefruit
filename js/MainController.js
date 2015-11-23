@@ -2,7 +2,7 @@
 
     var app = angular.module("fakefruit");
 
-    var MainController = function ($scope, $http, FruitService) {
+    var MainController = function ($scope, $http, $location, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
 
@@ -11,12 +11,15 @@
         }
 
         var onSearchFruit = function(data){
-            FruitService.onSearchFruit($scope, data);
+            FruitService.onSearchFruit($scope, data, 'main');
         };
 
         var onSearchType = function(data) {
             $scope.origins = data.origins;
             $scope.attributes = data.attributes;
+
+            $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
+                .search('type', $scope.selectedType.id);
         };
 
         var onError = function (reason) {

@@ -25,11 +25,13 @@
             })
             .when("/main", {
                 templateUrl: "main.html",
-                controller: "MainController"
+                controller: "MainController",
+                reloadOnSearch: false
             })
             .when("/quiz", {
                 templateUrl: "quiz.html",
-                controller: "QuizController"
+                controller: "QuizController",
+                reloadOnSearch: false
             })
             .otherwise({redirectTo:"/mission"});
     });

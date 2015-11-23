@@ -1,5 +1,5 @@
 (function(){
-    var FruitService = function($http, $routeParams) {
+    var FruitService = function($http, $routeParams, $location) {
         var host = 'http://'+window.location.hostname+':8080/',
             fruitPath = host + 'assets/fruit/',
             iconPath = host + 'assets/icon/',
@@ -67,8 +67,11 @@
                 });
         };
 
-        var onSearchFruit = function($scope, data){
+        var onSearchFruit = function($scope, data, page){
             $scope.types = data;
+            $location.path('/' + page, false)
+                .search('fruit', $scope.selectedFruit.id)
+                .search('type', null);
 
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];

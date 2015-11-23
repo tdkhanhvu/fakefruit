@@ -3,7 +3,7 @@
     var app = angular.module("fakefruit");
 
     var QuizController = function ($scope, $http, $interval, $timeout,
-                                    FruitService) {
+                                    $location, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
         $scope.disabled = false;
@@ -60,13 +60,16 @@
         }
 
         var onSearchFruit = function(data){
-            FruitService.onSearchFruit($scope, data);
+            FruitService.onSearchFruit($scope, data, 'quiz');
         };
 
         var onSearchType = function (data) {
             $scope.origins = data.origins;
             $scope.attributes = data.attributes;
             $scope.questions = [];
+
+            $location.path('/quiz', false).search('fruit', $scope.selectedFruit.id)
+                .search('type', $scope.selectedType.id);
 
             $scope.attributes.forEach(function (attribute) {
                 var validAttributes = [],
