@@ -1,69 +1,85 @@
 <div style="margin-top: 80px">
     <div class="row" style="margin-top: 30px;">
-        <div class="col-md-2">
-            <fruit-selection></fruit-selection>
-            <type-selection></type-selection>
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Câu Hỏi</strong></h3>
+        <div class="col-xs-12 col-md-2">
+            <div class="row">
+                <div class="col-xs-6 col-md-12">
+                    <fruit-selection></fruit-selection>
                 </div>
-                <div class="panel-body">
-                    <div ng-hide="questionAnswer <= questionTotal && selectedType">Xin hãy chọn loại trái cây để bắt đầu</div>
-                    <div class="table-responsive" style="overflow-y: hidden"
-                         ng-show="questionAnswer <= questionTotal && selectedType">
-                        <button class="btn btn-primary" type="button">
-                            <span class="badge">{{questionAnswer}}/{{questionTotal}}</span>
-                        </button>
-                        <button class="btn btn-success" type="button">
-                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                            <span class="badge">{{questionCorrect}}</span>
-                        </button>
-                        <button class="btn btn-danger" type="button">
-                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                            <span class="badge">{{questionIncorrect}}</span>
-                        </button>
+                <div class="col-xs-6 col-md-12">
+                    <type-selection></type-selection>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>Câu Hỏi</strong></h3>
+                        </div>
+                        <div class="panel-body" id="quiz">
+                            <div ng-hide="questionAnswer <= questionTotal && selectedType">Xin hãy chọn loại trái cây để
+                                bắt đầu
+                            </div>
+                            <div class="table-responsive" style="overflow-y: hidden"
+                                 ng-show="questionAnswer <= questionTotal && selectedType">
+                                <button class="btn btn-primary" type="button">
+                                    <span class="badge">{{questionAnswer}}/{{questionTotal}}</span>
+                                </button>
+                                <button class="btn btn-success" type="button">
+                                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                    <span class="badge">{{questionCorrect}}</span>
+                                </button>
+                                <button class="btn btn-danger" type="button">
+                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                    <span class="badge">{{questionIncorrect}}</span>
+                                </button>
 
-                        <button class="btn btn-info" type="button" ng-show="answer && questions.length"
-                                ng-click="nextQuestion()">
-                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                        </button>
-                        <div class="progress" style="margin-top:10px">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-success" role="progressbar"
-                                     aria-valuenow="{{percentComplete}}" aria-valuemin="0"
-                                     aria-valuemax="100" style="width: {{percentComplete}}%;">
-                                    {{percentComplete}}%
+                                <button class="btn btn-info" type="button" ng-show="answer && questions.length"
+                                        ng-click="nextQuestion()">
+                                    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                </button>
+                                <div class="progress" style="margin-top:10px">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="{{percentComplete}}" aria-valuemin="0"
+                                             aria-valuemax="100" style="width: {{percentComplete}}%;">
+                                            {{percentComplete}}%
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div ng-hide="questions.length || question" style="margin-top:30px;">
-                            Chúc mừng bạn đã hoàn thành xong câu đố với tỉ lệ đúng là
-                            {{questionCorrect * 100.0 / (questionCorrect + questionIncorrect) | number:2}} %
-                        </div>
-                        <div id="quizContent" ng-show="questions.length || question">
-                            <h5 class="visible-xs-inline">{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h5>
-                            <h3 class="hidden-xs">{{question.attributeName}} của giống {{selectedType.name}} nào giống mô tả sau?</h3>
-                            <div class="well">
-                                <blockquote>
-                                    <p>{{question.content}}</p>
-                                </blockquote>
-                            </div>
-                            <div>
-                                <div class="col-xs-4" ng-repeat="origin in origins">
-                                    <button type="button" ng-disabled="disabled" style="padding:0"
-                                            class="btn btn-success center-block"
-                                            ng-click="submitAnswer(origin.id)">
-                                        <img ng-src="{{origin.flag}}"/>
-                                    </button>
-                                    <div class="text-center">{{origin.name}}</div>
+                                <div ng-hide="questions.length || question" style="margin-top:30px;">
+                                    Chúc mừng bạn đã hoàn thành xong câu đố với tỉ lệ đúng là
+                                    {{questionCorrect * 100.0 / (questionCorrect + questionIncorrect) | number:2}} %
+                                </div>
+                                <div id="quizContent" ng-show="questions.length || question">
+                                    <h5 class="visible-xs-inline">{{question.attributeName}} của giống
+                                        {{selectedType.name}} nào giống mô tả sau?</h5>
+
+                                    <h3 class="hidden-xs">{{question.attributeName}} của giống {{selectedType.name}} nào
+                                        giống mô tả sau?</h3>
+
+                                    <div class="well">
+                                        <blockquote>
+                                            <p>{{question.content}}</p>
+                                        </blockquote>
+                                    </div>
+                                    <div>
+                                        <div class="col-xs-4" ng-repeat="origin in origins">
+                                            <button type="button" ng-disabled="disabled" style="padding:0"
+                                                    class="btn btn-success center-block"
+                                                    ng-click="submitAnswer(origin.id)">
+                                                <img ng-src="{{origin.flag}}"/>
+                                            </button>
+                                            <div class="text-center">{{origin.name}}</div>
                                     <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"
                                           ng-show="origin.id == answerId"
                                           style="display:block;text-align:center;font-size: 2.5em;"></span>
                                     <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"
                                           ng-show="answer == 'incorrect' && origin.id == submitId"
                                           style="display:block;text-align:center;font-size: 2.5em;"></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -71,27 +87,32 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="panel-title"><strong>Đáp Án</strong></h3>
-                </div>
-                <div class="panel-body">
-                    <div ng-hide="answer">
-                        Xin hãy trả lời câu hỏi để xem đáp án.
-                    </div>
-                    <div ng-show="answer">
-                        <h3>
+        <div class="col-xs-12 col-md-4">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>Đáp Án</strong></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div ng-hide="answer">
+                                Xin hãy trả lời câu hỏi để xem đáp án.
+                            </div>
+                            <div ng-show="answer">
+                                <h3>
                             <span class="label label-primary">{{question.attributeName}}
                             </span>
-                        </h3>
-                        <div class="panel panel-primary" ng-repeat="detail in question.details">
-                            <div class="panel-heading">
-                                <img ng-src="{{detail.flag}}" style="width:30px;"/>
-                                {{detail.originName}}
-                            </div>
-                            <div class="panel-body">
-                                <div>{{detail.content}}</div>
+                                </h3>
+
+                                <div class="panel panel-primary" ng-repeat="detail in question.details">
+                                    <div class="panel-heading">
+                                        <img ng-src="{{detail.flag}}" style="width:30px;"/>
+                                        {{detail.originName}}
+                                    </div>
+                                    <div class="panel-body">
+                                        <div>{{detail.content}}</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
