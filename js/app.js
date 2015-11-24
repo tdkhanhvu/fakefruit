@@ -13,7 +13,7 @@
             console.log($scope.names);
         });
     });
-    app.config(function($routeProvider){
+    app.config(function($routeProvider, $locationProvider){
         $routeProvider
             .when("/mission", {
                 templateUrl: "mission.html",
@@ -34,6 +34,9 @@
                 reloadOnSearch: false
             })
             .otherwise({redirectTo:"/mission"});
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
     });
 
     app.directive('fruitSelection', function(){
