@@ -115,7 +115,7 @@ function start() {
             filePath = '.' + request.url,
             tokens = filePath.split('/'),
             action = tokens[1];
-        //console.log('agent:' + request.headers['user-agent']);
+        console.log('agent:' + request.headers['user-agent']);
 
         if (filePath == './')
             filePath = './index.html';
