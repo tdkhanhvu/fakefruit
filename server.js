@@ -114,9 +114,12 @@ function start() {
         var pathname = url.parse(request.url).pathname,
             filePath = '.' + request.url,
             tokens = filePath.split('/'),
-            action = tokens[1];
-        console.log('agent:' + request.headers['user-agent']);
+            action = tokens[1],
+            agent = request.headers['user-agent'];
 
+        if (agent.indexOf('facebookexternalhit') > - 1 || agent.indexOf('Facebot')) {
+            //TODO: return html for Facebook crawler
+        }
         if (filePath == './')
             filePath = './index.html';
 
