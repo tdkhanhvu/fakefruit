@@ -6,16 +6,16 @@
         }
     ])
     
-    app.controller('MainController', [
-        '$scope', function ($scope) {
-            var _url = location.href;
-            $scope.myModel = {
-                Url: _url,
-                Name: "XXXX",
-                ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
-            };
-        }
-    ]);
+    // app.controller('MainController', [
+    //     '$scope', function ($scope) {
+    //         var _url = location.href;
+    //         $scope.myModel = {
+    //             Url: _url,
+    //             Name: "XXXX",
+    //             ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+    //         };
+    //     }
+    // ]);
 
     app.controller('login', function($scope, $http) {
         $scope.usr = "Username";

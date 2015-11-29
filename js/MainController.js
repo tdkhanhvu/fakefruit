@@ -29,12 +29,12 @@
         $scope.searchFruit = function () {
             $scope.selectedType = undefined;
 
-            FruitService.searchFruit($scope.selectedFruit.id)
+            FruitService.searchFruit($scope.selectedFruit.id, $scope)
                 .then(onSearchFruit, onError);
         };
 
         $scope.searchType = function () {
-            FruitService.searchType($scope.selectedFruit.id, $scope.selectedType.id)
+            FruitService.searchType($scope.selectedFruit.id, $scope.selectedType.id, $scope)
                 .then(onSearchType, onError);
         };
 
