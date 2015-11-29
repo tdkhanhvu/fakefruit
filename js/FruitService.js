@@ -51,8 +51,8 @@
             return imagePath + imageName;
         };
 
-        var searchFruit = function (fruitId) {
-            var url = host + 'searchFruit/' + fruitId;
+        var searchFruit = function ($scope) {
+            var url = host + 'searchFruit/' + $scope.selectedFruit.id;
             console.log(url);
 
             return $http.get(url)
@@ -62,6 +62,13 @@
                     types.forEach(function (type) {
                         type['icon'] = iconPath + type['icon'];
                     });
+                    
+                    // var _url = $location.absUrl();
+                    $scope.myModel = {
+                        Url: url,
+                        Name: "xxxg",
+                        ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+                    };
 
                     return types;
                 });
@@ -85,9 +92,12 @@
                     }
                 });
             }
+
+           
+            // alert($scope.myModel.Url);
         };
 
-        var searchType = function (fruitId, typeId) {
+        var searchType = function ($scope, fruitId, typeId) {
             var url = host + 'searchType/' + fruitId + '/' + typeId;
             console.log(url);
 
@@ -101,6 +111,13 @@
                         origin['flag'] = flagPath + origin['flag'];
                         origin['visible'] = true;
                     });
+                    
+                    $scope.myModel = {
+                        Url: url,
+                        Name: "xxxg",
+                        ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+                    };
+                    alert(url);
 
                     return {'origins': origins, 'attributes': attributes};
                 });
