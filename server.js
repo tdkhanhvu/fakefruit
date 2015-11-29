@@ -5,7 +5,8 @@ var http = require('http'),
     data = require('./data.js'),
     list = data.list,
     attributeGroups = data.attributeGroups,
-    flags = data.flags;
+    flags = data.flags,
+    domain = 'http://www.chontraicay.com';
 
 function getContentType(extension) {
     switch (extension) {
@@ -34,19 +35,51 @@ function getAttributeGroups(response) {
     response.end(JSON.stringify(attributeGroups), 'utf-8');
 }
 
+function getFruitById(fruitId) {
+    console.log('searchId:' + fruitId);
+
+    var result = null;
+    list.forEach(function (fruit) {
+        if (fruit['id'] == fruitId) {
+            result = fruit;
+        }
+    });
+
+    return result;
+}
+
+function getTypeById(fruitId, typeId) {
+    console.log('find type:' + typeId);
+
+    var result = null,
+        fruit = getFruitById(fruitId);
+    if (fruit != null)
+        fruit.types.forEach(function (type) {
+            if (type['id'] == typeId) {
+
+                type.origins.forEach(function (origin) {
+                    if (flags.hasOwnProperty(origin['id']))
+                        origin['flag'] = flags[origin['id']];
+                    else
+                        origin['flag'] = flags['other'];
+                });
+                result = type;
+            }
+        });
+
+    return result;
+}
+
 function searchFruit(pathname, response) {
     var tokens = pathname.split("/"),
         fruitId = tokens[tokens.length - 1],
-        result = [];
+        result = [],
+        fruit = getFruitById(fruitId);
 
-    console.log('searchId:' + fruitId);
-
-    list.forEach(function (fruit) {
-        if (fruit['id'] == fruitId)
-            fruit.types.forEach(function (type) {
-                result.push({'id': type['id'], 'name': type['name'], 'icon': type['icon']});
-            });
-    });
+    if (fruit != null)
+        fruit.types.forEach(function (type) {
+            result.push({'id': type['id'], 'name': type['name'], 'icon': type['icon']});
+        });
 
     response.end(JSON.stringify(result), 'utf-8');
 }
@@ -55,26 +88,8 @@ function searchType(pathname, response) {
     var tokens = pathname.split("/"),
         fruitId = tokens[tokens.length - 2],
         typeId = tokens[tokens.length - 1],
-        result = {};
-    console.log('fruitId:' + fruitId);
-    console.log('typeId:' + typeId);
+        result = getTypeById(fruitId, typeId);
 
-    list.forEach(function (fruit) {
-        if (fruit['id'] == fruitId)
-            fruit.types.forEach(function (type) {
-                if (type['id'] == typeId) {
-                    console.log('find type:' + type);
-
-                    type.origins.forEach(function (origin) {
-                        if (flags.hasOwnProperty(origin['id']))
-                            origin['flag'] = flags[origin['id']];
-                        else
-                            origin['flag'] = flags['other'];
-                    });
-                    result = type;
-                }
-            });
-    });
     response.end(JSON.stringify(result), 'utf-8');
 }
 
@@ -109,6 +124,86 @@ function getStaticFile(filePath, contentType, response) {
     });
 }
 
+function getDataBasedOnQuery(query, prefix) {
+    var image = 'main.jpg',
+        title = prefix + ' cách phân biệt các loại trái cây',
+        description = prefix + ' cách phân biệt các loại trái cây',
+        result = {};
+
+    if (query != null) {
+        var queryList = {};
+
+        query.split('&').forEach(function (record) {
+            var tokens = record.split('=');
+            queryList[tokens[0]] = tokens[1];
+        });
+
+        var item = null;
+        if ('fruit' in queryList) {
+            if ('type' in queryList) {
+                item = getTypeById(queryList['fruit'], queryList['type']);
+            } else
+                item = getFruitById(queryList['fruit']);
+
+            image = item['image'];
+            title = prefix + ' cách phân biệt các loại ' + item['name'];
+            description = prefix + ' cách phân biệt các loại ' + item['name'];
+        }
+    }
+    result.image = image;
+    result.title = title;
+    result.description = description;
+
+    return result;
+}
+function handleFacebookBot(request, response) {
+    var pathname = url.parse(request.url).pathname,
+        html = null,
+        result = {};
+
+    console.log(url.parse(request.url));
+
+    switch(pathname) {
+        case '/mission':
+            result = {
+                'title' : 'Câu chuyện về người Việt chọn trái cây Việt',
+                'description' : 'Dự án xuất phát từ sự bức xúc về việc trái cây Trung Quốc liên tục đội lốt trái cây Việt và bị tẩm hóa chất gây ảnh hưởng tới khách hàng.',
+                'image' : 'main.jpg'
+            };
+            break;
+        case '/contact':
+            result = {
+                'title' : 'Những con người đằng sau dự án chọn trái cây Việt',
+                'description' : 'Tụi mình là những con người bình thường, và cũng chung nỗi bức xúc về trái cây Trung Quốc đội lốt trái cây Việt như bao người Việt Nam khác.',
+                'image' : 'main.jpg'
+            };
+            break;
+        case '/main':
+            result = getDataBasedOnQuery(url.parse(request.url).query, 'Từ điển ');
+            break;
+        case '/quiz':
+            result = getDataBasedOnQuery(url.parse(request.url).query, 'Đố vui ');
+            break;
+    }
+
+    result['image'] = domain + '/assets/fruit/' + result['image'];
+
+    response.writeHead(200, { 'Content-Type': 'text/html'});
+    fs.readFile('./facebook.html', 'utf-8', function (error, content) {
+        if (error) {
+            return console.log(error);
+        } else {
+            html = content.replace('[IMAGE]', result['image'])
+                .replace('[TITLE]', result['title'])
+                .replace('[DESCRIPTION]', result['description'])
+                .replace('[URL]', domain + request.url);
+            console.log(html);
+        }
+    });
+
+    response.end(html, 'utf-8');
+}
+
 function start() {
     function onRequest(request, response) {
         var pathname = url.parse(request.url).pathname,
@@ -118,8 +213,9 @@ function start() {
             agent = request.headers['user-agent'];
 
         if (agent.indexOf('facebookexternalhit') > - 1 || agent.indexOf('Facebot')) {
-            //TODO: return html for Facebook crawler
+            handleFacebookBot(request, response);
         }
+
         if (filePath == './')
             filePath = './index.html';
 

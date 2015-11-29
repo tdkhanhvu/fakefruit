@@ -74,7 +74,7 @@ var flags = {
         'types': [
             {
                 'id': 'fuji',
-                'name': 'Fuji',
+                'name': 'Táo Fuji',
                 'icon': 'tao_fuji.png',
                 'origins': [
                     {
@@ -104,7 +104,7 @@ var flags = {
             },
             {
                 'id': 'xanh',
-                'name': 'Xanh',
+                'name': 'Táo Xanh',
                 'icon': 'tao_xanh.png',
                 'origins': [
                     {
@@ -131,7 +131,7 @@ var flags = {
             },
             {
                 'id': 'gala',
-                'name': 'Gala',
+                'name': 'Táo Gala',
                 'icon': 'tao_gala.png',
                 'origins': [
                     {
@@ -162,7 +162,7 @@ var flags = {
         'types': [
             {
                 'id': 'do',
-                'name': 'Đỏ',
+                'name': 'Nho Đỏ',
                 'icon': 'nho_do.png',
                 'origins': [
                     {
@@ -207,7 +207,7 @@ var flags = {
             },
             {
                 'id': 'xanh',
-                'name': 'Xanh',
+                'name': 'Nho Xanh',
                 'icon': 'nho_xanh.png',
                 'origins': [
                     {
@@ -240,11 +240,13 @@ var flags = {
     {
         'id': 'cam',
         'name': 'Cam',
+        'image': 'cam.jpg',
         'icon':'cam.png',
         'types': [
             {
                 'id': 'cam',
                 'name': 'Cam',
+                'image': 'cam.jpg',
                 'icon': 'cam.png',
                 'origins': [
                     {
@@ -429,7 +431,7 @@ var flags = {
         'types': [
             {
                 'id': 'trung',
-                'name': 'Trứng',
+                'name': 'Hồng Trứng',
                 'icon': 'hong.png',
                 'origins': [
                     {
@@ -462,7 +464,7 @@ var flags = {
             },
             {
                 'id': 'gion',
-                'name': 'Giòn',
+                'name': 'Hồng Giòn',
                 'icon': 'hong.png',
                 'origins': [
                     {
