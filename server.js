@@ -186,7 +186,7 @@ function handleFacebookBot(request, response) {
             break;
     }
 
-    result['image'] = domain + '/assets/fruit/' + result['image'];
+    result['image'] = domain + 'assets/fruit/' + result['image'];
 
     response.writeHead(200, { 'Content-Type': 'text/html'});
 
