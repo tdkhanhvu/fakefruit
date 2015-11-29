@@ -1,5 +1,6 @@
 (function(){
-    var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select', 'angulike']);
+    var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select']);
+    // var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select', 'angulike']);
     // angular.module('myApp', ['angulike']);
 
     app.controller('login', function($scope, $http) {
