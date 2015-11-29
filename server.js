@@ -212,7 +212,9 @@ function start() {
             action = tokens[1],
             agent = request.headers['user-agent'];
 
-        if (agent.indexOf('facebookexternalhit') > - 1 || agent.indexOf('Facebot') > -1) {
+        if ((agent.indexOf('facebookexternalhit') > - 1
+                || agent.indexOf('Facebot') > -1)
+            && path.extname(filePath) != '.jpg') {
             handleFacebookBot(request, response);
         }
 
