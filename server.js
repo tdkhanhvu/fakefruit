@@ -189,6 +189,7 @@ function handleFacebookBot(request, response) {
     result['image'] = domain + '/assets/fruit/' + result['image'];
 
     response.writeHead(200, { 'Content-Type': 'text/html'});
+
     fs.readFile('./facebook.html', 'utf-8', function (error, content) {
         if (error) {
             return console.log(error);
@@ -197,11 +198,10 @@ function handleFacebookBot(request, response) {
                 .replace('[TITLE]', result['title'])
                 .replace('[DESCRIPTION]', result['description'])
                 .replace('[URL]', domain + request.url);
-            console.log(html);
+
+            response.end(html, 'utf-8');
         }
     });
-
-    response.end(html, 'utf-8');
 }
 
 function start() {
