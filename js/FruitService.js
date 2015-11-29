@@ -68,7 +68,6 @@
                       Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
                       ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
                   };
-                  
 
                     return types;
                 });
@@ -92,6 +91,9 @@
                     }
                 });
             }
+
+           
+            // alert($scope.myModel.Url);
         };
 
         var searchType = function (fruitId, typeId, $scope) {
@@ -114,7 +116,7 @@
                       Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
                       ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
                   };
-                  alert(url);
+                //   alert(url);
 
                     return {'origins': origins, 'attributes': attributes};
                 });
