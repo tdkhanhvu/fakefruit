@@ -1,7 +1,10 @@
 (function(){
-    var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select']);
-    // var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select', 'angulike']);
-    // angular.module('myApp', ['angulike']);
+    // var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select']);
+    var app = angular.module('fakefruit', ['ngRoute', 'ui.bootstrap', 'ngSanitize', 'ui.select', 'angulike']).run([
+        '$rootScope', function ($rootScope) {
+            $rootScope.facebookAppId = '195462110792239'; // set your facebook app id here
+        }
+    ]);
 
     app.controller('login', function($scope, $http) {
         $scope.usr = "Username";
