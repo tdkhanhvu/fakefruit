@@ -6,7 +6,7 @@ var http = require('http'),
     list = data.list,
     attributeGroups = data.attributeGroups,
     flags = data.flags,
-    domain = 'http://52.76.185.81/';
+    domain = 'http://52.76.185.81';
 
 function getContentType(extension) {
     switch (extension) {
@@ -159,11 +159,14 @@ function getDataBasedOnQuery(query, prefix) {
 function handleFacebookBot(request, response) {
     var pathname = url.parse(request.url).pathname,
         html = null,
-        result = {};
+        result = {},
+        urlLink = request.url;
 
     console.log(url.parse(request.url));
 
     switch(pathname) {
+        case '/':
+            urlLink = '';
         case '/mission':
             result = {
                 'title' : 'Câu chuyện về người Việt chọn trái cây Việt',
@@ -186,7 +189,7 @@ function handleFacebookBot(request, response) {
             break;
     }
 
-    result['image'] = domain + 'assets/fruit/' + result['image'];
+    result['image'] = domain + '/assets/fruit/' + result['image'];
 
     response.writeHead(200, { 'Content-Type': 'text/html'});
 
@@ -197,7 +200,7 @@ function handleFacebookBot(request, response) {
             html = content.replace('[IMAGE]', result['image'])
                 .replace('[TITLE]', result['title'])
                 .replace('[DESCRIPTION]', result['description'])
-                .replace('[URL]', domain + request.url);
+                .replace('[URL]', domain + urlLink);
 
             response.end(html, 'utf-8');
         }
@@ -206,8 +209,7 @@ function handleFacebookBot(request, response) {
 
 function start() {
     function onRequest(request, response) {
-        var pathname = url.parse(request.url).pathname,
-            filePath = '.' + request.url,
+        var filePath = '.' + request.url,
             tokens = filePath.split('/'),
             action = tokens[1],
             agent = request.headers['user-agent'];
