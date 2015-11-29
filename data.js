@@ -70,11 +70,13 @@ var flags = {
     {
         'id': 'tao',
         'name': 'Táo',
+        'image': 'tao.jpg',
         'icon': 'tao.png',
         'types': [
             {
                 'id': 'fuji',
                 'name': 'Táo Fuji',
+                'image': 'taofuji.jpg',
                 'icon': 'tao_fuji.png',
                 'origins': [
                     {
@@ -105,6 +107,7 @@ var flags = {
             {
                 'id': 'xanh',
                 'name': 'Táo Xanh',
+                'image': 'taoxanh.jpg',
                 'icon': 'tao_xanh.png',
                 'origins': [
                     {
@@ -132,6 +135,7 @@ var flags = {
             {
                 'id': 'gala',
                 'name': 'Táo Gala',
+                'image': 'taogala.jpg',
                 'icon': 'tao_gala.png',
                 'origins': [
                     {
@@ -158,11 +162,13 @@ var flags = {
     {
         'id': 'nho',
         'name': 'Nho',
+        'image': 'nho.jpg',
         'icon': 'nho.png',
         'types': [
             {
                 'id': 'do',
                 'name': 'Nho Đỏ',
+                'image': 'nhodo.jpg',
                 'icon': 'nho_do.png',
                 'origins': [
                     {
@@ -208,6 +214,7 @@ var flags = {
             {
                 'id': 'xanh',
                 'name': 'Nho Xanh',
+                'image': 'nhoxanh.jpg',
                 'icon': 'nho_xanh.png',
                 'origins': [
                     {
@@ -294,11 +301,13 @@ var flags = {
     {
         'id': 'dau',
         'name': 'Dâu Tây',
+        'image': 'dau.jpg',
         'icon':'dau.png',
         'types': [
             {
                 'id': 'dau',
                 'name': 'Dâu Tây',
+                'image': 'dau.jpg',
                 'icon': 'dau.png',
                 'origins': [
                     {
@@ -337,11 +346,13 @@ var flags = {
     {
         'id': 'dualuoi',
         'name': 'Dưa Lưới',
+        'image': 'dualuoi.jpg',
         'icon':'dualuoi.png',
         'types': [
             {
                 'id': 'dualuoi',
                 'name': 'Dưa Lưới',
+                'image': 'dualuoi.jpg',
                 'icon': 'dualuoi.png',
                 'origins': [
                     {
@@ -388,11 +399,13 @@ var flags = {
     {
         'id': 'quyt',
         'name': 'Quýt',
+        'image': 'quyt.jpg',
         'icon':'quyt.png',
         'types': [
             {
                 'id': 'quyt',
                 'name': 'Quýt',
+                'image': 'quyt.jpg',
                 'icon': 'quyt.png',
                 'origins': [
                     {
@@ -427,11 +440,13 @@ var flags = {
     {
         'id': 'hong',
         'name': 'Hồng',
+        'image': 'hong.jpg',
         'icon':'hong.png',
         'types': [
             {
                 'id': 'trung',
                 'name': 'Hồng Trứng',
+                'image': 'hong.jpg',
                 'icon': 'hong.png',
                 'origins': [
                     {
@@ -493,11 +508,13 @@ var flags = {
     {
         'id': 'le',
         'name': 'Lê',
+        'image': 'le.jpg',
         'icon':'le.png',
         'types': [
             {
                 'id': 'le',
                 'name': 'Lê',
+                'image': 'le.jpg',
                 'icon': 'le.png',
                 'origins': [
                     {
@@ -536,11 +553,13 @@ var flags = {
     {
         'id': 'luu',
         'name': 'Lựu',
+        'image': 'luu.jpg',
         'icon':'luu.png',
         'types': [
             {
                 'id': 'luu',
                 'name': 'Lựu',
+                'image': 'luu.jpg',
                 'icon': 'luu.png',
                 'origins': [
                     {
@@ -583,11 +602,13 @@ var flags = {
     {
         'id': 'xoai',
         'name': 'Xoài',
+        'image': 'xoai.jpg',
         'icon':'xoai.png',
         'types': [
             {
                 'id': 'xoai',
                 'name': 'Xoài',
+                'image': 'xoai.jpg',
                 'icon': 'xoai.png',
                 'origins': [
                     {
@@ -628,11 +649,13 @@ var flags = {
     {
         'id': 'man',
         'name': 'Mận',
+        'image': 'man.jpg',
         'icon':'man.png',
         'types': [
             {
                 'id': 'man',
                 'name': 'Mận',
+                'image': 'man.jpg',
                 'icon': 'man.png',
                 'origins': [
                     {
@@ -682,11 +705,13 @@ var flags = {
     {
         'id': 'dao',
         'name': 'Đào',
+        'image': 'dao.jpg',
         'icon':'dao.png',
         'types': [
             {
                 'id': 'dao',
                 'name': 'Đào',
+                'image': 'dao.jpg',
                 'icon': 'dao.png',
                 'origins': [
                     {
