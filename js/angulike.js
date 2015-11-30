@@ -38,7 +38,7 @@
                                       renderLikeButton();
                                       
                                       // only need to run once
-                                      unbindWatch();
+                                    //   unbindWatch();
                                   }
                                   
                               });

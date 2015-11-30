@@ -34,11 +34,16 @@
                 
             // alert($location.absUrl());
             var _url = $location.absUrl();
+            // alert(_url);
             $scope.myModel = {
                 Url: _url,
-                Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
-                ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+                // Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
+                // ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
             };
+            // alert($scope.myModel.Url);
+            // var div = document.getElementById('xxxx');
+            // div.innerHTML = '';
+            // div.innerHTML = '<div fb-like="myModel.Url"></div>';
         };
 
         var onError = function (reason) {

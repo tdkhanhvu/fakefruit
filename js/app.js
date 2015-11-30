@@ -4,7 +4,7 @@
         '$rootScope', function ($rootScope) {
             $rootScope.facebookAppId = '195462110792239'; // set your facebook app id here
         }
-    ])
+    ]);
 
     app.controller('login', function($scope, $http) {
         $scope.usr = "Username";
