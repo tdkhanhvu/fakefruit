@@ -31,6 +31,14 @@
 
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
+                
+            // alert($location.absUrl());
+            var _url = $location.absUrl();
+            $scope.myModel = {
+                Url: _url,
+                Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
+                ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+            };
         };
 
         var onError = function (reason) {
@@ -45,7 +53,7 @@
         };
 
         $scope.searchType = function () {
-            FruitService.searchType($scope.selectedFruit.id, $scope.selectedType.id, $scope)
+            FruitService.searchType($scope.selectedFruit.id, $scope.selectedType.id, $scope, $location)
                 .then(onSearchType, onError);
         };
 
