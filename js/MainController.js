@@ -8,6 +8,7 @@
         $scope.myModel = {
             Url: $location.absUrl()
         };
+
         var onGetAllFruits = function(data){
             FruitService.onGetAllFruits($scope, data);
         }
