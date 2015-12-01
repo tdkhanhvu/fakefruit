@@ -24,6 +24,7 @@
             console.log('get new url, searchType:' + _url);
 
             $scope.myModel.Url = _url;
+            $scope.$apply();
         };
 
         var onError = function (reason) {
