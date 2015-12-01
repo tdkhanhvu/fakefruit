@@ -23,7 +23,7 @@
             var _url = $location.absUrl();
             $scope.myModel.Url = _url;
             console.log('get new url, searchType:' + $scope.myModel.Url);
-            //$scope.$apply();
+            $scope.$apply();
         };
 
         var onError = function (reason) {

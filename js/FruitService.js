@@ -82,7 +82,7 @@
             var _url = $location.absUrl();
             $scope.myModel.Url = _url;
             console.log('get new url, searchFruit:' + $scope.myModel.Url);
-            //$scope.$apply();
+            $scope.$apply();
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
