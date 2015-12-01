@@ -37,7 +37,7 @@
             $scope.fruits = data;
             console.log('onGetAllFruit');
             console.log($routeParams.fruit);
-            if (typeof($routeParams.fruit) != undefined) {
+            if (typeof($routeParams.fruit) != 'undefined') {
                 $scope.fruits.forEach(function(fruit){
                     if ($routeParams.fruit == fruit.id) {
                         $scope.selectedFruit = fruit;
@@ -87,7 +87,7 @@
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
-            } else if (typeof($routeParams.type) != undefined) {
+            } else if (typeof($routeParams.type) != 'undefined') {
                 $scope.types.forEach(function(type){
                     if ($routeParams.type == type.id) {
                         $scope.selectedType = type;
