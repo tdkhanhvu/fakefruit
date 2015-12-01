@@ -45,6 +45,11 @@
                     }
                 });
             }
+
+            var _url = $location.absUrl();
+            $scope.myModel = {
+                Url: _url
+            };
         };
 
         var getStaticImage = function(imageName) {
