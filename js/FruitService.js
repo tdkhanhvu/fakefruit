@@ -48,7 +48,9 @@
             } else {
                 var _url = $location.absUrl();
                 console.log('initial url:' + _url);
-                $scope.myModel.Url = _url;
+                $scope.myModel = {
+                    Url: _url
+                };
             }
         };
 
