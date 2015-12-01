@@ -79,12 +79,7 @@
             $location.path('/' + page, false)
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
-            var _url = $location.absUrl();
-            $scope.myModel.Url = _url;
-            console.log('get new url, searchFruit:' + $scope.myModel.Url);
-            if(!$scope.$$phase) {
-                $scope.$apply();
-            }
+
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
@@ -96,6 +91,13 @@
                         $scope.searchType();
                     }
                 });
+            } else {
+                var _url = $location.absUrl();
+                $scope.myModel.Url = _url;
+                console.log('get new url, searchFruit:' + $scope.myModel.Url);
+                if(!$scope.$$phase) {
+                    $scope.$apply();
+                }
             }
         };
 
