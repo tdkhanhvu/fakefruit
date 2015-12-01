@@ -30,6 +30,7 @@
 
                       var watchAdded = false;
                       function renderLikeButton() {
+                          console.log('renderLinkButton called');
                           if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
                               // wait for data if it hasn't loaded yet
                               watchAdded = true;
