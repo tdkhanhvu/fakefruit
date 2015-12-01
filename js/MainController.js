@@ -5,9 +5,9 @@
     var MainController = function ($scope, $http, $location, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
-        var _url = $location.absUrl();
+        var abc = $location.absUrl();
         $scope.myModel = {
-            Url: _url
+            Url: abc
         };
 
         var onGetAllFruits = function(data){
