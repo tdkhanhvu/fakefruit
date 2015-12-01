@@ -21,10 +21,9 @@
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
             var _url = $location.absUrl();
-            console.log('get new url, searchType:' + _url);
-
             $scope.myModel.Url = _url;
-            $scope.$apply();
+            console.log('get new url, searchType:' + $scope.myModel.Url);
+            //$scope.$apply();
         };
 
         var onError = function (reason) {
