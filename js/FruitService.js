@@ -48,9 +48,7 @@
             } else {
                 var _url = $location.absUrl();
                 console.log('initial url:' + _url);
-                $scope.myModel = {
-                    Url: _url
-                };
+                $scope.myModel.Url = _url;
             }
         };
 
@@ -81,9 +79,8 @@
                 .search('type', null);
             var _url = $location.absUrl();
             console.log('get new url, searchFruit:' + _url);
-            $scope.myModel = {
-                Url: _url
-            };
+            $scope.myModel.Url = _url;
+
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
