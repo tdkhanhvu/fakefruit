@@ -8,6 +8,7 @@ var http = require('http'),
     flags = data.flags,
     domain = 'http://52.76.185.81';
 
+
 function getContentType(extension) {
     switch (extension) {
         case '.js':
