@@ -62,12 +62,6 @@
                     types.forEach(function (type) {
                         type['icon'] = iconPath + type['icon'];
                     });
-                    
-                    // $scope.myModel = {
-                    //     Url: url,
-                    //     Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
-                    //     ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
-                    // };
 
                     return types;
                 });
