@@ -44,12 +44,12 @@
                         $scope.searchFruit();
                     }
                 });
+            } else {
+                var _url = $location.absUrl();
+                $scope.myModel = {
+                    Url: _url
+                };
             }
-
-//            var _url = $location.absUrl();
-//            $scope.myModel = {
-//                Url: _url
-//            };
         };
 
         var getStaticImage = function(imageName) {
@@ -78,6 +78,7 @@
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
             var _url = $location.absUrl();
+            console.log('get new url, searchFruit:' + _url);
             $scope.myModel = {
                 Url: _url
             };

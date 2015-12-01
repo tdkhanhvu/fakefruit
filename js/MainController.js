@@ -20,6 +20,7 @@
 
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
+            console.log('get new url, searchType:' + _url);
             var _url = $location.absUrl();
             $scope.myModel = {
                 Url: _url
