@@ -78,7 +78,10 @@
             $location.path('/' + page, false)
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
-
+            var _url = $location.absUrl();
+            $scope.myModel = {
+                Url: _url
+            };
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
@@ -91,9 +94,6 @@
                     }
                 });
             }
-
-           
-            // alert($scope.myModel.Url);
         };
 
         var searchType = function (fruitId, typeId, $scope, $location) {
@@ -110,13 +110,6 @@
                         origin['flag'] = flagPath + origin['flag'];
                         origin['visible'] = true;
                     });
-                    
-                    // var _url = window.location.href;
-                    // alert(_url);
-                    // console.log($location);
-                    
-                    
-                    //   alert(url);
 
                     return {'origins': origins, 'attributes': attributes};
                 });
