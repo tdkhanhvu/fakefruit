@@ -35,7 +35,8 @@
 
         var onGetAllFruits = function($scope, data) {
             $scope.fruits = data;
-
+            console.log('onGetAllFruit');
+            console.log($routeParams.fruit);
             if (typeof($routeParams.fruit) != undefined) {
                 $scope.fruits.forEach(function(fruit){
                     if ($routeParams.fruit == fruit.id) {
