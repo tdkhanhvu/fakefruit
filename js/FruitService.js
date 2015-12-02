@@ -77,6 +77,10 @@
             $location.path('/' + page, false)
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
+            var _url = $location.absUrl();
+            $scope.myModel = {
+                URL: _url
+            };
 
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
@@ -89,11 +93,6 @@
                         $scope.searchType();
                     }
                 });
-            } else {
-                var _url = $location.absUrl();
-                $scope.myModel = {
-                    URL: _url
-                };
             }
         };
 
