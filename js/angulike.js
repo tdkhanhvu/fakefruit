@@ -30,11 +30,10 @@
 
                         var watchAdded = false;
                         function renderLikeButton() {
-
                             if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
                                 // wait for data if it hasn't loaded yet
                                 watchAdded = true;
-                                scope.$watch('fbLike', function (newValue, oldValue) {
+                                var unbindWatch = scope.$watch('fbLike', function (newValue, oldValue) {
                                     if (newValue) {
                                         renderLikeButton();
 
@@ -42,17 +41,10 @@
                                         //   unbindWatch();
                                     }
 
-                                })();
+                                });
                                 return;
                             } else {
-                                //element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>');
-                                element.attr('data-href', scope.fbLike);
-                                element.attr('data-layout','button_count');
-                                element.attr('data-action','like');
-                                element.attr('data-show-faces','true');
-                                element.attr('data-share','true');
-                                element.attr('class', 'fb-like');
-                                //element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' ></div>');
+                                element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>');
                                 $window.FB.XFBML.parse(element.parent()[0]);
                             }
                         }

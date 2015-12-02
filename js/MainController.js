@@ -2,12 +2,20 @@
 
     var app = angular.module("fakefruit");
 
+//     angular.module('myApp')
+//   .controller('myController', [
+//       '$scope', function ($scope) {
+//           $scope.myModel = {
+//               Url: 'http://jasonwatmore.com/post/2014/08/01/AngularJS-directives-for-social-sharing-buttons-Facebook-Like-GooglePlus-Twitter-and-Pinterest.aspx',
+//               Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
+//               ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+//           };
+//       }
+//   ]);
+
     var MainController = function ($scope, $http, $location, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
-        var _url = $location.absUrl();
-        //$scope.url = _url;
-
 
         var onGetAllFruits = function(data){
             FruitService.onGetAllFruits($scope, data);
@@ -18,18 +26,24 @@
         };
 
         var onSearchType = function(data) {
-            console.log('on search type main');
             $scope.origins = data.origins;
             $scope.attributes = data.attributes;
 
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
+
+            // alert($location.absUrl());
             var _url = $location.absUrl();
-            console.log('current url, searchType:' + _url);
-
-            $scope.url = _url;
-
-            console.log('get new url, searchType:' + $scope.url);
+            // alert(_url);
+            $scope.myModel = {
+                Url: _url//,
+                // Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
+                // ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+            };
+            // alert($scope.myModel.Url);
+            // var div = document.getElementById('xxxx');
+            // div.innerHTML = '';
+            // div.innerHTML = '<div fb-like="myModel.Url"></div>';
         };
 
         var onError = function (reason) {

@@ -35,9 +35,8 @@
 
         var onGetAllFruits = function($scope, data) {
             $scope.fruits = data;
-            console.log('onGetAllFruit');
-            console.log($routeParams.fruit);
-            if (typeof($routeParams.fruit) != 'undefined') {
+
+            if (typeof($routeParams.fruit) != undefined) {
                 $scope.fruits.forEach(function(fruit){
                     if ($routeParams.fruit == fruit.id) {
                         $scope.selectedFruit = fruit;
@@ -45,10 +44,6 @@
                         $scope.searchFruit();
                     }
                 });
-            } else {
-//                var _url = $location.absUrl();
-//                console.log('initial url:' + _url);
-//                $scope.myModel.URL = _url;
             }
         };
 
@@ -68,6 +63,12 @@
                         type['icon'] = iconPath + type['icon'];
                     });
 
+                    // $scope.myModel = {
+                    //     Url: url,
+                    //     Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
+                    //     ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
+                    // };
+
                     return types;
                 });
         };
@@ -77,13 +78,11 @@
             $location.path('/' + page, false)
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
-            var _url = $location.absUrl();
-            $scope.url = _url;
 
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
-            } else if (typeof($routeParams.type) != 'undefined') {
+            } else if (typeof($routeParams.type) != undefined) {
                 $scope.types.forEach(function(type){
                     if ($routeParams.type == type.id) {
                         $scope.selectedType = type;
@@ -92,6 +91,9 @@
                     }
                 });
             }
+
+
+            // alert($scope.myModel.Url);
         };
 
         var searchType = function (fruitId, typeId, $scope, $location) {
@@ -108,6 +110,13 @@
                         origin['flag'] = flagPath + origin['flag'];
                         origin['visible'] = true;
                     });
+
+                    // var _url = window.location.href;
+                    // alert(_url);
+                    // console.log($location);
+
+
+                    //   alert(url);
 
                     return {'origins': origins, 'attributes': attributes};
                 });
