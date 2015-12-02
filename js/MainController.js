@@ -7,7 +7,7 @@
         $scope.selectedType = undefined;
         var _url = $location.absUrl();
         $scope.myModel = {
-            URL: _url
+            Url: _url
         };
 
         var onGetAllFruits = function(data){
@@ -29,7 +29,7 @@
             console.log('current url, searchType:' + _url);
 
             $scope.myModel = {
-                URL: _url
+                Url: _url
             };
 
             console.log('get new url, searchType:' + $scope.myModel.Url);

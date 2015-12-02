@@ -79,7 +79,7 @@
                 .search('type', null);
             var _url = $location.absUrl();
             $scope.myModel = {
-                URL: _url
+                Url: _url
             };
 
             if ($scope.types.length == 1) {
