@@ -19,6 +19,7 @@
         };
 
         var onSearchType = function(data) {
+            console.log('on search type main');
             $scope.origins = data.origins;
             $scope.attributes = data.attributes;
 
