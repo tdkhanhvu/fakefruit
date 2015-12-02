@@ -6,7 +6,6 @@
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
         var _url = $location.absUrl();
-        //$scope.myModel.Url = _url;
         $scope.myModel = {
             URL: _url
         };
@@ -26,7 +25,6 @@
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
             var _url = $location.absUrl();
-            //$scope.myModel.Url = _url;
             $scope.myModel = {
                 URL: _url
             };

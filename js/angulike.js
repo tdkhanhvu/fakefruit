@@ -11,7 +11,7 @@
                 return {
                     restrict: 'A',
                     scope: {
-                        fbLike: '=?'
+                        fbLike: '@'
                     },
                     link: function (scope, element, attrs) {
                         if (!$window.FB) {
@@ -30,6 +30,7 @@
 
                         var watchAdded = false;
                         function renderLikeButton() {
+                            console.log('render like button');
                             if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
                                 // wait for data if it hasn't loaded yet
                                 watchAdded = true;
