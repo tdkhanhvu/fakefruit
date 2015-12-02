@@ -6,7 +6,7 @@
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
         var _url = $location.absUrl();
-        $scope.url = _url;
+        //$scope.url = _url;
 
 
         var onGetAllFruits = function(data){
