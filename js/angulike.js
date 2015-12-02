@@ -32,7 +32,11 @@
                         var watchAdded = false;
                         function renderLikeButton() {
                             console.log('render like button');
+                            console.log(attrs.fbLike);
+                            console.log(scope.fbLike);
+                            console.log(watchAdded);
                             if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
+
                                 // wait for data if it hasn't loaded yet
                                 watchAdded = true;
                                 var unbindWatch = scope.$watch('fbLike', function (newValue, oldValue) {
