@@ -34,7 +34,7 @@
                             if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
                                 // wait for data if it hasn't loaded yet
                                 watchAdded = true;
-                                var unbindWatch = scope.$watch('fbLike', function (newValue, oldValue) {
+                                scope.$watch('fbLike', function (newValue, oldValue) {
                                     if (newValue) {
                                         renderLikeButton();
 
@@ -42,7 +42,7 @@
                                         //   unbindWatch();
                                     }
 
-                                });
+                                })();
                                 return;
                             } else {
                                 //element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>');
