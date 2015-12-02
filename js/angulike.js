@@ -35,6 +35,7 @@
                               // wait for data if it hasn't loaded yet
                               watchAdded = true;
                               var unbindWatch = scope.$watch('fbLike', function (newValue, oldValue) {
+                                  console.log('new value:' + newValue + '!');
                                   if (newValue) {
                                       renderLikeButton();
 
