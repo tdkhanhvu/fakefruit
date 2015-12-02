@@ -45,13 +45,15 @@
                                 });
                                 return;
                             } else {
-                                element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>');
+                                //element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>');
+                                element.attr('data-href','scope.fbLike');
+                                element.attr('data-layout','button_count');
+                                element.attr('data-action','like');
+                                element.attr('data-show-faces','true');
+                                element.attr('data-share','true');
+
+                                //element.html('<div class="fb-like"' + (!!scope.fbLike ? ' data-href="' + scope.fbLike + '"' : '') + ' ></div>');
                                 $window.FB.XFBML.parse(element.parent()[0]);
-                                scope.$watch('fbLike', function (newValue, oldValue) {
-                                    if (newValue) {
-                                        renderLikeButton();
-                                    }
-                                });
                             }
                         }
                     }
