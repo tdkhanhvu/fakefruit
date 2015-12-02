@@ -33,7 +33,9 @@
                         function renderLikeButton() {
                             console.log('render like button');
                             console.log(attrs.fbLike);
+                            console.log(!!attrs.fbLike );
                             console.log(scope.fbLike);
+                            console.log(!scope.fbLike );
                             console.log(watchAdded);
                             if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
 
