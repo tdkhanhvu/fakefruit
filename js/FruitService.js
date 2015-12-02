@@ -91,11 +91,9 @@
                 });
             } else {
                 var _url = $location.absUrl();
-                $scope.myModel.Url = _url;
-                console.log('get new url, searchFruit:' + $scope.myModel.Url);
-                if(!$scope.$$phase) {
-                    $scope.$apply();
-                }
+                $scope.myModel = {
+                    URL: _url
+                };
             }
         };
 

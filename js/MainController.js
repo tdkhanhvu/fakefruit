@@ -5,7 +5,7 @@
     var MainController = function ($scope, $http, $location, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
-        $scope.myModel = {};
+        //$scope.myModel = {};
 
         var onGetAllFruits = function(data){
             FruitService.onGetAllFruits($scope, data);
@@ -22,11 +22,12 @@
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
             var _url = $location.absUrl();
-            $scope.myModel.Url = _url;
+            //$scope.myModel.Url = _url;
+            $scope.myModel = {
+                URL: _url
+            };
+
             console.log('get new url, searchType:' + $scope.myModel.Url);
-            if(!$scope.$$phase) {
-                $scope.$apply();
-            }
         };
 
         var onError = function (reason) {
