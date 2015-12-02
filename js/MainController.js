@@ -6,9 +6,8 @@
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
         var _url = $location.absUrl();
-        $scope.myModel = {
-            Url: _url
-        };
+        $scope.url = _url;
+
 
         var onGetAllFruits = function(data){
             FruitService.onGetAllFruits($scope, data);
@@ -28,11 +27,9 @@
             var _url = $location.absUrl();
             console.log('current url, searchType:' + _url);
 
-            $scope.myModel = {
-                Url: _url
-            };
+            $scope.url = _url;
 
-            console.log('get new url, searchType:' + $scope.myModel.Url);
+            console.log('get new url, searchType:' + $scope.url);
         };
 
         var onError = function (reason) {

@@ -78,9 +78,7 @@
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
             var _url = $location.absUrl();
-            $scope.myModel = {
-                Url: _url
-            };
+            $scope.url = _url;
 
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
