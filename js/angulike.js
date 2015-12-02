@@ -10,9 +10,9 @@
             '$window', '$rootScope', function ($window, $rootScope) {
                 return {
                     restrict: 'A',
-//                    scope: {
-//                        fbLike: '@'
-//                    },
+                    scope: {
+                        fbLike: '@'
+                    },
                     link: function (scope, element, attrs) {
                         console.log('link');
                         if (!$window.FB) {
