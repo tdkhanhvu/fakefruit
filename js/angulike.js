@@ -11,7 +11,7 @@
               return {
                   restrict: 'A',
                   scope: {
-                      fbLike: '=?'
+                      fbLike: '='
                   },
                   link: function (scope, element, attrs) {
                       if (!$window.FB) {
