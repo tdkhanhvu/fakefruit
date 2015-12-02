@@ -26,6 +26,8 @@
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
             var _url = $location.absUrl();
+            console.log('current url, searchType:' + _url);
+
             $scope.myModel = {
                 URL: _url
             };
