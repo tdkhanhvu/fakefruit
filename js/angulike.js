@@ -10,10 +10,11 @@
             '$window', '$rootScope', function ($window, $rootScope) {
                 return {
                     restrict: 'A',
-                    scope: {
-                        fbLike: '@'
-                    },
+//                    scope: {
+//                        fbLike: '@'
+//                    },
                     link: function (scope, element, attrs) {
+                        console.log('link');
                         if (!$window.FB) {
                             // Load Facebook SDK if not already loaded
                             $.getScript('//connect.facebook.net/en_US/sdk.js', function () {
@@ -31,10 +32,12 @@
                         var watchAdded = false;
                         function renderLikeButton() {
                             console.log('render like button');
-                            if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
+                            //if (!!attrs.fbLike && !scope.fbLike && !watchAdded) {
+                            if (!watchAdded) {
                                 // wait for data if it hasn't loaded yet
                                 watchAdded = true;
                                 var unbindWatch = scope.$watch('fbLike', function (newValue, oldValue) {
+                                    console.log('new value');
                                     if (newValue) {
                                         renderLikeButton();
 
