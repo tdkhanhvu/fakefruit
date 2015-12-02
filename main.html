@@ -7,8 +7,9 @@
                         <div class="panel-heading">
                             <h3 class="panel-title"><strong>Chia sẻ FB</strong></h3>
                         </div>
-                        <div class="panel-body text-center" ng-show="myModel.Url">
-                            <div fb-like="myModel.Url"></div>
+                        <div class="panel-body text-center">
+                            <div fb-like="myModel.Url" ng-show="myModel.Url"></div>
+                            <div ng-hide="myModel.Url">Chọn trái cây trước khi chia sẻ Facebook</div>
                         </div>
                     </div>
                 </div>
