@@ -9,7 +9,7 @@
 
         var getAttributeGroups = function () {
             var url = host + 'getAttributeGroups';
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -19,7 +19,7 @@
 
         var getAllFruits = function() {
             var url = host + 'getAllFruits';
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -56,7 +56,7 @@
 
         var searchFruit = function (fruitId, $scope) {
             var url = host + 'searchFruit/' + fruitId;
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -95,7 +95,7 @@
 
         var searchType = function (fruitId, typeId, $scope, $location) {
             var url = host + 'searchType/' + fruitId + '/' + typeId;
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
