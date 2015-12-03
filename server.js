@@ -6,7 +6,7 @@ var http = require('http'),
     list = data.list,
     attributeGroups = data.attributeGroups,
     flags = data.flags,
-    domain = 'http://chontraicay.com';
+    domain = 'http://52.76.185.81';
 
 function getContentType(extension) {
     switch (extension) {
