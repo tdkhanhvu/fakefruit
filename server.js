@@ -6,7 +6,7 @@ var http = require('http'),
     list = data.list,
     attributeGroups = data.attributeGroups,
     flags = data.flags,
-    domain = 'http://52.76.185.81';
+    domain = 'http://chontraicay.com';
 
 function getContentType(extension) {
     switch (extension) {
@@ -200,7 +200,7 @@ function handleFacebookBot(request, response) {
             html = content.replace('[IMAGE]', result['image'])
                 .replace('[TITLE]', result['title'])
                 .replace('[DESCRIPTION]', result['description'])
-                .replace('[URL]', domain.replace('52.76.185.81', 'chontraicay.com') + urlLink);
+                .replace('[URL]', domain + urlLink);
 
             response.end(html, 'utf-8');
         }
