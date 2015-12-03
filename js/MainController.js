@@ -21,7 +21,7 @@
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
                 
-            var _url = $location.absUrl().replace('52.76.185.81', 'chontraicay.com');
+            var _url = $location.absUrl();
             $scope.myModel = {
                 Url: _url
             };
