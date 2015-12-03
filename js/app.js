@@ -48,19 +48,20 @@
             restrict: 'E',
             templateUrl: './templates/fruit-selection.html'
         };
-    });
-
-    app.directive('typeSelection', function(){
+    }).directive('typeSelection', function(){
         return {
             restrict: 'E',
             templateUrl: './templates/type-selection.html'
         };
-    });
-
-    app.directive('originSelection', function(){
+    }).directive('originSelection', function(){
         return {
             restrict: 'E',
             templateUrl: './templates/origin-selection.html'
+        };
+    }).directive('facebookShare', function(){
+        return {
+            restrict: 'E',
+            templateUrl: './templates/facebook-share.html'
         };
     });
 }());
