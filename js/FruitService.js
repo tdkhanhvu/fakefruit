@@ -50,6 +50,10 @@
             return imagePath + imageName;
         };
 
+        var getCurrentUrl = function() {
+            return $location.absUrl().replace('/#','');
+        }
+
         var searchFruit = function (fruitId, $scope) {
             var url = host + 'searchFruit/' + fruitId;
             console.log(url);
@@ -171,6 +175,7 @@
             searchFruit: searchFruit,
             searchType: searchType,
             getStaticImage: getStaticImage,
+            getCurrentUrl: getCurrentUrl,
             onGetAllFruits: onGetAllFruits,
             onSearchFruit: onSearchFruit
         };

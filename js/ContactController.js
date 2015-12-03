@@ -2,9 +2,9 @@
 
     var app = angular.module("fakefruit");
 
-    var ContactController = function ($scope, FruitService, $location) {
+    var ContactController = function ($scope, FruitService) {
         $scope.myModel = {
-            Url: $location.absUrl()
+            Url: FruitService.getCurrentUrl()
         };
 
         $scope.getImage = function(imageName) {

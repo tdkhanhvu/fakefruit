@@ -71,10 +71,10 @@
             $location.path('/quiz', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
 
-            _url = $location.absUrl();
             $scope.myModel = {
-                Url: _url
+                Url: FruitService.getCurrentUrl()
             };
+
             $scope.attributes.forEach(function (attribute) {
                 var validAttributes = [],
                     attrId = attribute.id;
