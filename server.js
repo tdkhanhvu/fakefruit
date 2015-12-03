@@ -200,7 +200,7 @@ function handleFacebookBot(request, response) {
             html = content.replace('[IMAGE]', result['image'])
                 .replace('[TITLE]', result['title'])
                 .replace('[DESCRIPTION]', result['description'])
-                .replace('[URL]', domain + urlLink);
+                .replace('[URL]', domain.replace('52.76.185.81', 'chontraicay.com') + urlLink);
 
             response.end(html, 'utf-8');
         }
