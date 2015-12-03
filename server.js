@@ -112,7 +112,7 @@ function getStaticFile(filePath, contentType, response) {
                     response.end();
                 }
                 else {
-                    response.writeHead(200, { 'Content-Type': contentType });
+                    response.writeHead(200, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*' });
                     response.end(content, 'utf-8');
                 }
             });
@@ -191,7 +191,7 @@ function handleFacebookBot(request, response) {
 
     result['image'] = domain + '/assets/fruit/' + result['image'];
 
-    response.writeHead(200, { 'Content-Type': 'text/html'});
+    response.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*'});
 
     fs.readFile('./facebook.html', 'utf-8', function (error, content) {
         if (error) {
@@ -226,7 +226,7 @@ function start() {
         var contentType = getContentType(path.extname(filePath));
 
         console.log('filePath:' + filePath);
-        response.writeHead(200, { 'Content-Type': contentType});
+        response.writeHead(200, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*'});
 
         switch (action) {
             case 'getAllFruits':
