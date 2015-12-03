@@ -7,10 +7,6 @@
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
         $scope.disabled = false;
-        var _url = $location.absUrl();
-        $scope.myModel = {
-            Url: _url
-        };
 
         $scope.startQuiz = function() {
             $scope.percentComplete = 0;
