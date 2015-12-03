@@ -6,7 +6,7 @@
         $scope.getImage = function(imageName) {
             var path = FruitService.getStaticImage(imageName);
 
-            console.log(path);
+            //console.log(path);
             return path;
         };
 
