@@ -62,12 +62,6 @@
                     types.forEach(function (type) {
                         type['icon'] = iconPath + type['icon'];
                     });
-                    
-                    // $scope.myModel = {
-                    //     Url: url,
-                    //     Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
-                    //     ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
-                    // };
 
                     return types;
                 });
@@ -78,7 +72,10 @@
             $location.path('/' + page, false)
                 .search('fruit', $scope.selectedFruit.id)
                 .search('type', null);
-
+            var _url = $location.absUrl().replace('52.76.185.81', 'chontraicay.com');
+            $scope.myModel = {
+                Url: _url
+            };
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
@@ -91,9 +88,6 @@
                     }
                 });
             }
-
-           
-            // alert($scope.myModel.Url);
         };
 
         var searchType = function (fruitId, typeId, $scope, $location) {
@@ -110,13 +104,6 @@
                         origin['flag'] = flagPath + origin['flag'];
                         origin['visible'] = true;
                     });
-                    
-                    // var _url = window.location.href;
-                    // alert(_url);
-                    // console.log($location);
-                    
-                    
-                    //   alert(url);
 
                     return {'origins': origins, 'attributes': attributes};
                 });
