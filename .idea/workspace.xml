@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f712029a-7e8a-4830-a759-52c33e36de9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ContactController.js" afterPath="$PROJECT_DIR$/js/ContactController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/FruitService.js" afterPath="$PROJECT_DIR$/js/FruitService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/MissionController.js" afterPath="$PROJECT_DIR$/js/MissionController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/QuizController.js" afterPath="$PROJECT_DIR$/js/QuizController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angulike.js" afterPath="$PROJECT_DIR$/js/angulike.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mission.html" afterPath="$PROJECT_DIR$/mission.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quiz.html" afterPath="$PROJECT_DIR$/quiz.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+    </list>
+    <list id="c7847610-c6ec-4e17-a04d-377b41eba643" name="ignore" comment="add handling facebook bot" />
+    <ignored path="FakeFruit.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="C:\wamp\www\FakeFruit" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FakeFruit" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MainController.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/MainController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="25" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1224">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FruitService.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/FruitService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="19" selection-start="2964" selection-end="2964" vertical-scroll-proportion="3.6141732" vertical-offset="102" max-vertical-offset="3162">
+              <folding>
+                <marker date="1449151145332" expanded="true" signature="143:6290" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="202" column="81" selection-start="6332" selection-end="6332" vertical-scroll-proportion="0.0" vertical-offset="3416" max-vertical-offset="4403">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="4" selection-start="127" selection-end="127" vertical-scroll-proportion="34.653847" vertical-offset="969" max-vertical-offset="2261">
+              <folding>
+                <marker date="1449149524076" expanded="true" signature="966:1070" placeholder="..." />
+                <marker date="1449149524076" expanded="true" signature="991:1052" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="26" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1972">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/js/RepoController.js" />
+        <option value="$PROJECT_DIR$/js/UserController.js" />
+        <option value="$PROJECT_DIR$/js/github.js" />
+        <option value="$PROJECT_DIR$/NodeJs/assets/data.js" />
+        <option value="$PROJECT_DIR$/js/dropdown/select2.min.js" />
+        <option value="$PROJECT_DIR$/css/select2.css" />
+        <option value="$PROJECT_DIR$/NodeJs/data.js" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/HeadController.js" />
+        <option value="$PROJECT_DIR$/templates/type-selection.html" />
+        <option value="$PROJECT_DIR$/templates/fruit-selection.html" />
+        <option value="$PROJECT_DIR$/templates/origin-selection.html" />
+        <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/NodeJs/router.js" />
+        <option value="$PROJECT_DIR$/NodeJs/index.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/router.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/NodeJs/server.js" />
+        <option value="$PROJECT_DIR$/data.js" />
+        <option value="$PROJECT_DIR$/quiz.html" />
+        <option value="$PROJECT_DIR$/js/ContactController.js" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/js/MissionController.js" />
+        <option value="$PROJECT_DIR$/mission.html" />
+        <option value="$PROJECT_DIR$/facebook.html" />
+        <option value="$PROJECT_DIR$/js/QuizController.js" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/js/angulike.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/MainController.js" />
+        <option value="$PROJECT_DIR$/js/FruitService.js" />
+        <option value="$PROJECT_DIR$/server.js" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1036" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FakeFruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FakeFruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FakeFruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FakeFruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FakeFruit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="&#10;Màu&#10;X" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="57" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="65" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="71" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="742" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="68" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="77" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="711" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestAngularJS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\FakeFruit" />
+      <recent name="C:\wamp\www\FakeFruit\js" />
+      <recent name="C:\wamp\www\FakeFruit\NodeJs\assets\icon" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\FakeFruit" />
+      <recent name="C:\wamp\www\FakeFruit\NodeJs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f712029a-7e8a-4830-a759-52c33e36de9b" name="Default" comment="" />
+      <changelist id="c7847610-c6ec-4e17-a04d-377b41eba643" name="ignore" comment="" />
+      <created>1446485024960</created>
+      <updated>1446485024960</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add server">
+      <created>1446485186031</created>
+      <updated>1446485186031</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add client code">
+      <created>1446486779228</created>
+      <updated>1446486779228</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove unused import">
+      <created>1446486826356</created>
+      <updated>1446486826356</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove bootstrap, using angular ui bootstrap instead">
+      <created>1446493309913</created>
+      <updated>1446493309913</updated>
+    </task>
+    <task id="LOCAL-00005" summary="disable select2 due to jquery conflict with angularjs&#10;&#10;">
+      <created>1446571902193</created>
+      <updated>1446571902193</updated>
+    </task>
+    <task id="LOCAL-00006" summary="split description into different attributes">
+      <created>1446572005351</created>
+      <updated>1446572005351</updated>
+    </task>
+    <task id="LOCAL-00007" summary="origin description to be in table form">
+      <created>1446574203901</created>
+      <updated>1446574203901</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add nho My">
+      <created>1446574866738</created>
+      <updated>1446574866738</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix button">
+      <created>1446658531077</created>
+      <updated>1446658531077</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix button alignment">
+      <created>1446661514618</created>
+      <updated>1446661514618</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove unused code">
+      <created>1446870639113</created>
+      <updated>1446870639113</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add apple info&#10;change UI to add icon of the fruit">
+      <created>1446896970726</created>
+      <updated>1446896970726</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix select2 to remove selected type when choosing new fruit">
+      <created>1446960596242</created>
+      <updated>1446960596242</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add more icons">
+      <created>1446974545816</created>
+      <updated>1446974545816</updated>
+    </task>
+    <task id="LOCAL-00015" summary="formatting layout">
+      <created>1446974572453</created>
+      <updated>1446974572453</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add bootstrap css">
+      <created>1446976271192</created>
+      <updated>1446976271192</updated>
+    </task>
+    <task id="LOCAL-00017" summary="change layout">
+      <created>1446976302513</created>
+      <updated>1446976302513</updated>
+    </task>
+    <task id="LOCAL-00018" summary="change layout">
+      <created>1446977294322</created>
+      <updated>1446977294322</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add angular-sanitize lib">
+      <created>1446977861926</created>
+      <updated>1446977861926</updated>
+    </task>
+    <task id="LOCAL-00020" summary="change layout">
+      <created>1446977923371</created>
+      <updated>1446977923371</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add dau, cam&#10;&#10;resize all photos">
+      <created>1446997336907</created>
+      <updated>1446997336907</updated>
+    </task>
+    <task id="LOCAL-00022" summary="if fruit only has 1 type, automatically select that type">
+      <created>1446997975751</created>
+      <updated>1446997975751</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add dua luoi">
+      <created>1446999793842</created>
+      <updated>1446999793842</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add quyt">
+      <created>1447000455970</created>
+      <updated>1447000455970</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add hong">
+      <created>1447002636583</created>
+      <updated>1447002636583</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add le info, luu photo">
+      <created>1447080198866</created>
+      <updated>1447080198866</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add xoai info">
+      <created>1447128118688</created>
+      <updated>1447128118688</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add man info">
+      <created>1447131780531</created>
+      <updated>1447131780531</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add dao info">
+      <created>1447154056913</created>
+      <updated>1447154056913</updated>
+    </task>
+    <task id="LOCAL-00030" summary="group attributes">
+      <created>1447155925202</created>
+      <updated>1447155925202</updated>
+    </task>
+    <task id="LOCAL-00031" summary="group attributes">
+      <created>1447156084874</created>
+      <updated>1447156084874</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add group attributes">
+      <created>1447165728364</created>
+      <updated>1447165728364</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add group attributes">
+      <created>1447166206932</created>
+      <updated>1447166206932</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add group attributes">
+      <created>1447172675767</created>
+      <updated>1447172675767</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add nho xanh info&#10;&#10;reorganize descriptions of fruits">
+      <created>1447178621715</created>
+      <updated>1447178621715</updated>
+    </task>
+    <task id="LOCAL-00036" summary="split getAttributeGroups from getAllFruits">
+      <created>1447262409829</created>
+      <updated>1447262409829</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix conflict">
+      <created>1447262806084</created>
+      <updated>1447262806084</updated>
+    </task>
+    <task id="LOCAL-00038" summary="extract code from MainController into FruitService to reuse in QuizController">
+      <created>1447265641890</created>
+      <updated>1447265641890</updated>
+    </task>
+    <task id="LOCAL-00039" summary="refactor code">
+      <created>1447266276865</created>
+      <updated>1447266276865</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix warning">
+      <created>1447266882031</created>
+      <updated>1447266882031</updated>
+    </task>
+    <task id="LOCAL-00041" summary="1st version of quiz">
+      <created>1447352198456</created>
+      <updated>1447352198456</updated>
+    </task>
+    <task id="LOCAL-00042" summary="2nd, more formatting and country flag">
+      <created>1447355876456</created>
+      <updated>1447355876456</updated>
+    </task>
+    <task id="LOCAL-00043" summary="formatting quiz">
+      <created>1447692176463</created>
+      <updated>1447692176463</updated>
+    </task>
+    <task id="LOCAL-00044" summary="formatting quiz">
+      <created>1447692980411</created>
+      <updated>1447692980411</updated>
+    </task>
+    <task id="LOCAL-00045" summary="formatting quiz">
+      <created>1447699351058</created>
+      <updated>1447699351058</updated>
+    </task>
+    <task id="LOCAL-00046" summary="formatting quiz">
+      <created>1447863528854</created>
+      <updated>1447863528854</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add mission page">
+      <created>1447867971634</created>
+      <updated>1447867971634</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fix quiz">
+      <created>1447868226728</created>
+      <updated>1447868226728</updated>
+    </task>
+    <task id="LOCAL-00049" summary="modify mission page">
+      <created>1447948950036</created>
+      <updated>1447948950036</updated>
+    </task>
+    <task id="LOCAL-00050" summary="modify mission page">
+      <created>1447951072199</created>
+      <updated>1447951072199</updated>
+    </task>
+    <task id="LOCAL-00051" summary="add contact">
+      <created>1447952895916</created>
+      <updated>1447952895916</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fix nav bar">
+      <created>1447953277590</created>
+      <updated>1447953277590</updated>
+    </task>
+    <task id="LOCAL-00053" summary="fix nav bar">
+      <created>1447956351648</created>
+      <updated>1447956351648</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add 2 modes for titles: bigger and smaller screens">
+      <created>1448040368451</created>
+      <updated>1448040368451</updated>
+    </task>
+    <task id="LOCAL-00055" summary="formatting headers">
+      <created>1448042818637</created>
+      <updated>1448042818637</updated>
+    </task>
+    <task id="LOCAL-00056" summary="formatting headers">
+      <created>1448045722751</created>
+      <updated>1448045722751</updated>
+    </task>
+    <task id="LOCAL-00057" summary="formatting headers">
+      <created>1448100351854</created>
+      <updated>1448100351855</updated>
+    </task>
+    <task id="LOCAL-00058" summary="change quiz">
+      <created>1448118374616</created>
+      <updated>1448118374616</updated>
+    </task>
+    <task id="LOCAL-00059" summary="read fruit and type from url, so that when a user shares this link on Facebook, another user clicks on it will lead to the same content">
+      <created>1448163334422</created>
+      <updated>1448163334422</updated>
+    </task>
+    <task id="LOCAL-00060" summary="refactor onGetAllFruit and onSearchFruit from MainController and QuizController into FruitService">
+      <created>1448164122678</created>
+      <updated>1448164122678</updated>
+    </task>
+    <task id="LOCAL-00061" summary="add back jquery min">
+      <created>1448165853548</created>
+      <updated>1448165853549</updated>
+    </task>
+    <task id="LOCAL-00062" summary="refactor into fruit-selection, type-selection and origin-selection directives">
+      <created>1448171815673</created>
+      <updated>1448171815673</updated>
+    </task>
+    <task id="LOCAL-00063" summary="make quiz more responsive">
+      <created>1448173192321</created>
+      <updated>1448173192321</updated>
+    </task>
+    <task id="LOCAL-00064" summary="make quiz more responsive">
+      <created>1448174684644</created>
+      <updated>1448174684644</updated>
+    </task>
+    <task id="LOCAL-00065" summary="remove redundant console output">
+      <created>1448175708092</created>
+      <updated>1448175708092</updated>
+    </task>
+    <task id="LOCAL-00066" summary="made data dictionary responsive">
+      <created>1448189076027</created>
+      <updated>1448189076027</updated>
+    </task>
+    <task id="LOCAL-00067" summary="add icon to each tab in navigation menu">
+      <created>1448201277757</created>
+      <updated>1448201277758</updated>
+    </task>
+    <task id="LOCAL-00068" summary="minor css editing">
+      <created>1448212580136</created>
+      <updated>1448212580136</updated>
+    </task>
+    <task id="LOCAL-00069" summary="add meta tag to ask mobile device loading interface that fits its screen">
+      <created>1448288693396</created>
+      <updated>1448288693396</updated>
+    </task>
+    <task id="LOCAL-00070" summary="make more responsive in mobile">
+      <created>1448292945187</created>
+      <updated>1448292945187</updated>
+    </task>
+    <task id="LOCAL-00071" summary="add support for IE">
+      <created>1448295915599</created>
+      <updated>1448295915599</updated>
+    </task>
+    <task id="LOCAL-00072" summary="change url without reloading when selecting fruit/type in main/quiz">
+      <created>1448301287307</created>
+      <updated>1448301287307</updated>
+    </task>
+    <task id="LOCAL-00073" summary="remove # in url">
+      <created>1448378030096</created>
+      <updated>1448378030096</updated>
+    </task>
+    <task id="LOCAL-00074" summary="test FB share #">
+      <created>1448473883582</created>
+      <updated>1448473883582</updated>
+    </task>
+    <task id="LOCAL-00075" summary="switch server from wamp to nodejs, fix issue with #">
+      <created>1448640190988</created>
+      <updated>1448640190988</updated>
+    </task>
+    <task id="LOCAL-00076" summary="merge 2 nodejs server into 1">
+      <created>1448690615880</created>
+      <updated>1448690615880</updated>
+    </task>
+    <task id="LOCAL-00077" summary="refactor nodejs server side">
+      <created>1448692745755</created>
+      <updated>1448692745755</updated>
+    </task>
+    <task id="LOCAL-00078" summary="add facebook file">
+      <created>1448726378253</created>
+      <updated>1448726378253</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add handling for FB bot">
+      <created>1448732271984</created>
+      <updated>1448732271984</updated>
+    </task>
+    <task id="LOCAL-00080" summary="add handling facebook bot">
+      <created>1448774071664</created>
+      <updated>1448774071665</updated>
+    </task>
+    <task id="LOCAL-00081" summary="fix facebook scraper does not receive data">
+      <created>1448784012271</created>
+      <updated>1448784012271</updated>
+    </task>
+    <task id="LOCAL-00082" summary="add fruit images for fb">
+      <created>1448785515573</created>
+      <updated>1448785515573</updated>
+    </task>
+    <task id="LOCAL-00083" summary="change domain name">
+      <created>1448806664185</created>
+      <updated>1448806664185</updated>
+    </task>
+    <task id="LOCAL-00084" summary="change domain name">
+      <created>1448806858560</created>
+      <updated>1448806858560</updated>
+    </task>
+    <task id="LOCAL-00085" summary="change domain name">
+      <created>1448808105604</created>
+      <updated>1448808105604</updated>
+    </task>
+    <task id="LOCAL-00086" summary="update size for image on FB">
+      <created>1448808402123</created>
+      <updated>1448808402123</updated>
+    </task>
+    <task id="LOCAL-00087" summary="change url formed">
+      <created>1448809482323</created>
+      <updated>1448809482323</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add logo">
+      <created>1448895684655</created>
+      <updated>1448895684655</updated>
+    </task>
+    <task id="LOCAL-00089" summary="center facebook like/share button&#10;&#10;remove redundant ',' in js">
+      <created>1448901203772</created>
+      <updated>1448901203772</updated>
+    </task>
+    <task id="LOCAL-00090" summary="center facebook button">
+      <created>1448901318556</created>
+      <updated>1448901318556</updated>
+    </task>
+    <task id="LOCAL-00091" summary="update facebook for quiz&#10;&#10;remove redundant code for main">
+      <created>1448901615111</created>
+      <updated>1448901615111</updated>
+    </task>
+    <task id="LOCAL-00092" summary="move fb share section to top">
+      <created>1448903016953</created>
+      <updated>1448903016953</updated>
+    </task>
+    <task id="LOCAL-00093" summary="move fb share section to top for quiz">
+      <created>1448903303172</created>
+      <updated>1448903303172</updated>
+    </task>
+    <task id="LOCAL-00094" summary="move fb share section to top for contact">
+      <created>1448904710907</created>
+      <updated>1448904710907</updated>
+    </task>
+    <task id="LOCAL-00095" summary="add more fb like/share button for contact page">
+      <created>1448904984007</created>
+      <updated>1448904984007</updated>
+    </task>
+    <task id="LOCAL-00096" summary="add more fb like/share button for mission page">
+      <created>1448905659767</created>
+      <updated>1448905659767</updated>
+    </task>
+    <task id="LOCAL-00097" summary="test">
+      <created>1448986268859</created>
+      <updated>1448986268859</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add more fb like/share button for mission page">
+      <created>1448986939564</created>
+      <updated>1448986939564</updated>
+    </task>
+    <task id="LOCAL-00099" summary="fix url not updated for Facebook">
+      <created>1448991455103</created>
+      <updated>1448991455103</updated>
+    </task>
+    <task id="LOCAL-00100" summary="fix url not updated for Facebook">
+      <created>1448993579229</created>
+      <updated>1448993579229</updated>
+    </task>
+    <task id="LOCAL-00101" summary="fix url not updated for Facebook">
+      <created>1448994004510</created>
+      <updated>1448994004510</updated>
+    </task>
+    <task id="LOCAL-00102" summary="fix url not updated for Facebook">
+      <created>1448994302166</created>
+      <updated>1448994302166</updated>
+    </task>
+    <task id="LOCAL-00103" summary="fix url not updated for Facebook">
+      <created>1448994480418</created>
+      <updated>1448994480418</updated>
+    </task>
+    <task id="LOCAL-00104" summary="fix url not updated for Facebook">
+      <created>1448994549085</created>
+      <updated>1448994549085</updated>
+    </task>
+    <task id="LOCAL-00105" summary="fix url not updated for Facebook">
+      <created>1448994637689</created>
+      <updated>1448994637689</updated>
+    </task>
+    <task id="LOCAL-00106" summary="fix url not updated for Facebook">
+      <created>1448994756052</created>
+      <updated>1448994756052</updated>
+    </task>
+    <task id="LOCAL-00107" summary="fix url not updated for Facebook">
+      <created>1448995209571</created>
+      <updated>1448995209571</updated>
+    </task>
+    <task id="LOCAL-00108" summary="fix url not updated for Facebook">
+      <created>1448995323729</created>
+      <updated>1448995323729</updated>
+    </task>
+    <task id="LOCAL-00109" summary="fix url not updated for Facebook">
+      <created>1448995413531</created>
+      <updated>1448995413531</updated>
+    </task>
+    <task id="LOCAL-00110" summary="fix url not updated for Facebook">
+      <created>1448995571017</created>
+      <updated>1448995571018</updated>
+    </task>
+    <task id="LOCAL-00111" summary="fix url not updated for Facebook">
+      <created>1448995660248</created>
+      <updated>1448995660248</updated>
+    </task>
+    <task id="LOCAL-00112" summary="fix url not updated for Facebook">
+      <created>1448995821833</created>
+      <updated>1448995821833</updated>
+    </task>
+    <task id="LOCAL-00113" summary="fix url not updated for Facebook">
+      <created>1448995902079</created>
+      <updated>1448995902079</updated>
+    </task>
+    <task id="LOCAL-00114" summary="fix url not updated for Facebook">
+      <created>1448996218928</created>
+      <updated>1448996218928</updated>
+    </task>
+    <task id="LOCAL-00115" summary="fix url not updated for Facebook">
+      <created>1448996393664</created>
+      <updated>1448996393664</updated>
+    </task>
+    <task id="LOCAL-00116" summary="fix url not updated for Facebook">
+      <created>1448996722370</created>
+      <updated>1448996722370</updated>
+    </task>
+    <task id="LOCAL-00117" summary="fix url not updated for Facebook">
+      <created>1448997022100</created>
+      <updated>1448997022100</updated>
+    </task>
+    <task id="LOCAL-00118" summary="fix url not updated for Facebook">
+      <created>1448997175744</created>
+      <updated>1448997175744</updated>
+    </task>
+    <task id="LOCAL-00119" summary="fix url not updated for Facebook">
+      <created>1448997277964</created>
+      <updated>1448997277964</updated>
+    </task>
+    <task id="LOCAL-00120" summary="fix url not updated for Facebook">
+      <created>1448997417941</created>
+      <updated>1448997417941</updated>
+    </task>
+    <task id="LOCAL-00121" summary="fix url not updated for Facebook">
+      <created>1448997542354</created>
+      <updated>1448997542354</updated>
+    </task>
+    <task id="LOCAL-00122" summary="fix url not updated for Facebook">
+      <created>1448997687289</created>
+      <updated>1448997687289</updated>
+    </task>
+    <task id="LOCAL-00123" summary="fix url not updated for Facebook">
+      <created>1449064289020</created>
+      <updated>1449064289020</updated>
+    </task>
+    <task id="LOCAL-00124" summary="fix url not updated for Facebook">
+      <created>1449065122966</created>
+      <updated>1449065122966</updated>
+    </task>
+    <task id="LOCAL-00125" summary="fix url not updated for Facebook">
+      <created>1449065509766</created>
+      <updated>1449065509766</updated>
+    </task>
+    <task id="LOCAL-00126" summary="fix url not updated for Facebook">
+      <created>1449066049080</created>
+      <updated>1449066049080</updated>
+    </task>
+    <task id="LOCAL-00127" summary="fix url not updated for Facebook">
+      <created>1449066185337</created>
+      <updated>1449066185337</updated>
+    </task>
+    <task id="LOCAL-00128" summary="fix url not updated for Facebook">
+      <created>1449066636545</created>
+      <updated>1449066636545</updated>
+    </task>
+    <task id="LOCAL-00129" summary="fix url not updated for Facebook">
+      <created>1449066818626</created>
+      <updated>1449066818626</updated>
+    </task>
+    <task id="LOCAL-00130" summary="fix url not updated for Facebook">
+      <created>1449067231464</created>
+      <updated>1449067231464</updated>
+    </task>
+    <task id="LOCAL-00131" summary="fix url not updated for Facebook">
+      <created>1449067675792</created>
+      <updated>1449067675792</updated>
+    </task>
+    <task id="LOCAL-00132" summary="fix url not updated for Facebook">
+      <created>1449068538050</created>
+      <updated>1449068538050</updated>
+    </task>
+    <task id="LOCAL-00133" summary="fix url not updated for Facebook">
+      <created>1449068756135</created>
+      <updated>1449068756135</updated>
+    </task>
+    <task id="LOCAL-00134" summary="fix url not updated for Facebook">
+      <created>1449068879879</created>
+      <updated>1449068879879</updated>
+    </task>
+    <task id="LOCAL-00135" summary="fix url not updated for Facebook">
+      <created>1449069010580</created>
+      <updated>1449069010580</updated>
+    </task>
+    <task id="LOCAL-00136" summary="fix url not updated for Facebook">
+      <created>1449069120513</created>
+      <updated>1449069120513</updated>
+    </task>
+    <task id="LOCAL-00137" summary="fix url not updated for Facebook">
+      <created>1449069211925</created>
+      <updated>1449069211925</updated>
+    </task>
+    <task id="LOCAL-00138" summary="fix url not updated for Facebook">
+      <created>1449069408648</created>
+      <updated>1449069408649</updated>
+    </task>
+    <task id="LOCAL-00139" summary="fix url not updated for Facebook">
+      <created>1449069711985</created>
+      <updated>1449069711985</updated>
+    </task>
+    <task id="LOCAL-00140" summary="fix url not updated for Facebook">
+      <created>1449069823376</created>
+      <updated>1449069823376</updated>
+    </task>
+    <task id="LOCAL-00141" summary="fix url not updated for Facebook">
+      <created>1449070065264</created>
+      <updated>1449070065264</updated>
+    </task>
+    <task id="LOCAL-00142" summary="fix url not updated for Facebook">
+      <created>1449070274296</created>
+      <updated>1449070274296</updated>
+    </task>
+    <task id="LOCAL-00143" summary="fix url not updated for Facebook">
+      <created>1449070564688</created>
+      <updated>1449070564688</updated>
+    </task>
+    <task id="LOCAL-00144" summary="fix url not updated for Facebook">
+      <created>1449070806004</created>
+      <updated>1449070806004</updated>
+    </task>
+    <task id="LOCAL-00145" summary="fix url not updated for Facebook">
+      <created>1449070944855</created>
+      <updated>1449070944855</updated>
+    </task>
+    <task id="LOCAL-00146" summary="fix url not updated for Facebook">
+      <created>1449071074131</created>
+      <updated>1449071074132</updated>
+    </task>
+    <task id="LOCAL-00147" summary="fix url not updated for Facebook">
+      <created>1449071196276</created>
+      <updated>1449071196277</updated>
+    </task>
+    <task id="LOCAL-00148" summary="revert to working version">
+      <created>1449072026971</created>
+      <updated>1449072026971</updated>
+    </task>
+    <task id="LOCAL-00149" summary="revert to working version">
+      <created>1449072149420</created>
+      <updated>1449072149420</updated>
+    </task>
+    <task id="LOCAL-00150" summary="revert to working version">
+      <created>1449072236313</created>
+      <updated>1449072236313</updated>
+    </task>
+    <task id="LOCAL-00151" summary="revert to working version">
+      <created>1449072768173</created>
+      <updated>1449072768173</updated>
+    </task>
+    <task id="LOCAL-00152" summary="revert to working version">
+      <created>1449072987634</created>
+      <updated>1449072987634</updated>
+    </task>
+    <task id="LOCAL-00153" summary="revert to working version">
+      <created>1449073297473</created>
+      <updated>1449073297474</updated>
+    </task>
+    <task id="LOCAL-00154" summary="revert to working version">
+      <created>1449074116506</created>
+      <updated>1449074116507</updated>
+    </task>
+    <task id="LOCAL-00155" summary="revert to working version">
+      <created>1449074501080</created>
+      <updated>1449074501080</updated>
+    </task>
+    <task id="LOCAL-00156" summary="fix wrong url in FB like/share due to forward with masking">
+      <created>1449150578252</created>
+      <updated>1449150578252</updated>
+    </task>
+    <task id="LOCAL-00157" summary="fix wrong url in FB like/share due to forward with masking">
+      <created>1449150723451</created>
+      <updated>1449150723451</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1036" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31382114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31707317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29268292" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29447854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31442463" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31928688" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2781186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <confirmMoveToFailedCommit value="1" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
+    <MESSAGE value="switch server from wamp to nodejs, fix issue with #" />
+    <MESSAGE value="merge 2 nodejs server into 1" />
+    <MESSAGE value="refactor nodejs server side" />
+    <MESSAGE value="add facebook file" />
+    <MESSAGE value="add handling for FB bot" />
+    <MESSAGE value="add handling facebook bot" />
+    <MESSAGE value="fix facebook scraper does not receive data" />
+    <MESSAGE value="add fruit images for fb" />
+    <MESSAGE value="change domain name" />
+    <MESSAGE value="update size for image on FB" />
+    <MESSAGE value="change url formed" />
+    <MESSAGE value="add logo" />
+    <MESSAGE value="center facebook like/share button&#10;&#10;remove redundant ',' in js" />
+    <MESSAGE value="center facebook button" />
+    <MESSAGE value="update facebook for quiz&#10;&#10;remove redundant code for main" />
+    <MESSAGE value="move fb share section to top" />
+    <MESSAGE value="move fb share section to top for quiz" />
+    <MESSAGE value="move fb share section to top for contact" />
+    <MESSAGE value="add more fb like/share button for contact page" />
+    <MESSAGE value="test" />
+    <MESSAGE value="add more fb like/share button for mission page" />
+    <MESSAGE value="fix url not updated for Facebook" />
+    <MESSAGE value="revert to working version" />
+    <MESSAGE value="fix wrong url in FB like/share due to forward with masking" />
+    <MESSAGE value="Merge branch 'master' of live:/fakefruit&#10;&#10;Conflicts:&#10;&#9;js/FruitService.js&#10;&#9;js/MainController.js&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of live:/fakefruit&#10;&#10;Conflicts:&#10;&#9;js/FruitService.js&#10;&#9;js/MainController.js&#10;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="2125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="47" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="2023" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="33" selection-start="1283" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="68" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="527" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="41" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2023" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="33" selection-start="1283" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="68" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="527" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="28" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="49" selection-start="1708" selection-end="1708" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="51" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="15" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="68" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="527" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="61" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="459" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ui-bootstrap-tpls-0.14.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/icon/tao.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/select2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="18" selection-start="4096" selection-end="4096" vertical-scroll-proportion="0.0" vertical-offset="2890" max-vertical-offset="3842" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="4" selection-end="10" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dropdown/select2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="29767" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="104474" selection-start="104639" selection-end="104639" vertical-scroll-proportion="0.18994413" vertical-offset="0" max-vertical-offset="358" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/HeadController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="34" selection-start="462" selection-end="462" vertical-scroll-proportion="0.69922876" vertical-offset="0" max-vertical-offset="476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/NewFile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/NewFile_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="39" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7327" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/type-selection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1025" vertical-scroll-proportion="-0.41666666" vertical-offset="145" max-vertical-offset="493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fruit-selection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="366" selection-end="366" vertical-scroll-proportion="0.3908046" vertical-offset="0" max-vertical-offset="493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="56" selection-start="458" selection-end="520" vertical-scroll-proportion="0.4775281" vertical-offset="0" max-vertical-offset="2346" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/origin-selection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="619" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="54" selection-start="658" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ContactController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="133" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mission.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="52" selection-start="7937" selection-end="7937" vertical-scroll-proportion="-4.576923" vertical-offset="2091" max-vertical-offset="3451" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular-route.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular-sanitize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11713" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5100">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="36" selection-start="898" selection-end="944" vertical-scroll-proportion="1.0262467" vertical-offset="0" max-vertical-offset="1207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/QuizController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="56" selection-start="2519" selection-end="2519" vertical-scroll-proportion="3.219697" vertical-offset="0" max-vertical-offset="2550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="127" selection-end="127" vertical-scroll-proportion="34.653847" vertical-offset="969" max-vertical-offset="2261">
+          <folding>
+            <marker date="1449149524076" expanded="true" signature="966:1070" placeholder="..." />
+            <marker date="1449149524076" expanded="true" signature="991:1052" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="81" selection-start="6332" selection-end="6332" vertical-scroll-proportion="0.0" vertical-offset="3416" max-vertical-offset="4403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/MissionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="69" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angulike.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="41" selection-start="1862" selection-end="1862" vertical-scroll-proportion="1.8133334" vertical-offset="0" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/MainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="25" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/FruitService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="19" selection-start="2964" selection-end="2964" vertical-scroll-proportion="3.6141732" vertical-offset="102" max-vertical-offset="3162">
+          <folding>
+            <marker date="1449151145332" expanded="true" signature="143:6290" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
