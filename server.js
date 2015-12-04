@@ -147,7 +147,10 @@ function getDataBasedOnQuery(query, prefix) {
 
             image = item['image'];
             title = prefix + ' cách phân biệt các loại ' + item['name'];
-            description = prefix + ' cách phân biệt các loại ' + item['name'];
+            if (prefix == 'Từ điển ')
+                description = item['text'] + 'Bạn hãy dành vài phút cập nhật thêm kiến thức nhá!';
+            else
+                description = item['text'] + 'Bạn hãy dành ít phút thử tài phân biệt qua các câu hỏi này nhá!'
         }
     }
     result.image = image;

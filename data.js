@@ -72,12 +72,14 @@ var flags = {
         'name': 'Táo',
         'image': 'tao.jpg',
         'icon': 'tao.png',
+        'text': 'Người dân Việt Nam hay chọn mua ba loại táo: táo Fuji, táo Gala và táo xanh.',
         'types': [
             {
                 'id': 'fuji',
                 'name': 'Táo Fuji',
                 'image': 'taofuji.jpg',
                 'icon': 'tao_fuji.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa táo Fuji Mỹ và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'my',
@@ -109,6 +111,7 @@ var flags = {
                 'name': 'Táo Xanh',
                 'image': 'taoxanh.jpg',
                 'icon': 'tao_xanh.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa táo xanh Mỹ và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'my',
@@ -137,6 +140,7 @@ var flags = {
                 'name': 'Táo Gala',
                 'image': 'taogala.jpg',
                 'icon': 'tao_gala.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa táo Gala Mỹ và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'my',
@@ -164,12 +168,14 @@ var flags = {
         'name': 'Nho',
         'image': 'nho.jpg',
         'icon': 'nho.png',
+        'text': 'Người dân Việt Nam hay chọn mua hai loại nho: nho đỏ và nho xanh. Hãy thử tìm hiểu cách phân biệt xuất xứ, nguồn gốc các loại nho này nhá.',
         'types': [
             {
                 'id': 'do',
                 'name': 'Nho Đỏ',
                 'image': 'nhodo.jpg',
                 'icon': 'nho_do.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa nho đỏ Mỹ, Ninh Thuận và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'ninhthuan',
@@ -216,6 +222,7 @@ var flags = {
                 'name': 'Nho Xanh',
                 'image': 'nhoxanh.jpg',
                 'icon': 'nho_xanh.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa nho xanh Ninh Thuận và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'ninhthuan',
@@ -249,12 +256,14 @@ var flags = {
         'name': 'Cam',
         'image': 'cam.jpg',
         'icon':'cam.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa cam Vinh, Úc và Trung Quốc không?',
         'types': [
             {
                 'id': 'cam',
                 'name': 'Cam',
                 'image': 'cam.jpg',
                 'icon': 'cam.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa cam Vinh, Úc và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vinh',
@@ -303,12 +312,14 @@ var flags = {
         'name': 'Dâu Tây',
         'image': 'dau.jpg',
         'icon':'dau.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa dâu Đà Lạt và Trung Quốc không?',
         'types': [
             {
                 'id': 'dau',
                 'name': 'Dâu Tây',
                 'image': 'dau.jpg',
                 'icon': 'dau.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa dâu Đà Lạt và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -348,12 +359,14 @@ var flags = {
         'name': 'Dưa Lưới',
         'image': 'dualuoi.jpg',
         'icon':'dualuoi.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa dưa lưới Việt Nam, Bảo Khuê và Trung Quốc không?',
         'types': [
             {
                 'id': 'dualuoi',
                 'name': 'Dưa Lưới',
                 'image': 'dualuoi.jpg',
                 'icon': 'dualuoi.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa dưa lưới Việt Nam, Bảo Khuê và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -401,12 +414,14 @@ var flags = {
         'name': 'Quýt',
         'image': 'quyt.jpg',
         'icon':'quyt.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa quýt Việt Nam và Trung Quốc không?',
         'types': [
             {
                 'id': 'quyt',
                 'name': 'Quýt',
                 'image': 'quyt.jpg',
                 'icon': 'quyt.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa quýt Việt Nam và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -442,12 +457,14 @@ var flags = {
         'name': 'Hồng',
         'image': 'hong.jpg',
         'icon':'hong.png',
+        'text': 'Người dân Việt Nam hay chọn mua hai loại hồng: hồng trứng và hồng giòn. Hãy thử tìm hiểu cách phân biệt xuất xứ, nguồn gốc các loại nho này nhá.',
         'types': [
             {
                 'id': 'trung',
                 'name': 'Hồng Trứng',
                 'image': 'hong.jpg',
                 'icon': 'hong.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa hồng trứng Đà Lạt và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -481,6 +498,7 @@ var flags = {
                 'id': 'gion',
                 'name': 'Hồng Giòn',
                 'icon': 'hong.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa hồng giòn Đà Lạt và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -510,12 +528,14 @@ var flags = {
         'name': 'Lê',
         'image': 'le.jpg',
         'icon':'le.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa lê Việt Nam và Trung Quốc không?',
         'types': [
             {
                 'id': 'le',
                 'name': 'Lê',
                 'image': 'le.jpg',
                 'icon': 'le.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa lê Việt Nam và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -555,12 +575,14 @@ var flags = {
         'name': 'Lựu',
         'image': 'luu.jpg',
         'icon':'luu.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa lựu Việt Nam và Trung Quốc không?',
         'types': [
             {
                 'id': 'luu',
                 'name': 'Lựu',
                 'image': 'luu.jpg',
                 'icon': 'luu.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa lựu Việt Nam và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -604,12 +626,14 @@ var flags = {
         'name': 'Xoài',
         'image': 'xoai.jpg',
         'icon':'xoai.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa xoài Việt Nam và Trung Quốc không?',
         'types': [
             {
                 'id': 'xoai',
                 'name': 'Xoài',
                 'image': 'xoai.jpg',
                 'icon': 'xoai.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa xoài Việt Nam và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -651,12 +675,14 @@ var flags = {
         'name': 'Mận',
         'image': 'man.jpg',
         'icon':'man.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa mận Lào Cai và Trung Quốc không?',
         'types': [
             {
                 'id': 'man',
                 'name': 'Mận',
                 'image': 'man.jpg',
                 'icon': 'man.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa mận Lào Cai và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'laocai',
@@ -707,12 +733,14 @@ var flags = {
         'name': 'Đào',
         'image': 'dao.jpg',
         'icon':'dao.png',
+        'text': 'Liệu bạn có biết cách phân biệt giữa đào Việt Nam và Trung Quốc không?',
         'types': [
             {
                 'id': 'dao',
                 'name': 'Đào',
                 'image': 'dao.jpg',
                 'icon': 'dao.png',
+                'text': 'Liệu bạn có biết cách phân biệt giữa đào Việt Nam và Trung Quốc không?',
                 'origins': [
                     {
                         'id': 'vietnam',
