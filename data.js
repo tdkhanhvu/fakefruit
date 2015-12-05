@@ -359,14 +359,14 @@ var flags = {
         'name': 'Dưa Lưới',
         'image': 'dualuoi.jpg',
         'icon':'dualuoi.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa dưa lưới Việt Nam, Bảo Khuê và Trung Quốc không?',
+        'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
         'types': [
             {
                 'id': 'dualuoi',
                 'name': 'Dưa Lưới',
                 'image': 'dualuoi.jpg',
                 'icon': 'dualuoi.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa dưa lưới Việt Nam, Bảo Khuê và Trung Quốc không?',
+                'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -414,14 +414,14 @@ var flags = {
         'name': 'Quýt',
         'image': 'quyt.jpg',
         'icon':'quyt.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa quýt Việt Nam và Trung Quốc không?',
+        'text': 'Quýt màu vàng mỡ gà, không được bắt mắt là quýt Việt Nam hay Trung Quốc? Đầu múi thường hay bị khô, xốp, không được mọng nước là đặc tính của quýt nước nào?',
         'types': [
             {
                 'id': 'quyt',
                 'name': 'Quýt',
                 'image': 'quyt.jpg',
                 'icon': 'quyt.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa quýt Việt Nam và Trung Quốc không?',
+                'text': 'Quýt màu vàng mỡ gà, không được bắt mắt là quýt Việt Nam hay Trung Quốc? Đầu múi thường hay bị khô, xốp, không được mọng nước là đặc tính của quýt nước nào?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -457,14 +457,14 @@ var flags = {
         'name': 'Hồng',
         'image': 'hong.jpg',
         'icon':'hong.png',
-        'text': 'Người dân Việt Nam hay chọn mua hai loại hồng: hồng trứng và hồng giòn. Hãy thử tìm hiểu cách phân biệt xuất xứ, nguồn gốc các loại nho này nhá.',
+        'text': 'Quả hồng tròn, dẹt trơn giống trứng gà là hồng trứng Đà Lạt hay Trung Quốc? Màu xanh nhưng hơi ngả vàng, màu sắc không đều, không bóng là hồng giòn Đà Lạt và Trung Quốc?',
         'types': [
             {
                 'id': 'trung',
                 'name': 'Hồng Trứng',
                 'image': 'hong.jpg',
                 'icon': 'hong.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa hồng trứng Đà Lạt và Trung Quốc không?',
+                'text': 'Quả hồng tròn, dẹt trơn giống trứng gà là hồng trứng Đà Lạt hay Trung Quốc? Loại hồng trứng nào có đặc tính hơi khô và không mọng nước?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -498,7 +498,7 @@ var flags = {
                 'id': 'gion',
                 'name': 'Hồng Giòn',
                 'icon': 'hong.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa hồng giòn Đà Lạt và Trung Quốc không?',
+                'text': 'Màu xanh nhưng hơi ngả vàng, màu sắc không đều, không bóng là hồng giòn Đà Lạt và Trung Quốc? Giữa hai loại này, loại nào có hình dáng to hơn?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -528,14 +528,14 @@ var flags = {
         'name': 'Lê',
         'image': 'le.jpg',
         'icon':'le.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa lê Việt Nam và Trung Quốc không?',
+        'text': 'Thịt quả trắng, đồng đều, không bị khô xốp là lê Việt Nam hay Trung Quốc? Loại lê nào có đặc tính ruột thâm đen hoặc có nhiều vết nứt thâm, lỗ chỗ như kim châm?',
         'types': [
             {
                 'id': 'le',
                 'name': 'Lê',
                 'image': 'le.jpg',
                 'icon': 'le.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa lê Việt Nam và Trung Quốc không?',
+                'text': 'Thịt quả trắng, đồng đều, không bị khô xốp là lê Việt Nam hay Trung Quốc? Loại lê nào có đặc tính ruột thâm đen hoặc có nhiều vết nứt thâm, lỗ chỗ như kim châm?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -575,14 +575,14 @@ var flags = {
         'name': 'Lựu',
         'image': 'luu.jpg',
         'icon':'luu.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa lựu Việt Nam và Trung Quốc không?',
+        'text': 'Trái lựu hạt nhiều và có màu nhạt hơn, nhiều nước là lựu Việt Nam hay Trung Quốc? Loại lựu nào có đặc tính là trái tròn, đều nhau, đẹp mắt?',
         'types': [
             {
                 'id': 'luu',
                 'name': 'Lựu',
                 'image': 'luu.jpg',
                 'icon': 'luu.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa lựu Việt Nam và Trung Quốc không?',
+                'text': 'Trái lựu hạt nhiều và có màu nhạt hơn, nhiều nước là lựu Việt Nam hay Trung Quốc? Loại lựu nào có đặc tính là trái tròn, đều nhau, đẹp mắt?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -626,14 +626,14 @@ var flags = {
         'name': 'Xoài',
         'image': 'xoai.jpg',
         'icon':'xoai.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa xoài Việt Nam và Trung Quốc không?',
+        'text': 'Trái thuôn, khúc đầu của quả xoài chín vàng và cứng là xoài Việt Nam hay Trung Quốc? Loại xoài nào không có vị xoài và ăn nhạt nhẽo?',
         'types': [
             {
                 'id': 'xoai',
                 'name': 'Xoài',
                 'image': 'xoai.jpg',
                 'icon': 'xoai.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa xoài Việt Nam và Trung Quốc không?',
+                'text': 'Trái thuôn, khúc đầu của quả xoài chín vàng và cứng là xoài Việt Nam hay Trung Quốc? Loại xoài nào không có vị xoài và ăn nhạt nhẽo?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -675,14 +675,14 @@ var flags = {
         'name': 'Mận',
         'image': 'man.jpg',
         'icon':'man.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa mận Lào Cai và Trung Quốc không?',
+        'text': 'Trái mận nhỏ và màu tím là mận Lào Cai hay Trung Quốc? Loại mận nào hết mùa vào giữa tháng 7?',
         'types': [
             {
                 'id': 'man',
                 'name': 'Mận',
                 'image': 'man.jpg',
                 'icon': 'man.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa mận Lào Cai và Trung Quốc không?',
+                'text': 'Trái mận nhỏ và màu tím là mận Lào Cai hay Trung Quốc? Loại mận nào hết mùa vào giữa tháng 7?',
                 'origins': [
                     {
                         'id': 'laocai',
@@ -733,14 +733,14 @@ var flags = {
         'name': 'Đào',
         'image': 'dao.jpg',
         'icon':'dao.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa đào Việt Nam và Trung Quốc không?',
+        'text': 'Trái đào kích thước khá nhỏ, bằng chén uống nước trà là đào Việt Nam và Trung Quốc? Loại đào nào vỏ trơn láng, nhẵn mịn trong khi lông ít hoặc không có?',
         'types': [
             {
                 'id': 'dao',
                 'name': 'Đào',
                 'image': 'dao.jpg',
                 'icon': 'dao.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa đào Việt Nam và Trung Quốc không?',
+                'text': 'Trái đào kích thước khá nhỏ, bằng chén uống nước trà là đào Việt Nam và Trung Quốc? Loại đào nào vỏ trơn láng, nhẵn mịn trong khi lông ít hoặc không có?',
                 'origins': [
                     {
                         'id': 'vietnam',
