@@ -148,9 +148,9 @@ function getDataBasedOnQuery(query, prefix) {
             image = item['image'];
             title = prefix + ' cách phân biệt các loại ' + item['name'];
             if (prefix == 'Từ điển ')
-                description = item['text'] + 'Bạn hãy dành vài phút cập nhật thêm kiến thức nhá!';
+                description = item['text'] + ' Bạn hãy dành vài phút cập nhật thêm kiến thức nhá!';
             else
-                description = item['text'] + 'Bạn hãy dành ít phút thử tài phân biệt qua các câu hỏi này nhá!'
+                description = item['text'] + ' Bạn có đủ tự tin là mình phân biệt được không? Hãy dành ít phút thử tài của bạn qua các câu hỏi này nhá!'
         }
     }
     result.image = image;

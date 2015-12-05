@@ -72,14 +72,14 @@ var flags = {
         'name': 'Táo',
         'image': 'tao.jpg',
         'icon': 'tao.png',
-        'text': 'Người dân Việt Nam hay chọn mua ba loại táo: táo Fuji, táo Gala và táo xanh.',
+        'text': 'Hình dáng trái táo hơi vuông và có góc cạnh là táo Fuji Mỹ hay Trung Quốc? Màu trái táo xanh đậm là táo xanh Mỹ hay Trung Quốc? Ruột trái táo nhiều nước là táo Gala Mỹ hay Trung Quốc?',
         'types': [
             {
                 'id': 'fuji',
                 'name': 'Táo Fuji',
                 'image': 'taofuji.jpg',
                 'icon': 'tao_fuji.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa táo Fuji Mỹ và Trung Quốc không?',
+                'text': 'Hình dáng trái táo hơi vuông và có góc cạnh là táo Fuji Mỹ hay Trung Quốc? Thế còn vỏ nhiều hạt trắng mịn thì sao? Và vị xốp, bở có chút vị ngọt?',
                 'origins': [
                     {
                         'id': 'my',
@@ -111,7 +111,7 @@ var flags = {
                 'name': 'Táo Xanh',
                 'image': 'taoxanh.jpg',
                 'icon': 'tao_xanh.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa táo xanh Mỹ và Trung Quốc không?',
+                'text': 'Màu trái táo xanh đậm là táo xanh Mỹ hay Trung Quốc? Thế còn mùi thơm và vị chát ở lưỡi dù đã gọt vỏ thì sao?',
                 'origins': [
                     {
                         'id': 'my',
@@ -140,7 +140,7 @@ var flags = {
                 'name': 'Táo Gala',
                 'image': 'taogala.jpg',
                 'icon': 'tao_gala.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa táo Gala Mỹ và Trung Quốc không?',
+                'text': 'Ruột trái táo nhiều nước là táo Gala Mỹ hay Trung Quốc? Thế xốp và vị nhạt, thậm chí không có mùi vị gì thì sao?',
                 'origins': [
                     {
                         'id': 'my',
@@ -168,14 +168,14 @@ var flags = {
         'name': 'Nho',
         'image': 'nho.jpg',
         'icon': 'nho.png',
-        'text': 'Người dân Việt Nam hay chọn mua hai loại nho: nho đỏ và nho xanh. Hãy thử tìm hiểu cách phân biệt xuất xứ, nguồn gốc các loại nho này nhá.',
+        'text': 'Vỏ mỏng, chùm nhỏ, thon dài, trái khít vào nhau là đặc tính của nho đỏ Ninh Thuận, nho Mỹ hay nho Trung Quốc? Màu xanh ngả vành nhạt là đặc tính của nho xanh Ninh Thuận hay nho Trung Quốc?',
         'types': [
             {
                 'id': 'do',
                 'name': 'Nho Đỏ',
                 'image': 'nhodo.jpg',
                 'icon': 'nho_do.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa nho đỏ Mỹ, Ninh Thuận và Trung Quốc không?',
+                'text': 'Vỏ mỏng, chùm nhỏ, thon dài, trái khít vào nhau là đặc tính của nho đỏ Ninh Thuận, nho Mỹ hay nho Trung Quốc? Giữa các loại nho vừa kể trên, loại nào ruột có nhiều hạt, mềm?',
                 'origins': [
                     {
                         'id': 'ninhthuan',
@@ -222,7 +222,7 @@ var flags = {
                 'name': 'Nho Xanh',
                 'image': 'nhoxanh.jpg',
                 'icon': 'nho_xanh.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa nho xanh Ninh Thuận và Trung Quốc không?',
+                'text': 'Màu xanh ngả vành nhạt là đặc tính của nho xanh Ninh Thuận hay nho Trung Quốc? Giữa các loại nho vừa kể trên, loại nào ruột mềm, không hạt và nhiều nước?',
                 'origins': [
                     {
                         'id': 'ninhthuan',
@@ -256,14 +256,14 @@ var flags = {
         'name': 'Cam',
         'image': 'cam.jpg',
         'icon':'cam.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa cam Vinh, Úc và Trung Quốc không?',
+        'text': 'Vỏ thường bị nám phía trên cuống, hơi mỏng chứ không mỏng tanh là đặc tính của cam Vinh, cam Úc hay cam Trung Quốc? Cam nước nào có vị ngọt và mùi thơm vừa phải?',
         'types': [
             {
                 'id': 'cam',
                 'name': 'Cam',
                 'image': 'cam.jpg',
                 'icon': 'cam.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa cam Vinh, Úc và Trung Quốc không?',
+                'text': 'Vỏ thường bị nám phía trên cuống, hơi mỏng chứ không mỏng tanh là đặc tính của cam Vinh, cam Úc hay cam Trung Quốc? Cam nước nào có vị ngọt và mùi thơm vừa phải?',
                 'origins': [
                     {
                         'id': 'vinh',
@@ -312,14 +312,14 @@ var flags = {
         'name': 'Dâu Tây',
         'image': 'dau.jpg',
         'icon':'dau.png',
-        'text': 'Liệu bạn có biết cách phân biệt giữa dâu Đà Lạt và Trung Quốc không?',
+        'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
         'types': [
             {
                 'id': 'dau',
                 'name': 'Dâu Tây',
                 'image': 'dau.jpg',
                 'icon': 'dau.png',
-                'text': 'Liệu bạn có biết cách phân biệt giữa dâu Đà Lạt và Trung Quốc không?',
+                'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
                 'origins': [
                     {
                         'id': 'dalat',
