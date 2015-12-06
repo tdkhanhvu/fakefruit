@@ -9,7 +9,7 @@
 
         var getAttributeGroups = function () {
             var url = host + 'getAttributeGroups';
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -19,7 +19,7 @@
 
         var getAllFruits = function() {
             var url = host + 'getAllFruits';
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -35,8 +35,7 @@
 
         var onGetAllFruits = function($scope, data) {
             $scope.fruits = data;
-
-            if (typeof($routeParams.fruit) != undefined) {
+            if (typeof($routeParams.fruit) != 'undefined') {
                 $scope.fruits.forEach(function(fruit){
                     if ($routeParams.fruit == fruit.id) {
                         $scope.selectedFruit = fruit;
@@ -51,9 +50,13 @@
             return imagePath + imageName;
         };
 
+        var getCurrentUrl = function() {
+            return $location.absUrl().replace('/#','');
+        }
+
         var searchFruit = function (fruitId, $scope) {
             var url = host + 'searchFruit/' + fruitId;
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -62,12 +65,6 @@
                     types.forEach(function (type) {
                         type['icon'] = iconPath + type['icon'];
                     });
-                    
-                    // $scope.myModel = {
-                    //     Url: url,
-                    //     Name: "AngularJS directives for social sharing buttons - Facebook, Google+, Twitter and Pinterest | Jason Watmore's Blog",
-                    //     ImageUrl: 'http://www.jasonwatmore.com/pics/jason.jpg'
-                    // };
 
                     return types;
                 });
@@ -85,7 +82,7 @@
             if ($scope.types.length == 1) {
                 $scope.selectedType = $scope.types[0];
                 $scope.searchType();
-            } else if (typeof($routeParams.type) != undefined) {
+            } else if (typeof($routeParams.type) != 'undefined') {
                 $scope.types.forEach(function(type){
                     if ($routeParams.type == type.id) {
                         $scope.selectedType = type;
@@ -98,7 +95,7 @@
 
         var searchType = function (fruitId, typeId, $scope, $location) {
             var url = host + 'searchType/' + fruitId + '/' + typeId;
-            console.log(url);
+            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -178,6 +175,7 @@
             searchFruit: searchFruit,
             searchType: searchType,
             getStaticImage: getStaticImage,
+            getCurrentUrl: getCurrentUrl,
             onGetAllFruits: onGetAllFruits,
             onSearchFruit: onSearchFruit
         };

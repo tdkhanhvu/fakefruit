@@ -8,7 +8,6 @@ var http = require('http'),
     flags = data.flags,
     domain = 'http://52.76.185.81';
 
-
 function getContentType(extension) {
     switch (extension) {
         case '.js':
@@ -113,7 +112,7 @@ function getStaticFile(filePath, contentType, response) {
                     response.end();
                 }
                 else {
-                    response.writeHead(200, { 'Content-Type': contentType });
+                    response.writeHead(200, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*' });
                     response.end(content, 'utf-8');
                 }
             });
@@ -148,7 +147,10 @@ function getDataBasedOnQuery(query, prefix) {
 
             image = item['image'];
             title = prefix + ' cách phân biệt các loại ' + item['name'];
-            description = prefix + ' cách phân biệt các loại ' + item['name'];
+            if (prefix == 'Từ điển ')
+                description = item['text'] + ' Bạn hãy dành vài phút cập nhật thêm kiến thức nhá!';
+            else
+                description = item['text'] + ' Bạn có đủ tự tin là mình phân biệt được không? Hãy dành ít phút thử tài của bạn qua các câu hỏi này nhá!'
         }
     }
     result.image = image;
@@ -192,7 +194,7 @@ function handleFacebookBot(request, response) {
 
     result['image'] = domain + '/assets/fruit/' + result['image'];
 
-    response.writeHead(200, { 'Content-Type': 'text/html'});
+    response.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*'});
 
     fs.readFile('./facebook.html', 'utf-8', function (error, content) {
         if (error) {
@@ -228,7 +230,7 @@ function start() {
         var contentType = getContentType(path.extname(filePath));
 
         console.log('filePath:' + filePath);
-        response.writeHead(200, { 'Content-Type': contentType});
+        response.writeHead(200, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*'});
 
         switch (action) {
             case 'getAllFruits':

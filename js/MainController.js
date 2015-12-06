@@ -5,10 +5,6 @@
     var MainController = function ($scope, $http, $location, FruitService) {
         $scope.selectedFruit = undefined;
         $scope.selectedType = undefined;
-        var _url = $location.absUrl();
-        $scope.myModel = {
-            Url: _url
-        };
 
         var onGetAllFruits = function(data){
             FruitService.onGetAllFruits($scope, data);
@@ -24,9 +20,9 @@
 
             $location.path('/main', false).search('fruit', $scope.selectedFruit.id)
                 .search('type', $scope.selectedType.id);
-            _url = $location.absUrl();
+
             $scope.myModel = {
-                Url: _url
+                Url: FruitService.getCurrentUrl()
             };
         };
 

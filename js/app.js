@@ -14,7 +14,6 @@
         $http.get("http://www.w3schools.com/angular/customers.php")
         .success(function(response) {
             $scope.names = response.records;
-            console.log($scope.names);
         });
     });
     app.config(function($routeProvider, $locationProvider){
@@ -48,19 +47,20 @@
             restrict: 'E',
             templateUrl: './templates/fruit-selection.html'
         };
-    });
-
-    app.directive('typeSelection', function(){
+    }).directive('typeSelection', function(){
         return {
             restrict: 'E',
             templateUrl: './templates/type-selection.html'
         };
-    });
-
-    app.directive('originSelection', function(){
+    }).directive('originSelection', function(){
         return {
             restrict: 'E',
             templateUrl: './templates/origin-selection.html'
+        };
+    }).directive('facebookShare', function(){
+        return {
+            restrict: 'E',
+            templateUrl: './templates/facebook-share.html'
         };
     });
 }());

@@ -72,12 +72,14 @@ var flags = {
         'name': 'Táo',
         'image': 'tao.jpg',
         'icon': 'tao.png',
+        'text': 'Hình dáng trái táo hơi vuông và có góc cạnh là táo Fuji Mỹ hay Trung Quốc? Màu trái táo xanh đậm là táo xanh Mỹ hay Trung Quốc? Ruột trái táo nhiều nước là táo Gala Mỹ hay Trung Quốc?',
         'types': [
             {
                 'id': 'fuji',
                 'name': 'Táo Fuji',
                 'image': 'taofuji.jpg',
                 'icon': 'tao_fuji.png',
+                'text': 'Hình dáng trái táo hơi vuông và có góc cạnh là táo Fuji Mỹ hay Trung Quốc? Thế còn vỏ nhiều hạt trắng mịn thì sao? Và vị xốp, bở có chút vị ngọt?',
                 'origins': [
                     {
                         'id': 'my',
@@ -109,6 +111,7 @@ var flags = {
                 'name': 'Táo Xanh',
                 'image': 'taoxanh.jpg',
                 'icon': 'tao_xanh.png',
+                'text': 'Màu trái táo xanh đậm là táo xanh Mỹ hay Trung Quốc? Thế còn mùi thơm và vị chát ở lưỡi dù đã gọt vỏ thì sao?',
                 'origins': [
                     {
                         'id': 'my',
@@ -137,6 +140,7 @@ var flags = {
                 'name': 'Táo Gala',
                 'image': 'taogala.jpg',
                 'icon': 'tao_gala.png',
+                'text': 'Ruột trái táo nhiều nước là táo Gala Mỹ hay Trung Quốc? Thế xốp và vị nhạt, thậm chí không có mùi vị gì thì sao?',
                 'origins': [
                     {
                         'id': 'my',
@@ -164,12 +168,14 @@ var flags = {
         'name': 'Nho',
         'image': 'nho.jpg',
         'icon': 'nho.png',
+        'text': 'Vỏ mỏng, chùm nhỏ, thon dài, trái khít vào nhau là đặc tính của nho đỏ Ninh Thuận, nho Mỹ hay nho Trung Quốc? Màu xanh ngả vành nhạt là đặc tính của nho xanh Ninh Thuận hay nho Trung Quốc?',
         'types': [
             {
                 'id': 'do',
                 'name': 'Nho Đỏ',
                 'image': 'nhodo.jpg',
                 'icon': 'nho_do.png',
+                'text': 'Vỏ mỏng, chùm nhỏ, thon dài, trái khít vào nhau là đặc tính của nho đỏ Ninh Thuận, nho Mỹ hay nho Trung Quốc? Giữa các loại nho vừa kể trên, loại nào ruột có nhiều hạt, mềm?',
                 'origins': [
                     {
                         'id': 'ninhthuan',
@@ -216,6 +222,7 @@ var flags = {
                 'name': 'Nho Xanh',
                 'image': 'nhoxanh.jpg',
                 'icon': 'nho_xanh.png',
+                'text': 'Màu xanh ngả vành nhạt là đặc tính của nho xanh Ninh Thuận hay nho Trung Quốc? Giữa các loại nho vừa kể trên, loại nào ruột mềm, không hạt và nhiều nước?',
                 'origins': [
                     {
                         'id': 'ninhthuan',
@@ -249,12 +256,14 @@ var flags = {
         'name': 'Cam',
         'image': 'cam.jpg',
         'icon':'cam.png',
+        'text': 'Vỏ thường bị nám phía trên cuống, hơi mỏng chứ không mỏng tanh là đặc tính của cam Vinh, cam Úc hay cam Trung Quốc? Cam nước nào có vị ngọt và mùi thơm vừa phải?',
         'types': [
             {
                 'id': 'cam',
                 'name': 'Cam',
                 'image': 'cam.jpg',
                 'icon': 'cam.png',
+                'text': 'Vỏ thường bị nám phía trên cuống, hơi mỏng chứ không mỏng tanh là đặc tính của cam Vinh, cam Úc hay cam Trung Quốc? Cam nước nào có vị ngọt và mùi thơm vừa phải?',
                 'origins': [
                     {
                         'id': 'vinh',
@@ -303,12 +312,14 @@ var flags = {
         'name': 'Dâu Tây',
         'image': 'dau.jpg',
         'icon':'dau.png',
+        'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
         'types': [
             {
                 'id': 'dau',
                 'name': 'Dâu Tây',
                 'image': 'dau.jpg',
                 'icon': 'dau.png',
+                'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -348,12 +359,14 @@ var flags = {
         'name': 'Dưa Lưới',
         'image': 'dualuoi.jpg',
         'icon':'dualuoi.png',
+        'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
         'types': [
             {
                 'id': 'dualuoi',
                 'name': 'Dưa Lưới',
                 'image': 'dualuoi.jpg',
                 'icon': 'dualuoi.png',
+                'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -401,12 +414,14 @@ var flags = {
         'name': 'Quýt',
         'image': 'quyt.jpg',
         'icon':'quyt.png',
+        'text': 'Quýt màu vàng mỡ gà, không được bắt mắt là quýt Việt Nam hay Trung Quốc? Đầu múi thường hay bị khô, xốp, không được mọng nước là đặc tính của quýt nước nào?',
         'types': [
             {
                 'id': 'quyt',
                 'name': 'Quýt',
                 'image': 'quyt.jpg',
                 'icon': 'quyt.png',
+                'text': 'Quýt màu vàng mỡ gà, không được bắt mắt là quýt Việt Nam hay Trung Quốc? Đầu múi thường hay bị khô, xốp, không được mọng nước là đặc tính của quýt nước nào?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -442,12 +457,14 @@ var flags = {
         'name': 'Hồng',
         'image': 'hong.jpg',
         'icon':'hong.png',
+        'text': 'Quả hồng tròn, dẹt trơn giống trứng gà là hồng trứng Đà Lạt hay Trung Quốc? Màu xanh nhưng hơi ngả vàng, màu sắc không đều, không bóng là hồng giòn Đà Lạt và Trung Quốc?',
         'types': [
             {
                 'id': 'trung',
                 'name': 'Hồng Trứng',
                 'image': 'hong.jpg',
                 'icon': 'hong.png',
+                'text': 'Quả hồng tròn, dẹt trơn giống trứng gà là hồng trứng Đà Lạt hay Trung Quốc? Loại hồng trứng nào có đặc tính hơi khô và không mọng nước?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -481,6 +498,7 @@ var flags = {
                 'id': 'gion',
                 'name': 'Hồng Giòn',
                 'icon': 'hong.png',
+                'text': 'Màu xanh nhưng hơi ngả vàng, màu sắc không đều, không bóng là hồng giòn Đà Lạt và Trung Quốc? Giữa hai loại này, loại nào có hình dáng to hơn?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -510,12 +528,14 @@ var flags = {
         'name': 'Lê',
         'image': 'le.jpg',
         'icon':'le.png',
+        'text': 'Thịt quả trắng, đồng đều, không bị khô xốp là lê Việt Nam hay Trung Quốc? Loại lê nào có đặc tính ruột thâm đen hoặc có nhiều vết nứt thâm, lỗ chỗ như kim châm?',
         'types': [
             {
                 'id': 'le',
                 'name': 'Lê',
                 'image': 'le.jpg',
                 'icon': 'le.png',
+                'text': 'Thịt quả trắng, đồng đều, không bị khô xốp là lê Việt Nam hay Trung Quốc? Loại lê nào có đặc tính ruột thâm đen hoặc có nhiều vết nứt thâm, lỗ chỗ như kim châm?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -555,12 +575,14 @@ var flags = {
         'name': 'Lựu',
         'image': 'luu.jpg',
         'icon':'luu.png',
+        'text': 'Trái lựu hạt nhiều và có màu nhạt hơn, nhiều nước là lựu Việt Nam hay Trung Quốc? Loại lựu nào có đặc tính là trái tròn, đều nhau, đẹp mắt?',
         'types': [
             {
                 'id': 'luu',
                 'name': 'Lựu',
                 'image': 'luu.jpg',
                 'icon': 'luu.png',
+                'text': 'Trái lựu hạt nhiều và có màu nhạt hơn, nhiều nước là lựu Việt Nam hay Trung Quốc? Loại lựu nào có đặc tính là trái tròn, đều nhau, đẹp mắt?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -604,12 +626,14 @@ var flags = {
         'name': 'Xoài',
         'image': 'xoai.jpg',
         'icon':'xoai.png',
+        'text': 'Trái thuôn, khúc đầu của quả xoài chín vàng và cứng là xoài Việt Nam hay Trung Quốc? Loại xoài nào không có vị xoài và ăn nhạt nhẽo?',
         'types': [
             {
                 'id': 'xoai',
                 'name': 'Xoài',
                 'image': 'xoai.jpg',
                 'icon': 'xoai.png',
+                'text': 'Trái thuôn, khúc đầu của quả xoài chín vàng và cứng là xoài Việt Nam hay Trung Quốc? Loại xoài nào không có vị xoài và ăn nhạt nhẽo?',
                 'origins': [
                     {
                         'id': 'vietnam',
@@ -651,12 +675,14 @@ var flags = {
         'name': 'Mận',
         'image': 'man.jpg',
         'icon':'man.png',
+        'text': 'Trái mận nhỏ và màu tím là mận Lào Cai hay Trung Quốc? Loại mận nào hết mùa vào giữa tháng 7?',
         'types': [
             {
                 'id': 'man',
                 'name': 'Mận',
                 'image': 'man.jpg',
                 'icon': 'man.png',
+                'text': 'Trái mận nhỏ và màu tím là mận Lào Cai hay Trung Quốc? Loại mận nào hết mùa vào giữa tháng 7?',
                 'origins': [
                     {
                         'id': 'laocai',
@@ -707,12 +733,14 @@ var flags = {
         'name': 'Đào',
         'image': 'dao.jpg',
         'icon':'dao.png',
+        'text': 'Trái đào kích thước khá nhỏ, bằng chén uống nước trà là đào Việt Nam và Trung Quốc? Loại đào nào vỏ trơn láng, nhẵn mịn trong khi lông ít hoặc không có?',
         'types': [
             {
                 'id': 'dao',
                 'name': 'Đào',
                 'image': 'dao.jpg',
                 'icon': 'dao.png',
+                'text': 'Trái đào kích thước khá nhỏ, bằng chén uống nước trà là đào Việt Nam và Trung Quốc? Loại đào nào vỏ trơn láng, nhẵn mịn trong khi lông ít hoặc không có?',
                 'origins': [
                     {
                         'id': 'vietnam',
