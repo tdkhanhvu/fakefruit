@@ -148,7 +148,9 @@
                         if (startAttribute == null)
                             startAttribute = attribute;
                         else
-                            temp.push({'group':'', 'class':attributeGroup.class,
+                            temp.push({
+                                'group':'',
+                                'class':attributeGroup['class'],
                                 'id':attribute.id, 'name':attribute.name, 'rows': 0});
                         rowCount++;
                     }
