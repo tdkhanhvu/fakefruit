@@ -44,6 +44,66 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h1 class="panel-title visible-xs-inline">
+                                <strong>Đăng kí tham gia</strong>
+                                <div fb-like="myModel.Url" style="float: right;"></div>
+                            </h1>
+                            <h1 class="panel-title hidden-xs" style="font-size: 36px">
+                                <strong>Đăng kí tham gia</strong>
+                                <div fb-like="myModel.Url" style="float: right;margin-top: -10px;"></div>
+                            </h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="text-center">
+                                <form class="form-horizontal" novalidate ng-hide="submitted"
+                                      ng-submit="submitForm()">
+                                    <div class="form-group">
+                                        <label for="inputName" class="col-sm-2 control-label">Họ Tên</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" ng-model="name"
+                                                   id="inputName" placeholder="Họ Tên">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" ng-model="email"
+                                                   id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPosition" class="col-sm-2 control-label">Vị Trí</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="inputPosition"
+                                                    ng-model="position">
+                                                <option>Thiết Kế</option>
+                                                <option>Lập Trình</option>
+                                                <option>Đóng Góp Thông Tin</option>
+                                                <option>PR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputComment" class="col-sm-2 control-label">Ghi Chú</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" ng-model="comment"
+                                                      id="inputComment" rows="3"></textarea>                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit"
+                                                    class="btn btn-default">Đăng Kí</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <p ng-show="submitted">
+                                    Cảm ơn bạn đã đăng kí tham gia. Tụi mình sẽ liên hệ lại bạn sau.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h1 class="panel-title visible-xs-inline">
                                 <strong>Liên Hệ</strong>
                                 <div fb-like="myModel.Url" style="float: right;"></div>
                             </h1>
