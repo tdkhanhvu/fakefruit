@@ -151,7 +151,9 @@
                             temp.push({
                                 'group':'',
                                 'class':attributeGroup['class'],
-                                'id':attribute.id, 'name':attribute.name, 'rows': 0});
+                                'id':attribute.id,
+                                'name':attribute.name,
+                                'rows': 0});
                         rowCount++;
                     }
                 }
@@ -159,8 +161,11 @@
                 //number of row span by attribute group name cell = number
                 //of attributes exist in origin
                 if (startAttribute != null)
-                    result.push({'group':attributeGroup.name, 'class':attributeGroup.class, 'id':startAttribute.id,
-                        'name':startAttribute.name, 'rows':rowCount});
+                    result.push({'group':attributeGroup.name,
+                        'class':attributeGroup['class'],
+                        'id':startAttribute.id,
+                        'name':startAttribute.name,
+                        'rows':rowCount});
 
                 if (temp.length)
                     result.push.apply(result, temp);
