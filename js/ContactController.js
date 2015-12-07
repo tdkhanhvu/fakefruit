@@ -15,4 +15,3 @@
 
     app.controller("ContactController", ContactController);
 })();
-
