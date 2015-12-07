@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f712029a-7e8a-4830-a759-52c33e36de9b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ContactController.js" afterPath="$PROJECT_DIR$/js/ContactController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/FruitService.js" afterPath="$PROJECT_DIR$/js/FruitService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/MissionController.js" afterPath="$PROJECT_DIR$/js/MissionController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/QuizController.js" afterPath="$PROJECT_DIR$/js/QuizController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angulike.js" afterPath="$PROJECT_DIR$/js/angulike.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mission.html" afterPath="$PROJECT_DIR$/mission.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quiz.html" afterPath="$PROJECT_DIR$/quiz.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+    <list default="true" id="f712029a-7e8a-4830-a759-52c33e36de9b" name="Default" comment="change from elastic ip to domain name" />
+    <list id="c7847610-c6ec-4e17-a04d-377b41eba643" name="ignore" comment="add handling facebook bot">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/FakeFruit.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <list id="c7847610-c6ec-4e17-a04d-377b41eba643" name="ignore" comment="add handling facebook bot" />
     <ignored path="FakeFruit.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,51 +32,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/MainController.js">
+      <file leaf-file-name="mission.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mission.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="25" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1224">
+            <state line="146" column="62" selection-start="9145" selection-end="9145" vertical-scroll-proportion="0.0" vertical-offset="2504" max-vertical-offset="3893">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FruitService.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FruitService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/FruitService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="19" selection-start="2964" selection-end="2964" vertical-scroll-proportion="3.6141732" vertical-offset="102" max-vertical-offset="3162">
-              <folding>
-                <marker date="1449151145332" expanded="true" signature="143:6290" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="81" selection-start="6332" selection-end="6332" vertical-scroll-proportion="0.0" vertical-offset="3416" max-vertical-offset="4403">
+            <state line="11" column="22" selection-start="476" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="3247">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="127" selection-end="127" vertical-scroll-proportion="34.653847" vertical-offset="969" max-vertical-offset="2261">
-              <folding>
-                <marker date="1449149524076" expanded="true" signature="966:1070" placeholder="..." />
-                <marker date="1449149524076" expanded="true" signature="991:1052" placeholder="{...}" />
-              </folding>
+            <state line="16" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1207">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.html">
+      <file leaf-file-name="data.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1972">
+            <state line="736" column="0" selection-start="31873" selection-end="31873" vertical-scroll-proportion="0.0" vertical-offset="679" max-vertical-offset="13294">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="21" selection-start="250" selection-end="250" vertical-scroll-proportion="0.35695538" vertical-offset="0" max-vertical-offset="4471">
               <folding />
             </state>
           </provider>
@@ -107,30 +98,31 @@
         <option value="$PROJECT_DIR$/css/select2.css" />
         <option value="$PROJECT_DIR$/NodeJs/data.js" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/js/HeadController.js" />
         <option value="$PROJECT_DIR$/templates/type-selection.html" />
         <option value="$PROJECT_DIR$/templates/fruit-selection.html" />
         <option value="$PROJECT_DIR$/templates/origin-selection.html" />
         <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/NodeJs/router.js" />
         <option value="$PROJECT_DIR$/NodeJs/index.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/NodeJs/server.js" />
-        <option value="$PROJECT_DIR$/data.js" />
-        <option value="$PROJECT_DIR$/quiz.html" />
-        <option value="$PROJECT_DIR$/js/ContactController.js" />
-        <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/js/MissionController.js" />
-        <option value="$PROJECT_DIR$/mission.html" />
         <option value="$PROJECT_DIR$/facebook.html" />
-        <option value="$PROJECT_DIR$/js/QuizController.js" />
-        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/js/angulike.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/quiz.html" />
+        <option value="$PROJECT_DIR$/templates/facebook-share.html" />
+        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/js/QuizController.js" />
         <option value="$PROJECT_DIR$/js/MainController.js" />
+        <option value="$PROJECT_DIR$/js/MissionController.js" />
+        <option value="$PROJECT_DIR$/js/ContactController.js" />
+        <option value="$PROJECT_DIR$/mission.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/js/FruitService.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/HeadController.js" />
+        <option value="$PROJECT_DIR$/data.js" />
         <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
@@ -167,7 +159,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,22 +177,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FakeFruit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FakeFruit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,9 +192,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="65" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="71" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="70" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="742" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="743" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="79" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
@@ -909,7 +887,71 @@
       <created>1449150723451</created>
       <updated>1449150723451</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="update with CORS for server">
+      <created>1449151879681</created>
+      <updated>1449151879681</updated>
+    </task>
+    <task id="LOCAL-00159" summary="update with CORS for server">
+      <created>1449152056854</created>
+      <updated>1449152056854</updated>
+    </task>
+    <task id="LOCAL-00160" summary="revert to elastic IP">
+      <created>1449153723896</created>
+      <updated>1449153723896</updated>
+    </task>
+    <task id="LOCAL-00161" summary="fix issue with forwarding with masking when share link on FB">
+      <created>1449154002964</created>
+      <updated>1449154002964</updated>
+    </task>
+    <task id="LOCAL-00162" summary="change mission page content">
+      <created>1449160247177</created>
+      <updated>1449160247177</updated>
+    </task>
+    <task id="LOCAL-00163" summary="remove initializing url for quiz page">
+      <created>1449160405264</created>
+      <updated>1449160405264</updated>
+    </task>
+    <task id="LOCAL-00164" summary="extract facebook share into template">
+      <created>1449160901650</created>
+      <updated>1449160901650</updated>
+    </task>
+    <task id="LOCAL-00165" summary="extract get current url into FruitService">
+      <created>1449161971144</created>
+      <updated>1449161971144</updated>
+    </task>
+    <task id="LOCAL-00166" summary="fix content">
+      <created>1449165042625</created>
+      <updated>1449165042625</updated>
+    </task>
+    <task id="LOCAL-00167" summary="comment out console.log">
+      <created>1449167848155</created>
+      <updated>1449167848155</updated>
+    </task>
+    <task id="LOCAL-00168" summary="comment out console.log">
+      <created>1449167946642</created>
+      <updated>1449167946642</updated>
+    </task>
+    <task id="LOCAL-00169" summary="add more description when sharing on FB">
+      <created>1449243080626</created>
+      <updated>1449243080626</updated>
+    </task>
+    <task id="LOCAL-00170" summary="add more description when sharing on FB">
+      <created>1449287122915</created>
+      <updated>1449287122915</updated>
+    </task>
+    <task id="LOCAL-00171" summary="add more description when sharing on FB">
+      <created>1449288252110</created>
+      <updated>1449288252110</updated>
+    </task>
+    <task id="LOCAL-00172" summary="change from elastic ip to domain name">
+      <created>1449503629435</created>
+      <updated>1449503629435</updated>
+    </task>
+    <task id="LOCAL-00173" summary="change from elastic ip to domain name">
+      <created>1449504501214</created>
+      <updated>1449504501214</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -936,29 +978,29 @@
     <frame x="-8" y="0" width="1036" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31382114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31707317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29268292" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31219512" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31707317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29447854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3190184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2884927" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31442463" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3128039" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -967,12 +1009,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31707317" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31928688" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901135" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2894309" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2781186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3006135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -993,17 +1035,6 @@
     </option>
     <confirmMoveToFailedCommit value="1" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
-    <MESSAGE value="switch server from wamp to nodejs, fix issue with #" />
-    <MESSAGE value="merge 2 nodejs server into 1" />
-    <MESSAGE value="refactor nodejs server side" />
-    <MESSAGE value="add facebook file" />
-    <MESSAGE value="add handling for FB bot" />
-    <MESSAGE value="add handling facebook bot" />
-    <MESSAGE value="fix facebook scraper does not receive data" />
-    <MESSAGE value="add fruit images for fb" />
-    <MESSAGE value="change domain name" />
-    <MESSAGE value="update size for image on FB" />
-    <MESSAGE value="change url formed" />
     <MESSAGE value="add logo" />
     <MESSAGE value="center facebook like/share button&#10;&#10;remove redundant ',' in js" />
     <MESSAGE value="center facebook button" />
@@ -1018,19 +1049,25 @@
     <MESSAGE value="revert to working version" />
     <MESSAGE value="fix wrong url in FB like/share due to forward with masking" />
     <MESSAGE value="Merge branch 'master' of live:/fakefruit&#10;&#10;Conflicts:&#10;&#9;js/FruitService.js&#10;&#9;js/MainController.js&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of live:/fakefruit&#10;&#10;Conflicts:&#10;&#9;js/FruitService.js&#10;&#9;js/MainController.js&#10;" />
+    <MESSAGE value="update with CORS for server" />
+    <MESSAGE value="revert to elastic IP" />
+    <MESSAGE value="fix issue with forwarding with masking when share link on FB" />
+    <MESSAGE value="change mission page content" />
+    <MESSAGE value="remove initializing url for quiz page" />
+    <MESSAGE value="extract facebook share into template" />
+    <MESSAGE value="extract get current url into FruitService" />
+    <MESSAGE value="fix content" />
+    <MESSAGE value="comment out console.log" />
+    <MESSAGE value="add more description when sharing on FB" />
+    <MESSAGE value="change from elastic ip to domain name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change from elastic ip to domain name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="2125" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="47" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1088" />
@@ -1161,11 +1198,6 @@
         <state line="4" column="104474" selection-start="104639" selection-end="104639" vertical-scroll-proportion="0.18994413" vertical-offset="0" max-vertical-offset="358" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/HeadController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="462" selection-end="462" vertical-scroll-proportion="0.69922876" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/NewFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
@@ -1174,11 +1206,6 @@
     <entry file="file://$PROJECT_DIR$/js/NewFile_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="39" selection-start="3096" selection-end="3096" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7327" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/type-selection.html">
@@ -1191,34 +1218,9 @@
         <state line="8" column="28" selection-start="366" selection-end="366" vertical-scroll-proportion="0.3908046" vertical-offset="0" max-vertical-offset="493" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="56" selection-start="458" selection-end="520" vertical-scroll-proportion="0.4775281" vertical-offset="0" max-vertical-offset="2346" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/origin-selection.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="619" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="54" selection-start="658" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ContactController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="133" selection-end="206" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mission.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="52" selection-start="7937" selection-end="7937" vertical-scroll-proportion="-4.576923" vertical-offset="2091" max-vertical-offset="3451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facebook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="551" selection-end="551" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/angular-route.min.js">
@@ -1226,81 +1228,120 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="362" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/angular-sanitize.js">
+    <entry file="file://$PROJECT_DIR$/js/angulike.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11713" />
+        <state line="40" column="41" selection-start="1862" selection-end="1862" vertical-scroll-proportion="1.8133334" vertical-offset="0" max-vertical-offset="3434" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/angular.min.js">
+    <entry file="file://$PROJECT_DIR$/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5100">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="898" selection-end="944" vertical-scroll-proportion="1.0262467" vertical-offset="0" max-vertical-offset="1207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/QuizController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="56" selection-start="2519" selection-end="2519" vertical-scroll-proportion="3.219697" vertical-offset="0" max-vertical-offset="2550" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1972">
-          <folding />
-        </state>
+        <state line="5" column="41" selection-start="190" selection-end="193" vertical-scroll-proportion="0.22193211" vertical-offset="0" max-vertical-offset="383" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="127" selection-end="127" vertical-scroll-proportion="34.653847" vertical-offset="969" max-vertical-offset="2261">
-          <folding>
-            <marker date="1449149524076" expanded="true" signature="966:1070" placeholder="..." />
-            <marker date="1449149524076" expanded="true" signature="991:1052" placeholder="{...}" />
-          </folding>
+        <state line="88" column="22" selection-start="4137" selection-end="4191" vertical-scroll-proportion="-16.346153" vertical-offset="1071" max-vertical-offset="2261" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/facebook-share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="346" selection-end="346" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="-1.2854443" vertical-offset="765" max-vertical-offset="1836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="211" selection-end="211" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="2227" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="25" selection-start="1663" selection-end="1663" vertical-scroll-proportion="1.3333334" vertical-offset="0" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular-sanitize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-28.859007" vertical-offset="11053" max-vertical-offset="11713">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
+    <entry file="file://$PROJECT_DIR$/js/QuizController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="81" selection-start="6332" selection-end="6332" vertical-scroll-proportion="0.0" vertical-offset="3416" max-vertical-offset="4403">
-          <folding />
-        </state>
+        <state line="85" column="32" selection-start="2990" selection-end="2993" vertical-scroll-proportion="0.33240223" vertical-offset="1326" max-vertical-offset="2482" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/MissionController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="69" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/angulike.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="41" selection-start="1862" selection-end="1862" vertical-scroll-proportion="1.8133334" vertical-offset="0" max-vertical-offset="3434">
+        <state line="16" column="11" selection-start="370" selection-end="373" vertical-scroll-proportion="0.58760107" vertical-offset="54" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/MainController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1224">
+        <state line="62" column="11" selection-start="1840" selection-end="1843" vertical-scroll-proportion="0.5726257" vertical-offset="849" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ContactController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="205" selection-end="205" vertical-scroll-proportion="0.30050504" vertical-offset="0" max-vertical-offset="408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mission.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="62" selection-start="9145" selection-end="9145" vertical-scroll-proportion="0.0" vertical-offset="2504" max-vertical-offset="3893">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/FruitService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="19" selection-start="2964" selection-end="2964" vertical-scroll-proportion="3.6141732" vertical-offset="102" max-vertical-offset="3162">
+        <state line="11" column="22" selection-start="476" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="2793" max-vertical-offset="3247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="290" column="108" selection-start="146060" selection-end="146071" vertical-scroll-proportion="0.74221456" vertical-offset="4501" max-vertical-offset="5100">
           <folding>
-            <marker date="1449151145332" expanded="true" signature="143:6290" placeholder="{...}" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/HeadController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="14" selection-start="256" selection-end="256" vertical-scroll-proportion="0.23011844" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="736" column="0" selection-start="31873" selection-end="31873" vertical-scroll-proportion="0.0" vertical-offset="679" max-vertical-offset="13294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="250" selection-end="250" vertical-scroll-proportion="0.35695538" vertical-offset="0" max-vertical-offset="4471">
+          <folding />
         </state>
       </provider>
     </entry>
