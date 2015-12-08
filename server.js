@@ -237,6 +237,7 @@ function register(request, response){
         var mailOptions = {
             from: 'Chọn Trái Cây<chontraicay@gmail.com>',
             to: toEmail,
+            cc: 'quangphuc789@gmail.com,tdkhanhvu@gmail.com',
             subject: 'Chào mừng bạn gia nhập Chọn Trái Cây',
             text: 'Hello world ✔',
             html: htmlContent
