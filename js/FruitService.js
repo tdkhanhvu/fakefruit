@@ -9,7 +9,6 @@
 
         var getAttributeGroups = function () {
             var url = host + 'getAttributeGroups';
-            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -19,7 +18,6 @@
 
         var getAllFruits = function() {
             var url = host + 'getAllFruits';
-            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -56,7 +54,6 @@
 
         var searchFruit = function (fruitId, $scope) {
             var url = host + 'searchFruit/' + fruitId;
-            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -93,9 +90,8 @@
             }
         };
 
-        var searchType = function (fruitId, typeId, $scope, $location) {
+        var searchType = function (fruitId, typeId) {
             var url = host + 'searchType/' + fruitId + '/' + typeId;
-            //console.log(url);
 
             return $http.get(url)
                 .then(function (response) {
@@ -174,6 +170,19 @@
             return result;
         };
 
+        var register = function(name, email, position, comment) {
+            var data = {
+                'name': name,
+                'email': email,
+                'position': position,
+                'comment': comment
+            };
+            $http.post(host + 'register', data)
+                .then(function (response) {
+
+                });
+        };
+
         getAttributeGroups();
 
         return {
@@ -184,7 +193,8 @@
             getStaticImage: getStaticImage,
             getCurrentUrl: getCurrentUrl,
             onGetAllFruits: onGetAllFruits,
-            onSearchFruit: onSearchFruit
+            onSearchFruit: onSearchFruit,
+            register: register
         };
     };
 

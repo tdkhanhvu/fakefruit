@@ -6,6 +6,14 @@ var http = require('http'),
     list = data.list,
     attributeGroups = data.attributeGroups,
     flags = data.flags,
+    nodemailer = require('nodemailer'),
+    transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'chontraicay@gmail.com',
+            pass: 'traicay123'
+        }
+    });
     domain = 'http://www.chontraicay.com';  // Note: to make it more dynamic
 
 function getContentType(extension) {
@@ -209,6 +217,36 @@ function handleFacebookBot(request, response) {
         }
     });
 }
+function register(request){
+    request.on('data', function(chunk) {
+        var json = JSON.parse(chunk.toString()),
+            toEmail = json['email'],
+            name = json['name'],
+            position = json['position'],
+            comment = json['comment'],
+            htmlContent = '';
+
+        htmlContent = '<p>Chào bạn ' + name + ',</p>' +
+            '<p>Cám ơn bạn đã đăng kí tham gia Chọn Trái Cây ' +
+            'với vị trí ' + '<strong>' + position + '</strong>.</p>' +
+            '<p>Thân,</p><p>Ban Tổ Chức Chọn Trái Cây</p>';
+
+        var mailOptions = {
+            from: 'Chọn Trái Cây<chontraicay@gmail.com>',
+            to: toEmail,
+            subject: 'Chào mừng bạn gia nhập Chọn Trái Cây',
+            text: 'Hello world ✔',
+            html: htmlContent
+        };
+
+        transporter.sendMail(mailOptions, function(error, info){
+            if(error){
+                return console.log(error);
+            }
+            console.log('Message sent: ' + info.response);
+        });
+    });
+}
 
 function start() {
     function onRequest(request, response) {
@@ -244,6 +282,9 @@ function start() {
                 break;
             case 'searchType':
                 searchType(url.parse(request.url, true).pathname, response);
+                break;
+            case 'register':
+                register(request);
                 break;
             default:
                 getStaticFile(filePath, contentType, response);

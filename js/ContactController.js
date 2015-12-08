@@ -47,8 +47,11 @@
             else
                 $scope.positionClass = 'has-success';
 
-            if ( !isError)
+            if ( !isError) {
+                FruitService.register($scope.name, $scope.email,
+                    $scope.position, $scope.comment);
                 $scope.submitted = true;
+            }
         }
 
         function validateEmail(email) {
