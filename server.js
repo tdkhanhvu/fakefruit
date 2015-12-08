@@ -218,15 +218,18 @@ function handleFacebookBot(request, response) {
     });
 }
 function register(request){
-    request.on('data', function(chunk) {
-        var json = JSON.parse(chunk.toString()),
+    var jsonString = '';
+    request.on('data', function (chunk) {
+        jsonString += chunk;
+    });
+    request.on('end', function () {
+        var json = JSON.parse(jsonString.toString()),
             toEmail = json['email'],
             name = json['name'],
             position = json['position'],
-            comment = json['comment'],
-            htmlContent = '';
+            comment = json['comment'];
 
-        htmlContent = '<p>Chào bạn ' + name + ',</p>' +
+        var htmlContent = '<p>Chào bạn ' + name + ',</p>' +
             '<p>Cám ơn bạn đã đăng kí tham gia Chọn Trái Cây ' +
             'với vị trí ' + '<strong>' + position + '</strong>.</p>' +
             '<p>Thân,</p><p>Ban Tổ Chức Chọn Trái Cây</p>';
