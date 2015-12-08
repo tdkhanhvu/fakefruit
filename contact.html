@@ -56,21 +56,29 @@
                             <div class="text-center">
                                 <form class="form-horizontal" novalidate ng-hide="submitted"
                                       ng-submit="submitForm()">
-                                    <div class="form-group">
+                                    <div class="form-group" ng-class="nameClass">
                                         <label for="inputName" class="col-sm-2 control-label">Họ Tên</label>
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" ng-model="name"
                                                    id="inputName" placeholder="Họ Tên">
+                                            <span id="inputNameHelp" class="help-block"
+                                                    ng-show="nameClass == 'has-error'">
+                                                Xin hãy nhập Họ Tên
+                                            </span>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" ng-class="emailClass">
                                         <label for="inputEmail" class="col-sm-2 control-label">Email</label>
                                         <div class="col-sm-10">
                                             <input type="email" class="form-control" ng-model="email"
                                                    id="inputEmail" placeholder="Email">
+                                            <span id="inputEmailHelp" class="help-block"
+                                                  ng-show="emailClass == 'has-error'">
+                                                Xin hãy nhập Email format a@a.com
+                                            </span>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group" ng-class="positionClass">
                                         <label for="inputPosition" class="col-sm-2 control-label">Vị Trí</label>
                                         <div class="col-sm-10">
                                             <select class="form-control" id="inputPosition"
@@ -80,6 +88,10 @@
                                                 <option>Đóng Góp Thông Tin</option>
                                                 <option>PR</option>
                                             </select>
+                                            <span id="inputPositionHelp" class="help-block"
+                                                  ng-show="positionClass == 'has-error'">
+                                                Xin hãy chọn Vị Trí
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -96,7 +108,9 @@
                                     </div>
                                 </form>
                                 <p ng-show="submitted">
-                                    Cảm ơn bạn đã đăng kí tham gia. Tụi mình sẽ liên hệ lại bạn sau.
+                                    Cảm ơn bạn <strong>{{name}}</strong> đã đăng kí tham gia vào
+                                    vị trí <strong>{{position}}</strong>.
+                                    Tụi mình sẽ liên hệ lại bạn qua email <strong>{{email}}</strong> sau.
                                 </p>
                             </div>
                         </div>
