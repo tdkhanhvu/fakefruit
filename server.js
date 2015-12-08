@@ -270,6 +270,10 @@ function start() {
         if (filePath == './')
             filePath = './index.html';
 
+        if (filePath == './server.js' || filePath == './data.js'){
+            response.writeHead(404, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*'});
+            response.end('', 'utf-8');
+        }
         var contentType = getContentType(path.extname(filePath));
 
         console.log('filePath:' + filePath);
