@@ -217,7 +217,7 @@ function handleFacebookBot(request, response) {
         }
     });
 }
-function register(request){
+function register(request, response){
     var jsonString = '';
     request.on('data', function (chunk) {
         jsonString += chunk;
@@ -247,6 +247,7 @@ function register(request){
                 return console.log(error);
             }
             console.log('Message sent: ' + info.response);
+            response.end('', 'utf-8');
         });
     });
 }
@@ -287,7 +288,7 @@ function start() {
                 searchType(url.parse(request.url, true).pathname, response);
                 break;
             case 'register':
-                register(request);
+                register(request, response);
                 break;
             default:
                 getStaticFile(filePath, contentType, response);
