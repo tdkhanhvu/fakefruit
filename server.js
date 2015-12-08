@@ -8,6 +8,7 @@ var http = require('http'),
     flags = data.flags,
     domain = 'http://www.chontraicay.com';  // Note: to make it more dynamic
 
+
 function getContentType(extension) {
     switch (extension) {
         case '.js':
