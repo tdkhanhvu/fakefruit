@@ -312,14 +312,14 @@ var flags = {
         'name': 'Dâu Tây',
         'image': 'dau.jpg',
         'icon':'dau.png',
-        'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc?  Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
+        'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
         'types': [
             {
                 'id': 'dau',
                 'name': 'Dâu Tây',
                 'image': 'dau.jpg',
                 'icon': 'dau.png',
-                'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc?  Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
+                'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
                 'origins': [
                     {
                         'id': 'dalat',
@@ -359,14 +359,14 @@ var flags = {
         'name': 'Dưa Lưới',
         'image': 'dualuoi.jpg',
         'icon':'dualuoi.png',
-        'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
+        'text': 'Vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Tìm hiểu loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
         'types': [
             {
                 'id': 'dualuoi',
                 'name': 'Dưa Lưới',
                 'image': 'dualuoi.jpg',
                 'icon': 'dualuoi.png',
-                'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
+                'text': 'Vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Tìm hiểu loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
                 'origins': [
                     {
                         'id': 'vietnam',
