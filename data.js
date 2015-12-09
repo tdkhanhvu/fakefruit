@@ -312,14 +312,14 @@ var flags = {
         'name': 'Dâu Tây',
         'image': 'dau.jpg',
         'icon':'dau.png',
-        'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
+        'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc?  Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
         'types': [
             {
                 'id': 'dau',
                 'name': 'Dâu Tây',
                 'image': 'dau.jpg',
                 'icon': 'dau.png',
-                'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc? Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
+                'text': 'Quả vừa phải, không quá to, không đồng đều là dâu Đà Lạt hay Trung Quốc?  Loại dâu nào thị quả màu đỏ nhạt, nhiều phần thịt có màu trắng?',
                 'origins': [
                     {
                         'id': 'dalat',
