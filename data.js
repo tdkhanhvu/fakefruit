@@ -359,14 +359,14 @@ var flags = {
         'name': 'Dưa Lưới',
         'image': 'dualuoi.jpg',
         'icon':'dualuoi.png',
-        'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
+        'text': 'Vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Tìm hiểu loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
         'types': [
             {
                 'id': 'dualuoi',
                 'name': 'Dưa Lưới',
                 'image': 'dualuoi.jpg',
                 'icon': 'dualuoi.png',
-                'text': 'Dưa lưới có vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
+                'text': 'Vân lưới to và đẹp là dưa lưới Việt Nam, Bảo Khuê và Trung Quốc? Tìm hiểu loại dưa lưới nào ruột dưa màu vàng cam, cùi hơi mềm và khi bổ dưa ra sau vài tiếng, ruột quả sẽ nhanh bị nhũn?',
                 'origins': [
                     {
                         'id': 'vietnam',
