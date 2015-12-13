@@ -44,11 +44,11 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h1 class="panel-title visible-xs-inline">
-                                <strong>Đăng kí tham gia</strong>
+                                <strong>Góp Ý / Tham Gia</strong>
                                 <div fb-like="myModel.Url" style="float: right;"></div>
                             </h1>
                             <h1 class="panel-title hidden-xs" style="font-size: 36px">
-                                <strong>Đăng kí tham gia</strong>
+                                <strong>Góp Ý / Tham Gia</strong>
                                 <div fb-like="myModel.Url" style="float: right;margin-top: -10px;"></div>
                             </h1>
                         </div>
@@ -78,7 +78,21 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="form-group" ng-class="positionClass">
+                                    <div class="form-group" ng-class="purposeClass">
+                                        <label for="inputPurpose" class="col-sm-2 control-label">Mục Đích Liên Hệ</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="inputPurpose"
+                                                    ng-model="purpose">
+                                                <option>Tham Gia</option>
+                                                <option>Góp Ý</option>
+                                            </select>
+                                            <span id="inputPurposeHelp" class="help-block"
+                                                  ng-show="purposeClass == 'has-error'">
+                                                Xin hãy chọn Mục Đích Liên Hệ
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" ng-class="positionClass" ng-show="purpose == 'Tham Gia'">
                                         <label for="inputPosition" class="col-sm-2 control-label">Vị Trí</label>
                                         <div class="col-sm-10">
                                             <select class="form-control" id="inputPosition"
@@ -107,11 +121,19 @@
                                         </div>
                                     </div>
                                 </form>
-                                <p ng-show="submitted">
-                                    Cảm ơn bạn <strong>{{name}}</strong> đã đăng kí tham gia vào
-                                    vị trí <strong>{{position}}</strong>.
-                                    Tụi mình sẽ liên hệ lại bạn qua email <strong>{{email}}</strong> sau.
-                                </p>
+                                <div ng-show="submitted">
+                                    <p ng-show="purpose == 'Tham Gia'">
+                                        Cảm ơn bạn <strong>{{name}}</strong> đã đăng kí tham gia vào
+                                        vị trí <strong>{{position}}</strong>.
+                                        Tụi mình sẽ liên hệ lại bạn qua email <strong>{{email}}</strong> sau.
+                                    </p>
+                                    <p ng-hide="purpose == 'Tham Gia'">
+                                        Cảm ơn bạn <strong>{{name}}</strong> đã góp ý.
+                                        Tụi mình sẽ tiếp nhận ý kiến phản hồi của bạn và sẽ
+                                        liên hệ lại bạn qua email <strong>{{email}}</strong> sau nếu cần.
+                                    </p>
+
+                                </div>
                             </div>
                         </div>
                     </div>

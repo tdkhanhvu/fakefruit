@@ -170,10 +170,11 @@
             return result;
         };
 
-        var register = function(name, email, position, comment) {
+        var register = function(name, email, purpose, position, comment) {
             var data = {
                 'name': name,
                 'email': email,
+                'purpose': purpose,
                 'position': position,
                 'comment': comment
             };

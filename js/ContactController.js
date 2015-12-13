@@ -13,6 +13,9 @@
         $scope.email = '';
         $scope.emailClass = '';
 
+        $scope.purpose = '';
+        $scope.purposeClass = '';
+
         $scope.position = '';
         $scope.positionClass = '';
 
@@ -40,7 +43,14 @@
             else
                 $scope.emailClass = 'has-success';
 
-            if ($scope.position == '') {
+            if ($scope.purpose == '') {
+                isError = true;
+                $scope.purposeClass = 'has-error';
+            }
+            else
+                $scope.purposeClass = 'has-success';
+
+            if ($scope.purpose == 'Tham Gia' && $scope.position == '') {
                 isError = true;
                 $scope.positionClass = 'has-error';
             }
@@ -48,7 +58,7 @@
                 $scope.positionClass = 'has-success';
 
             if ( !isError) {
-                FruitService.register($scope.name, $scope.email,
+                FruitService.register($scope.name, $scope.email, $scope.purpose,
                     $scope.position, $scope.comment);
                 $scope.submitted = true;
             }

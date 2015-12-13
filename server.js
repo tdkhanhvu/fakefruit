@@ -226,21 +226,34 @@ function register(request, response){
         var json = JSON.parse(jsonString.toString()),
             toEmail = json['email'],
             name = json['name'],
+            purpose = json['purpose'],
             position = json['position'],
-            comment = json['comment'];
+            comment = json['comment'],
+            htmlContent = '',
+            subject = '';
 
-        var htmlContent = '<p>Chào bạn ' + name + ',</p>' +
-            '<p>Cám ơn bạn đã đăng kí tham gia Chọn Trái Cây ' +
-            'với vị trí ' + '<strong>' + position + '</strong>.</p>' +
-            '<p>Chúng tôi cũng đã lưu ý nhận xét của bạn:</p>' +
-            '<p>' + comment + '</p>' +
-            '<p>Thân,</p><p>Ban Tổ Chức Chọn Trái Cây</p>';
+        if (purpose == 'Tham Gia') {
+            subject = 'Chào mừng bạn gia nhập Chọn Trái Cây';
+            htmlContent = '<p>Chào bạn ' + name + ',</p>' +
+                '<p>Cám ơn bạn đã đăng kí tham gia Chọn Trái Cây ' +
+                'với vị trí ' + '<strong>' + position + '</strong>.</p>' +
+                '<p>Chúng tôi cũng đã lưu ý nhận xét của bạn:</p>' +
+                '<p>' + comment + '</p>' +
+                '<p>Thân,</p><p>Ban Tổ Chức Chọn Trái Cây</p>';
+        } else {
+            subject = 'Cám ơn góp ý của bạn cho Chọn Trái Cây';
+            htmlContent = '<p>Chào bạn ' + name + ',</p>' +
+                '<p>Cám ơn bạn đã đóng góp ý kiến cho Chọn Trái Cây: ' +
+                '<p>' + comment + '</p>' +
+                '<p>' + 'Chúng tôi sẽ xem xét và cải thiện website của mình!' + '</p>' +
+                '<p>Thân,</p><p>Ban Tổ Chức Chọn Trái Cây</p>';
+        }
 
         var mailOptions = {
             from: 'Chọn Trái Cây<chontraicay@gmail.com>',
             to: toEmail,
             cc: 'quangphuc789@gmail.com,tdkhanhvu@gmail.com',
-            subject: 'Chào mừng bạn gia nhập Chọn Trái Cây',
+            subject: subject,
             text: 'Hello world ✔',
             html: htmlContent
         };
