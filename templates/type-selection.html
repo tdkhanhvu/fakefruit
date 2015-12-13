@@ -4,7 +4,7 @@
     </div>
     <div class="panel-body">
         <ui-select ng-model="$parent.selectedType" theme="bootstrap"
-                   on-select="searchType()">
+                   on-select="searchType()" search-enabled="false">
             <ui-select-match placeholder="Chọn {{selectedFruit.name}}">
                 <img ng-src="{{$select.selected.icon}}" style="margin-top:-5px"
                      class="pull-left">
