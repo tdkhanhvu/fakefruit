@@ -232,6 +232,8 @@ function register(request, response){
         var htmlContent = '<p>Chào bạn ' + name + ',</p>' +
             '<p>Cám ơn bạn đã đăng kí tham gia Chọn Trái Cây ' +
             'với vị trí ' + '<strong>' + position + '</strong>.</p>' +
+            '<p>Chúng tôi cũng đã lưu ý nhận xét của bạn:</p>' +
+            '<p>' + comment + '</p>' +
             '<p>Thân,</p><p>Ban Tổ Chức Chọn Trái Cây</p>';
 
         var mailOptions = {
@@ -274,6 +276,7 @@ function start() {
             response.writeHead(404, { 'Content-Type': contentType, 'Access-Control-Allow-Origin': '*'});
             response.end('', 'utf-8');
         }
+
         var contentType = getContentType(path.extname(filePath));
 
         console.log('filePath:' + filePath);
